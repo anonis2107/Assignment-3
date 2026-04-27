@@ -9,12 +9,52 @@
 
     <!-- Cart heading-->
     <header>
-        <button> id="backbutton">←</button>
+        <button id="backbutton">←</button>
         <h1>Cart</h1>
 
     </header>
 
-    <!-- -->
+    <!--Empty State-->
+    <div class="emptycart">
+        <a href="Categories.html" class="continueshopping">Continue Shopping</a>
+    </div>
+
+    <!--Has items in cart-->
+    <div class="notemptycart">
+        <div class="items">
+
+            <!--Item-->
+            <article class="item">
+                <img src="productimg.png" alt="Product image" class="cartimage">
+
+                <section class="itemdetails">
+                    <h3 class="itemname">Product Name</h3>
+                    <details class="itemselections">
+                        <summary>Selections</summary>
+
+                        <section class="selectioncontents">
+                            <p><span class="sub-titles">Shape: </span>Circle</p>
+                            <p><span class="sub-titles">Sticker Size: </span>n mm</p>
+                            <p><span class="sub-titles">Sticker Material: </span>Gloss Sticker Paper</p>
+                            <p><span class="sub-titles">Sticker Colour: </span>Full Colour</p>
+                            <p><span class="sub-titles">Sticker Finish: </span>Standard</p>
+                            <p><span class="sub-titles">Sticker Special Effects: </span>None</p>
+                            <p><span class="sub-titles">Quantity: </span>0</p>
+
+                        </section>
+                    </details>
+
+                    <div class="price">$0</div>
+                </section>
+                    
+            </article>
+
+        </div>
+
+
+    </div>
+
+    <button>CHECKOUT</button>
     
     
 </body>
