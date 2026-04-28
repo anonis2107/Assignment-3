@@ -34,16 +34,130 @@
 
          <!-- Product Info-->
           <section class="productinfo">
-            <h1 class="productname">Product Name</h1>
-            <div class="rating">★★★★★</div>
-            <p>Starting from<span class="Starting price">$50</span></p>
+            <h1 id="productname">Product Name</h1>
+            <div id="rating">★★★★★</div>
+            <p>Starting from<span id="Starting price">$50</span></p>
 
             <p>*Please note all selections must be made before "Add to Cart" is available- Check 'How to Order' below for more details</p>
             
-            <!-- SELECTIONS-->
+            <!-- SELECTIONS NEED TO MAKE INTO A BUTTON & PROGRESSIVE SELECTION-->
+
+            <section class="selections">
+                <details id="shapeSelection">
+                    <summary>Sticker Shape*</summary>
+                    <select>
+                        <option>Select</option>
+                        <option>Circle</option>
+                        <option>Oval</option>
+                    </select>
+                </details>
+
+                <!-- only show if circle selected-->
+                <details id="sizeSelectionCircle">
+                    <summary>Sticker Size*</summary>
+                    <select>
+                        <option>Select</option>
+                        <option>13mm</option>
+                        <option>19mm</option>
+                        <option>25mm</option>
+                        <option>32mm</option>
+                        <option>38mm</option>
+                        <option>50mm</option>
+                        <option>64mm</option>
+                        <option>70mm</option>
+                        <option>76mm</option>
+                        <option>101mm</option>
+                        <option>115mm</option>
+                    </select>
+                </details>
+
+                <!-- only show if oval selected-->
+                <details id="sizeSelectionOval">
+                    <summary>Sticker Size*</summary>
+                    <select>
+                        <option>Select</option>
+                        <option>19mm x 38mm</option>
+                        <option>32mm x 50mm</option>
+                        <option>45mm x 64mm</option>
+                        <option>50mm x 76mm</option>
+                        <option>50mm x 83mm</option>
+                        <option>76mm x 101mm</option>
+                        <option>101mm x 152mm</option>
+                    </select>
+                </details>
+
+                <details id="materialSelection">
+                    <summary>Sticker Material*</summary>
+                    <select>
+                        <option>Sticker Paper Gloss</option>
+                        <option>Sticker Paper Matte</option>
+                        <option>White Vinyl</option>
+                        <option>Clear Vinyl</option>
+                    </select>
+                </details>
+
+                <details id="colourSelection">
+                    <summary>Sticker Colour*</summary>
+                    <select>
+                        <option>Select</option>
+                        <option>Black & White</option>
+                        <option>Full Colour</option>
+                    </select>
+                </details>
+
+                <details id="finishSelection">
+                    <summary>Sticker Finish*</summary>
+                    <select>
+                        <option>Select</option>
+                        <option>Standard Finish</option>
+                        <option>High UV Gloss Coating</option>
+                    </select>
+                </details>
+
+                <details id="effectsSelection">
+                    <summary>Sticker Special Effects*</summary>
+                    <select>
+                        <option>Select</option>
+                        <option>None</option>
+                        <option>Emboss or Deboss (single side)</option>
+                        <option>Foil Stamping</option>
+                        <option>Spot UV</option>
+                    </select>
+                </details>
+
+                <details id="quantitySelection">
+                    <summary>Sticker Quantity*</summary>
+                    <select>
+                        <option>Select</option>
+                        <option>50</option>
+                        <option>100</option>
+                        <option>250</option>
+                        <option>500</option>
+                        <option>750</option>
+                        <option>1000</option>
+                        <option>1500</option>
+                        <option>2000</option>
+                        <option>3000</option>
+                        <option>4000</option>
+                        <option>5000</option>
+                        <option>6000</option>
+                        <option>7000</option>
+                        <option>8000</option>
+                        <option>9000</option>
+                        <option>10000</option>
+
+                    </select>
+                </details>
+            </section>
+
+            
 
 
 
+
+            <!--UNAVAIL UNTIL ALL SELECTIONS HAVE BEEN SELECTED-->
+            <button id="uploadDesign">Upload Design</button>
+            <button id="addToCart">Add to Cart</button>
 
             <!--Product text sections-->
 
@@ -63,8 +177,8 @@
                                 <li>Quantity</li>
                             </ol>
                         </li>
-                        <li>Upload your design</li>
-                        <li>Add to Cart</li>
+                        <li>2. Upload your design</li>
+                        <li>3. Add to Cart</li>
 
                     </ol>
                 </details>
