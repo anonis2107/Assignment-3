@@ -1,34 +1,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 
 /* GENERAL visual design */
 body{
     background-color: #EAE8E5;
+    margin: 0;
 }
 
 header{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 25px;
+    padding: 10px;
     background: #FFFF;
 }
 
-nav {
+.headerNav {
     display: flex;
-    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    border-top: 0.5px solid;
+    padding: 15px;
+    
+}
+
+nav a{
+    font-family: "Playfair", sans-serif;
+    font-size: large;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 header input{
     padding: 10px 20px;
     border-radius: 20px;
     border: 1px solid;
-    width: 150px;
+    width: 100%;
+    max-width: 350px;
 }
 
-header img{
-    height: 80px
+.logo{
+    height: 80px;
+    justify-content: center;
+}
+
+.cart-icon{
+    height: 50px;
 }
 
 /* set header font */
@@ -44,6 +72,12 @@ p{
 
 /*HOMEPAGE */
 
+.hero{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
 .hero img{
     width: 100%;
     height: 350px; /*TEST ON SMALL SCREEN */
@@ -54,6 +88,27 @@ p{
     text-align: center;
     padding: 30px 20px;
 }
+
+.hero button{
+    margin: 0;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: 0.5px solid;
+    padding: 9px 12px;
+
+}
+#left{
+    left: 15px;
+}
+
+#right{
+    right: 15px;
+}
+
+
 .shopnowbtn{
     display: inline-block;
     font-family: "Montserrat", serif;
@@ -63,6 +118,13 @@ p{
     margin: 10px 0;
     color: white;
     padding: 15px 35px;
+
+    transition: 0.1s;
+
+}
+
+.shopnowbtn:hover{
+    box-shadow: 0 6px 15px rgba(0, 0, 0,.25);
 
 }
 
@@ -74,9 +136,11 @@ p{
 .keyValues{
     display: flex;
     justify-content: center;
-    gap: 80px;
-    margin-top:30px;
     text-align: center;
+    gap: 120px;
+    margin-top:30px;
+    
+    margin-bottom: 60px;
 }
 
 .keyValues img{
@@ -85,12 +149,64 @@ p{
     justify-content: center;
 }
 
-footer{
-    display: flex;
+/* CATEGORIES PAGE */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.category{
+    position: relative;
+    overflow: hidden;
     text-align: center;
-    padding: 5px 25px;
+}
+
+.category img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.6;
+    display: block;
+    transition: 0.3s;
+}
+
+.category h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: black;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 0.5px solid;
     background: #FFFF;
 
+}
+
+.footerNav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+/* MOBILE DESIGN */
+@media (max-width: 768px) {
+    .categories{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 
 
