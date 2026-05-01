@@ -15,6 +15,11 @@ header{
     background: #FFFF;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+}
+
 header input{
     padding: 10px 20px;
     border-radius: 20px;
@@ -23,7 +28,7 @@ header input{
 }
 
 header img{
-    height: 40px
+    height: 80px
 }
 
 /* set header font */
@@ -44,26 +49,34 @@ p{
     height: 350px; /*TEST ON SMALL SCREEN */
     object-fit: cover;
 }
+
+.herocontent{
+    text-align: center;
+    padding: 30px 20px;
+}
 .shopnowbtn{
     display: inline-block;
     font-family: "Montserrat", serif;
+    font-size: 26px;
     background:#272401;
     text-decoration: none;
+    margin: 10px 0;
     color: white;
-
-    padding: 10px 20px;
+    padding: 15px 35px;
 
 }
 
 #tagline{
     font-family: "Montserrat", serif;
-    font-size: 24;
+    font-size: 20px;
 }
 
 .keyValues{
     display: flex;
     justify-content: center;
     gap: 80px;
+    margin-top:30px;
+    text-align: center;
 }
 
 .keyValues img{
@@ -73,6 +86,10 @@ p{
 }
 
 footer{
+    display: flex;
+    text-align: center;
+    padding: 5px 25px;
+    background: #FFFF;
 
 }
 
