@@ -37,7 +37,95 @@
                 <h3>Personal Information</h3>
 
                 <input type="text" name="name" placeholder="Your Name" required>
+
+                <div class="detailRow">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
             </section>
+
+            <!--Shipping Info-->
+            <section class="detailSection">
+                <h3>Shipping Information</h3>
+
+                <div class="detailRow">
+                    <input type="text" name="address" placeholder="Address" required>
+                    <input type="number" name="postcode" placeholder="Postcode" required>
+                    
+                </div>
+
+                <div class="detailRow">
+                    <input type="text" name="city" placeholder="City" required>
+                    <input type="text" name="country" placeholder="Country" required>
+                </div>
+            </section>
+
+            <!--Shipping Method -->
+            <section class="detailSection">
+                <h3>Shipping Method</h3>
+                <label class="shippingOption">
+                    <input id="standardShipping"
+                        name="shippingMethod" type="radio"
+                        checked required>
+                    <span for="standardShipping">Standard Shipping</span>
+                    <span class="standardPrice">$10</span>
+
+                </label>
+
+                <label class="shippingOption">
+                    <input id="expressShipping"
+                        name="shippingMethod" type="radio"
+                        checked required>
+                    <span for="expressShipping">Express Shipping</span>
+                    <span class="expressPrice">$15</span>
+
+                </label>
+
+            </section>
+
+            <!-- Payment Methods-->
+            <section class="detailSection">
+                <h3>Payment Methods</h3>
+
+                <div class="payments">
+                    <button type="button" class="tab">Credit/Debit Card</button>
+                    <button type="button" class="tab">Klarna</button>
+                    <button type="button" class="tab">Paypal</button>
+                    <button type="button" class="tab"> Apple Pay</button>
+                </div>
+
+                <!-- Card Fields-->
+                 <article class="cardDetails" id="card">
+                    <input type="text" placeholder="Cardholder Name">
+                    <div class="detailRow">
+                        <input type="number" placeholder="Card Number">
+                        <input type="date" placeholder="Expiry Date">
+                        <input type="text" placeholder="CVC">
+                    </div>
+                 </article>
+                 
+                 <!--Klarna-->
+                 <article class="klarnaMethod" id="klarna">
+                    <p>Continue with Klarna at next step</p>
+                 </article>
+
+                 <!--Paypal-->
+                 <article class="paypalMethod" id="paypal">
+                    <p>Pay with Paypal</p>
+                 </article>
+
+                 <!-- Apply Pay-->
+                  <article class="appleMethod" id="applePay">
+                    <p>Pay using Apply Pay</p>
+                  </article>
+            </section>
+
+            <!--Place Order Final Step-->
+            <button type="submit" class="placeOrderbtn">
+                PLACE ORDER
+            </button>
+
+
         </form>
         
 
