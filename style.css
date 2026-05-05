@@ -81,8 +81,10 @@ font-size: clamp(35px, 5vw, 50px);
 /*body text */
 p{
     font-family: "Montserrat", serif;
-    font-size: clamp(12px, 2vw, 18px);
+    font-size: clamp(12px, 2vw, 16px);
     margin: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
 
@@ -128,12 +130,12 @@ p{
 .shopnowbtn{
     display: inline-block;
     font-family: "Montserrat", serif;
-    font-size: 26px;
+    font-size: 22px;
     background:#272401;
     text-decoration: none;
     margin: 10px 0;
     color: white;
-    padding: 15px 35px;
+    padding: 12px 30px;
 
     transition: 0.1s;
 
@@ -276,6 +278,16 @@ p{
     display: flex;
     justify-content: center;
     
+}
+
+/* ABOUT US */
+#aboutUsSub {
+    font-family: "Montserrat", serif;
+    font-size: clamp(15px, 2vw, 18px);
+    font-weight: 600;
+    margin: 20px;
+    
+
 }
 
 
