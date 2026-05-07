@@ -33,33 +33,33 @@
     <main class="productpage">
         <!-- Product Image-->
         <section class="productimage">
-            <img src="productimg.png" alt="Product Image">
+            <img id="productImage" src="productimg.png" alt="Product Image">
 
         </section>
 
          <!-- Product Info-->
         <section class="productinfo">
-            <h1 id="productname">Product Name</h1>
+            <h1 id="productName">Product Name</h1>
             <div id="rating">★★★★★</div>
-            <p>Starting from<span id="startingPrice">$50</span></p>
+            <p>Starting from <span id="startingPrice">$50</span></p>
 
             <p>*Please note all selections must be made before "Add to Cart" is available- Check 'How to Order' below for more details</p>
             
             <!-- SELECTIONS NEED TO MAKE INTO A BUTTON & PROGRESSIVE SELECTION-->
 
             <section class="selections">
-                <details id="shapeSelection">
-                    <summary>Sticker Shape*</summary>
+                <section id="shapeSelection">
+                    <h3 class="selectionType">Shape*</h3>
                     <select>
                         <option>Select</option>
                         <option>Circle</option>
                         <option>Oval</option>
                     </select>
-                </details>
+                </section>
 
                 <!-- only show if circle selected-->
-                <details id="sizeSelectionCircle">
-                    <summary>Sticker Size*</summary>
+                <section id="sizeSelectionCircle">
+                    <h3>Size*</h3>
                     <select>
                         <option>Select</option>
                         <option>13mm</option>
@@ -74,11 +74,11 @@
                         <option>101mm</option>
                         <option>115mm</option>
                     </select>
-                </details>
+                </section>
 
                 <!-- only show if oval selected-->
-                <details id="sizeSelectionOval">
-                    <summary>Sticker Size*</summary>
+                <section id="sizeSelectionOval">
+                    <h3>Size*</h3>
                     <select>
                         <option>Select</option>
                         <option>19mm x 38mm</option>
@@ -89,38 +89,38 @@
                         <option>76mm x 101mm</option>
                         <option>101mm x 152mm</option>
                     </select>
-                </details>
+                </section>
 
-                <details id="materialSelection">
-                    <summary>Sticker Material*</summary>
+                <section id="materialSelection">
+                    <h3>Material*</h3>
                     <select>
                         <option>Sticker Paper Gloss</option>
                         <option>Sticker Paper Matte</option>
                         <option>White Vinyl</option>
                         <option>Clear Vinyl</option>
                     </select>
-                </details>
+                </section>
 
-                <details id="colourSelection">
-                    <summary>Sticker Colour*</summary>
+                <section id="colourSelection">
+                    <h3>Colour*</h3>
                     <select>
                         <option>Select</option>
                         <option>Black & White</option>
                         <option>Full Colour</option>
                     </select>
-                </details>
+                </section>
 
-                <details id="finishSelection">
-                    <summary>Sticker Finish*</summary>
+                <section id="finishSelection">
+                    <h3>Finish*</h3>
                     <select>
                         <option>Select</option>
                         <option>Standard Finish</option>
                         <option>High UV Gloss Coating</option>
                     </select>
-                </details>
+                </section>
 
-                <details id="effectsSelection">
-                    <summary>Sticker Special Effects*</summary>
+                <section id="effectsSelection">
+                    <h3>Special Effects*</h3>
                     <select>
                         <option>Select</option>
                         <option>None</option>
@@ -128,10 +128,10 @@
                         <option>Foil Stamping</option>
                         <option>Spot UV</option>
                     </select>
-                </details>
+                </section>
 
-                <details id="quantitySelection">
-                    <summary>Sticker Quantity*</summary>
+                <section id="quantitySelection">
+                    <h3>Quantity*</h3>
                     <select>
                         <option>Select</option>
                         <option>50</option>
@@ -152,7 +152,7 @@
                         <option>10000</option>
 
                     </select>
-                </details>
+                </section>
             </section>
 
             
@@ -161,8 +161,12 @@
 
 
             <!--UNAVAIL UNTIL ALL SELECTIONS HAVE BEEN SELECTED-->
-            <button id="uploadDesign">Upload Design</button>
-            <button id="addToCart">Add to Cart</button>
+            <section class="productButtons">
+                <button id="uploadDesign">Upload Design</button>
+                <button id="addToCart">Add to Cart</button>
+
+            </section>
+
 
             <!--Product text sections-->
 
@@ -191,7 +195,7 @@
                 <!-- Description-->
                 <details>
                     <summary>Description</summary>
-                    <p class="productDescription">Product description</p>
+                    <p id="productDescription" class="productDescription">Product description</p>
                 </details>
 
                 <!--Reviews-->

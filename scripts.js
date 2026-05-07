@@ -2,70 +2,70 @@ const products = {
     //Cards & Stationary
     bookmark: {
         name: "Bookmarks",
-        price: $50,
-        image: "bookmarks.png"
-        description: 
+        price: 50,
+        image: "bookmarks.png",
+        description: "Bookmarks are more than just a way to mark your page; they are a creative tool to promote your brand, share a message, or add a personal touch to your reading experience. At The Sticker Printing, we specialize in high-quality custom bookmark printing that is affordable, vibrant, and tailored to your exact needs."
     },
     envelope: {
     name: "Envelopes",
     price: 50,
-    image: "envelopes.png"
-    description: 
+    image: "envelopes.png",
+    description: "" 
     },
     invitation: {
         name: "Invitation Cards",
         price: 50,
-        image: "invitations.png"
-        description: 
+        image: "invitations.png",
+        description: ""
     },
     postcard: {
         name: "Postcards",
         price: 50,
-        image: "postcards.png"
-        description: 
+        image: "postcards.png",
+        description: ""
     },
     notepad: {
         name: "Notepads",
         price: 50,
-        image: "notepads.png"
-        description: 
+        image: "notepads.png",
+        description: ""
     },
 
     //CD & Packaging
     cdcover: {
         name: "CD Covers",
         price: 50,
-        image: "cdcovers.png"
-        description: 
+        image: "cdcovers.png",
+        description: ""
     },
 
     //Custom Stickers
     diecutstickers: {
         name: "Die Cut Stickers",
         price: 50,
-        image: "diecut.png"
-        description: 
+        image: "diecut.png",
+        description: ""
     },
 
     clearstickers: {
         name: "Clear Stickers",
         price: 50,
-        image: "clearsticker.png"
-        description: 
+        image: "clearsticker.png",
+        description: ""
     },
 
     embossedstickers: {
         name: "Embossed Stickers",
         price: 50,
-        image: "embossedstickers.png"
-        description: 
+        image: "embossedstickers.webp",
+        description: ""
     },
 
     heavydutystickers: {
         name: "Heavy Duty Stickers",
         price: 50,
-        image: "heavyduty.png"
-        description: 
+        image: "heavyduty.png",
+        description: ""
     },
 
     //Gift card
@@ -73,8 +73,8 @@ const products = {
     giftcards: {
         name: "Gift Cards",
         price: 50,
-        image: "giftcards.png"
-        description: 
+        image: "giftcards.png",
+        description: ""
     },
 
     //Label & Tags
@@ -82,22 +82,22 @@ const products = {
     assetlabels: {
         name: "Asset Labels",
         price: 50,
-        image: "assetlabels.png"
-        description: 
+        image: "assetlabels.png",
+        description: ""
     },
 
     doorhangers: {
         name: "Door Hangers",
         price: 50,
-        image: "doorhangers.png"
-        description: 
+        image: "doorhangers.png",
+        description: ""
     },
 
     standardcustomlabels: {
         name: "Standard Custom Labels",
         price: 50,
-        image: "standardcustomlabels.png"
-        description: 
+        image: "standardcustomlabels.png",
+        description: ""
     },
 
     //Large Sinage
@@ -105,15 +105,15 @@ const products = {
     posters: {
         name: "Posters",
         price: 50,
-        image: "posters.png"
-        description: 
+        image: "posters.png",
+        description: ""
     },
 
     vinybanner: {
         name: "Vinyl Banner",
         price: 50,
-        image: "vinylbanner.png"
-        description: 
+        image: "vinylbanner.png",
+        description: ""
     },
 
     // Marketing Materials
@@ -121,44 +121,72 @@ const products = {
     businesscards: {
         name: "Business Cards",
         price: 50,
-        image: "businesscards.png"
-        description: 
+        image: "businesscards.png",
+        description: ""
     },
 
     brochures: {
         name: "Brochures",
         price: 50,
-        image: "brochures.png"
-        description: 
+        image: "brochures.png",
+        description: ""
     },
 
     eventtickets: {
         name: "Event Tickets",
         price: 50,
-        image: "eventtickets.png"
-        description: 
+        image: "eventtickets.png",
+        description: ""
     },
 
     menus: {
         name: "Menus",
         price: 50,
-        image: "menus.png"
-        description: 
+        image: "menus.png",
+        description: ""
     },
 
     tabletents: {
         name: "Table Tents",
         price: 50,
-        image: "tabletents.png"
-        description: 
+        image: "tabletents.png",
+        description: ""
     },
 
     //Speciality Finishes
     foilstamping: {
         name: "Foil Stamping",
         price: 50,
-        image: "foilstamping.png"
-        description: 
+        image: "foilstamping.png",
+        description: ""
     }
 
 };
+
+//get product id from URL
+
+const params = new URLSearchParams(window.location.search);
+
+const productID = params.get("id");
+
+//find the product that matches id
+const product = products[productID];
+
+// if the product exists update content
+if (product) {
+
+    //image
+    document.getElementById("productImage").src = product.image;
+
+    //productname
+    document.getElementById("productName").textContent = product.name;
+
+    //price
+    document.getElementById("startingPrice").textContent = "$" + product.price;
+
+    //product description
+    document.getElementById("productDescription").textContent = product.description;
+
+    
+}
+
