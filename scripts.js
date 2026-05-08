@@ -189,4 +189,27 @@ if (product) {
 
     
 }
+//if shape is selected show appropriate sizing selections
+function openSize(shape){
+
+    //intiialise it to always have it unless selection made
+    document.getElementById('sizeSelectionCircle').classList.add('d-none');
+    document.getElementById('sizeSelectionOval').classList.add('d-none');
+
+
+    if (shape.value == "0") {
+        document.getElementById('sizeSelectionCircle').classList.remove('d-none');
+    }
+    if (shape.value == "1") {
+        document.getElementById('sizeSelectionOval').classList.remove('d-none');
+    }
+
+}
+
+//show new selection after previous one is made
+function showNext(next){
+            document.getElementById(next).classList.remove('d-none');
+
+
+}
 

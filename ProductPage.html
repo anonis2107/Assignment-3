@@ -50,50 +50,51 @@
             <section class="selections">
                 <section id="shapeSelection">
                     <h3 class="selectionType">Shape*</h3>
-                    <select>
-                        <option>Select</option>
-                        <option>Circle</option>
-                        <option>Oval</option>
+                    <select id="shape" onchange="openSize(this)">
+                        <option value="">Select</option>
+                        <option value="0">Circle</option>
+                        <option value="1">Oval</option>
                     </select>
                 </section>
 
                 <!-- only show if circle selected-->
-                <section id="sizeSelectionCircle">
+                <section id="sizeSelectionCircle" class="d-none">
                     <h3>Size*</h3>
-                    <select>
-                        <option>Select</option>
-                        <option>13mm</option>
-                        <option>19mm</option>
-                        <option>25mm</option>
-                        <option>32mm</option>
-                        <option>38mm</option>
-                        <option>50mm</option>
-                        <option>64mm</option>
-                        <option>70mm</option>
-                        <option>76mm</option>
-                        <option>101mm</option>
-                        <option>115mm</option>
+                    <select onchange="showNext('materialSelection')">
+                        <option value="">Select</option>
+                        <option value="13mm">13mm</option>
+                        <option value="19mm">19mm</option>
+                        <option value="25mm">25mm</option>
+                        <option value="32mm">32mm</option>
+                        <option value="38mm">38mm</option>
+                        <option value="50mm">50mm</option>
+                        <option value="64mm">64mm</option>
+                        <option value="70mm">70mm</option>
+                        <option value="76mm">76mm</option>
+                        <option value="101mm">101mm</option>
+                        <option value="115mm">115mm</option>
                     </select>
                 </section>
 
                 <!-- only show if oval selected-->
-                <section id="sizeSelectionOval">
+                <section id="sizeSelectionOval"  class="d-none">
                     <h3>Size*</h3>
-                    <select>
+                    <select onchange="showNext('materialSelection')">
                         <option>Select</option>
-                        <option>19mm x 38mm</option>
-                        <option>32mm x 50mm</option>
-                        <option>45mm x 64mm</option>
-                        <option>50mm x 76mm</option>
-                        <option>50mm x 83mm</option>
-                        <option>76mm x 101mm</option>
-                        <option>101mm x 152mm</option>
+                        <option value="19mm x 38mm">19mm x 38mm</option>
+                        <option value="32mm x 50mm">32mm x 50mm</option>
+                        <option value="45mm x 64mm">45mm x 64mm</option>
+                        <option value="50mm x 76mm">50mm x 76mm</option>
+                        <option value="50mm x 83mm">50mm x 83mm</option>
+                        <option value="76mm x 101mm">76mm x 101mm</option>
+                        <option value="101mm x 152mm">101mm x 152mm</option>
                     </select>
                 </section>
 
-                <section id="materialSelection">
+                <section id="materialSelection" class="d-none">
                     <h3>Material*</h3>
-                    <select>
+                    <select onchange="showNext('colourSelection')">
+                        <option>Select</option>
                         <option>Sticker Paper Gloss</option>
                         <option>Sticker Paper Matte</option>
                         <option>White Vinyl</option>
@@ -101,27 +102,27 @@
                     </select>
                 </section>
 
-                <section id="colourSelection">
+                <section id="colourSelection" class="d-none">
                     <h3>Colour*</h3>
-                    <select>
+                    <select onchange="showNext('finishSelection')">
                         <option>Select</option>
                         <option>Black & White</option>
                         <option>Full Colour</option>
                     </select>
                 </section>
 
-                <section id="finishSelection">
+                <section id="finishSelection" class="d-none">
                     <h3>Finish*</h3>
-                    <select>
+                    <select onchange="showNext('effectsSelection')">
                         <option>Select</option>
                         <option>Standard Finish</option>
                         <option>High UV Gloss Coating</option>
                     </select>
                 </section>
 
-                <section id="effectsSelection">
+                <section id="effectsSelection" class="d-none">
                     <h3>Special Effects*</h3>
-                    <select>
+                    <select onchange="showNext('quantitySelection')">
                         <option>Select</option>
                         <option>None</option>
                         <option>Emboss or Deboss (single side)</option>
@@ -130,7 +131,7 @@
                     </select>
                 </section>
 
-                <section id="quantitySelection">
+                <section id="quantitySelection" class="d-none">
                     <h3>Quantity*</h3>
                     <select>
                         <option>Select</option>
@@ -162,8 +163,8 @@
 
             <!--UNAVAIL UNTIL ALL SELECTIONS HAVE BEEN SELECTED-->
             <section class="productButtons">
-                <button id="uploadDesign">Upload Design</button>
-                <button id="addToCart">Add to Cart</button>
+                <button id="uploadDesign" disabled>Upload Design</button>
+                <button id="addToCart" disabled>Add to Cart</button>
 
             </section>
 

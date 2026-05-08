@@ -325,6 +325,10 @@ p{
     align-items: ;
 }
 
+.d-none {
+    display: none;
+}
+
 
 
 
