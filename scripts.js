@@ -4,31 +4,232 @@ const products = {
         name: "Bookmarks",
         price: 50,
         image: "bookmarks.png",
+
+        sizes: [
+            "50mm x 155mm",
+            "50mm x 203mm"
+        ],
+        material: [
+            "350 GSM Card Stock",
+            "400 GSM Card Stock"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        hole: [
+            "No Holes",
+            "6.35mm Hole",
+            "4.75mm Hole"
+        ],
+        tassel: [
+            "None",
+            "Black Tassel",
+            "Blue Tassel",
+            "Red Tassel",
+            "Green Tassel"
+        ],
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
         description: "Bookmarks are more than just a way to mark your page; they are a creative tool to promote your brand, share a message, or add a personal touch to your reading experience. At The Sticker Printing, we specialize in high-quality custom bookmark printing that is affordable, vibrant, and tailored to your exact needs."
     },
     envelope: {
     name: "Envelopes",
     price: 50,
     image: "envelopes.png",
+
+    size: [
+            "Select",
+            "A7",
+            "A6",
+            "100mm x 240mm",
+            "228mm x 325mm"
+        ],
+
+        flapStyle: [
+            "Select",
+            "No Flap Envelope",
+            "Top Flap",
+            "Left Flap",
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
     description: "" 
     },
     invitation: {
         name: "Invitation Cards",
         price: 50,
         image: "invitations.png",
+        size: [
+            "Select",
+            "A7",
+            "A6",
+            "100mm x 240mm",
+            "228mm x 325mm"
+        ],
+
+        material: [
+            "350 GSM Card Stock",
+            "400 GSM Card Stock"
+        ],
+
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
         description: ""
+
     },
     postcard: {
         name: "Postcards",
         price: 50,
         image: "postcards.png",
-        description: ""
+        size: [
+            "Select",
+            "101mm x 155mm",
+            "127mm x 152mm",
+            "127mm x 178mm",
+            "155mm x 228mm"
+        ],
+
+        material: [
+            "Select",
+            "280 GSM Cardstock",
+            "310 GSM Cardstock",
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        finish: [
+            "Standard Gloss Finish"
+            "Matt Finish"
+            "High Gloss Finish"
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+        description: "At The Sticker Printing, we offer high-quality custom postcard printing designed to help you grab attention and make a lasting impression. With vibrant colors, premium materials, and full customization options, our postcards are perfect for direct mail campaigns, event promotions, thank-you notes, and more."
     },
     notepad: {
         name: "Notepads",
         price: 50,
         image: "notepads.png",
-        description: ""
+        
+        size: [
+            "108mm x 140mm",
+            "89mm x 216mm",
+            "140mm x 216mm",
+            "216mm x 280mm"
+
+        ],
+
+        material: [
+            "50 GSM Art Paper"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        sheetsPerPad [
+            "25",
+            "50",
+            "75",
+            "100"
+        ]
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+        description: "Notepads are a versatile tool for businesses, events, and personal use. At The Sticker Printing, we specialize in high-quality notepad printing, offering a wide range of customization options to help you create notepads that are as practical as they are stylish."
     },
 
     //CD & Packaging
@@ -36,7 +237,46 @@ const products = {
         name: "CD Covers",
         price: 50,
         image: "cdcovers.png",
-        description: ""
+
+        size: [
+            "Select",
+            "A7",
+            "A6",
+            "100mm x 240mm",
+            "228mm x 325mm"
+        ],
+
+        material: [
+            "300 GSM Card Stock",
+            "400 GSM Card Stock"
+        ],
+
+        window: [
+            "Yes Window",
+            "No Window"
+        ]
+
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+        description: "CD covers are more than just protective cases—they’re a powerful branding tool for musicians, businesses, and artists alike. At The Sticker Printing, we offer high-quality custom CD cover printing that combines vibrant design, lasting durability, and professional appeal to help your CDs make a lasting impression."
     },
 
     //Custom Stickers
