@@ -279,33 +279,33 @@ const products = {
         description: "CD covers are more than just protective cases—they’re a powerful branding tool for musicians, businesses, and artists alike. At The Sticker Printing, we offer high-quality custom CD cover printing that combines vibrant design, lasting durability, and professional appeal to help your CDs make a lasting impression."
     },
 
-    //Custom Stickers
+    //Custom Stickers (don't need selections as stickers have their own page with specific selections)
     diecutstickers: {
         name: "Die Cut Stickers",
         price: 50,
         image: "diecut.png",
-        description: ""
+        description: "High-quality custom round stickers designed for branding, packaging, promotions, or personal use. Made from premium vinyl, paper, or polyester, they’re available in matte, gloss, or transparent finishes and sizes from 25mm to 100mm (or custom).Printed in full colour with UV-resistant technology, these stickers offer sharp, vibrant results that won’t fade. They’re waterproof, weatherproof, and suitable for both indoor and outdoor use, with strong adhesive options (permanent or removable)."
     },
 
     clearstickers: {
         name: "Clear Stickers",
         price: 50,
         image: "clearsticker.png",
-        description: ""
+        description: "Clear vinyl stickers offer a sleek, modern, and professional look, making them perfect for a variety of applications. Whether you’re using them for product labeling, window decals, or promotional giveaways, clear vinyl stickers provide a unique, transparent backdrop that enhances the design without overwhelming it. High-quality clear vinyl sticker printing, delivering durable, vibrant, and fully customizable stickers that reflect your brand in the best possible light."
     },
 
     embossedstickers: {
         name: "Embossed Stickers",
         price: 50,
         image: "embossedstickers.webp",
-        description: ""
+        description: "Embossed labels and stickers offer a unique, tactile experience that elevates your branding and product packaging. The raised design creates a sophisticated, high-end look, ensuring your brand stands out with style and elegance."
     },
 
     heavydutystickers: {
         name: "Heavy Duty Stickers",
         price: 50,
         image: "heavyduty.png",
-        description: ""
+        description: "Heavy-duty stickers are built to handle tough conditions without losing quality. At The Sticker Printing, we offer strong, long-lasting heavy duty stickers perfect for vehicles, equipment, outdoor use, and industrial needs."
     },
 
     //Gift card
@@ -314,30 +314,203 @@ const products = {
         name: "Gift Cards",
         price: 50,
         image: "giftcards.png",
-        description: ""
+
+        size: [
+            "Select",
+            "85mm x 55mm (Standard)",
+            "90mm x 50mm",
+            "100mm x 70mm",
+            "120mm x 60mm"
+
+        ]
+
+        finish: [
+            "Select",
+            "Gold",
+            "Silver",
+            "Rose Gold",
+            "None"
+        ]
+
+        cornerStyle: [
+            "Select",
+            "Sharp"
+            "Rounded"
+        ]
+
+       quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+        description: "Gift cards are more than just a present—they’re a thoughtful experience. At The Sticker Printing, we offer high-quality custom gift card printing that’s perfect for businesses and personal gifting. Whether you need branded gift cards for your store or a custom card for someone special, we’ve got you covered."
     },
 
-    //Label & Tags
+    //Label & Tags 
 
     assetlabels: {
         name: "Asset Labels",
         price: 50,
         image: "assetlabels.png",
-        description: ""
+
+        size: [
+            "20mm x 10mm",
+            "40mm x 20mm",
+            "50mm x 25mm",
+            "60mm x 30mm",
+            "80mm x 40mm",
+            "100mm x 50mm",
+        ],
+
+        material: [
+            "White Vinyl",
+             "Clear Vinyl"
+        ],
+
+        finish: [
+        "Matte",
+        "Gloss",
+        ],
+
+        corners: [
+        "Rounded Corners",
+        "Square Corners"
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+        description: "Protect your valuable assets with custom asset labels, tags, and stickers designed for long-lasting durability and security. At The Sticker Printing, we specialize in high-quality asset labeling solutions that help businesses efficiently track, manage, and safeguard their equipment, tools, and inventory. Our labels are built to withstand harsh environments, ensuring clear readability and strong adhesion on a variety of surfaces."
     },
 
     doorhangers: {
         name: "Door Hangers",
         price: 50,
         image: "doorhangers.png",
-        description: ""
+
+        size: [
+            "88mm x 215mm"
+            "88mm x 280mm"
+            "105mm x 280mm"
+            "105mm x 360mm"
+        ],
+
+        material: [
+            "310 GSM Art Card"
+            "350 GSM Art Card"
+        ],
+        colour: [
+            "Full Colour"
+            "Black & White"
+        ],
+
+        finish: [
+            "Standard Gloss Finish",
+            "High Gloss Finish",
+            "Matt Finish"
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+        description: "Door Hangers are a fantastic way to grab attention and deliver important messages directly to your audience. Whether for business promotions, event invitations, or personal use, The Sticker Printing offers high-quality custom door hanger printing that ensures your message stands out."
     },
 
     standardcustomlabels: {
         name: "Standard Custom Labels",
         price: 50,
         image: "standardcustomlabels.png",
-        description: ""
+        size: [
+            "50mm x 50mm",
+            "75mm x 128mm",
+            "75mm x 150mm",
+            "101mm x 101mm",
+            "101mm x 155mm",
+            "127mm x 127mm",
+            "127mm x 178mm",
+            "228mm x 75mm",
+            "255mm x 75mm"
+        ],
+
+        material: [
+            "White Vinyl",
+             "Clear Vinyl"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ]
+
+        finish: [
+        "Matte",
+        "Gloss",
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+        description: "Labels do more than share info—they showcase your brand. At The Sticker Printing, we create high-quality custom labels that make your products stand out. Perfect for bottles, jars, packaging, or promos, our labels are designed to boost your brand and leave a lasting impression."
     },
 
     //Large Sinage
@@ -346,14 +519,119 @@ const products = {
         name: "Posters",
         price: 50,
         image: "posters.png",
-        description: ""
+
+        size: [
+            "28cm x 44cm",
+            "30.5cm x 46cm",
+            "46cm x 60cm",
+            "56cm x 72cm",
+            "60cm x 90cm"
+
+        ],
+        
+        material: [
+            "150 GSM Poster Paper"
+            "310 GSM Poster Card"
+            "350 GSM Poster Card"
+
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        finsh: [
+            "Standard Gloss Finish"
+            "High Gloss Finish"
+
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+
+        description: "Posters are a powerful marketing tool, perfect for grabbing attention and spreading your message. Whether you’re promoting an event, showcasing your brand, or creating eye-catching artwork."
     },
 
     vinybanner: {
         name: "Vinyl Banner",
         price: 50,
         image: "vinylbanner.png",
-        description: ""
+        size : [
+            "0.3m x 0.3m",
+            "0.5m x 0.5m",
+            "0.5m x 1m",
+            "0.5m x 1.5m",
+            "0.5m x 2m",
+            "0.5m x 3m",
+            "1m x 1.5m",
+            "1m x 2m",
+            "1m x 2.5m",
+            "1m x 3m",
+            "1.5m x 1.5m",
+            "1.5m x 2m",
+            "1.5m x 3m",
+            "2m x 3m",
+            "2m x 4m",
+            "2m x 5m",
+            "3m x 3m",
+            "3m x 3.5m"
+        ],
+
+        material: [
+            "9 Oz Matt Vinyl",
+            "13 Oz Matt Vinyl"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        finish: [
+            "Raw Edges (No Grommets & Hem)",
+            "Grommets & Hem",
+            "75mm Pole Pocket (Left & Right)",
+            "75mm Pole Pocket (Top & Bottom)"
+        ]
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+        description: "Vinyl banners are an exceptional way to make a bold statement at events, in-store promotions, or outdoor advertising campaigns. At The Sticker Printing, we specialize in custom vinyl banner printing, providing high-quality, weather-resistant banners that ensure your message stands out and lasts."
     },
 
     // Marketing Materials
@@ -362,35 +640,275 @@ const products = {
         name: "Business Cards",
         price: 50,
         image: "businesscards.png",
-        description: ""
+
+        size: [
+            "90mm x 50mm (Standard)",
+            "50mm x 50mm (Mini Square)",
+            "90mm x 90mm (Jumbo Square)",
+            "90mm x 25mm (Slim)"
+        ],
+
+        material: [
+            "310 GSM Card Stock",
+            "350 GSM Card Stock",
+            "400 GSM Card Stock",
+            "600 GSM Card Stock"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        finish: [
+            "Standard Gloss Finish",
+            "Matt Finish"
+        ],
+        specialEffects: [
+            "Emboss or Deboss ( Single Side)",
+            "Foil Stamping ( Single Sided)",
+            "Spot UV (Single Sided)"
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+        
+        description: "Business cards are more than just contact details; they are a powerful tool to represent your business. At The Sticker Printing, we ensure that your custom business card printing experience is not only informative but also memorable, leaving a lasting impression on clients."
     },
 
     brochures: {
         name: "Brochures",
         price: 50,
         image: "brochures.png",
-        description: ""
+
+        size: [
+            "DL",
+            "A6",
+            "A5",
+            "A4",
+            "Square 210mm x 210mm"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        foldType: [
+            "Bi-Fold",
+            "Tri-Fold",
+            "Z-Fold",
+            "Gate Fold",
+            "Half Fold"
+        ],
+
+        material: [
+            "150 GSM Gloss",
+            "170 GSM Gloss",
+            "250 GSM Gloss",
+            "300 GSM Matte"
+        ],
+
+        printing: [
+            "Single Sided",
+            "Double Sided"
+        ],
+
+        finish: [
+            "Matte",
+            "Gloss",
+            "Soft Touch"
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+    
+        description: "Brochures are one of the most effective marketing tools, allowing you to showcase your brand, products, and services in a professional and engaging way. At The Sticker Printing, we specialize in high-quality custom brochure printing that is not only affordable but designed to capture audience’s attention."
     },
 
     eventtickets: {
         name: "Event Tickets",
         price: 50,
         image: "eventtickets.png",
-        description: ""
+
+        size: [
+            "50mm x 140mm",
+            "55mm x 150mm",
+            "70mm x 150mm",
+            "80mm x 200mm",
+            "Custom Size"
+        ],
+
+        material: [
+            "250 GSM Gloss",
+            "300 GSM Matte",
+            "350 GSM Card Stock",
+            "Synthetic Waterproof Stock"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        finish: [
+            "Matte",
+            "Gloss",
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+        description: "Event tickets are more than just entry passes—they help set the tone for your event. At The Sticker Printing, we offer high-quality custom event ticket printing that leaves a lasting impression. Whether it’s a concert, festival, conference, or any special event, our custom tickets are made to look great and stand out."
     },
 
     menus: {
         name: "Menus",
         price: 50,
         image: "menus.png",
-        description: ""
+
+        size: [
+            "108mm x 280mm",
+            "140mm x 216mm",
+            "216mm x 280mm",
+            "216mm x 356mm",
+            "229mm x 309mm",
+            "280mm x 432mm"
+        ],
+
+        material: [
+            "150 GSM Art Paper".
+            "350 GSM Art Card",
+            "310 GSM Art Card",
+            "150 GSM Art Paper"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        finish: [
+            "Standard Gloss Finish",
+            "High Gloss Finish"
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+        description: "Menus do more than list food—they showcase your brand and set the tone for your dining experience. At The Sticker Printing, we create high-quality custom menus that highlight your dishes and make a lasting impression."
     },
 
     tabletents: {
         name: "Table Tents",
         price: 50,
         image: "tabletents.png",
-        description: ""
+
+        size: [
+            "72mm x 280mm (Flat Size: 72mm X 666mm)",
+            "101mm x 155mm (Flat Size: 101mm X 415mm)"
+        ],
+
+        material: [
+            "260 GSM Art Card",
+            "280 GSM Matt Card",
+            "310 GSM Art Card",
+            "350 GSM Art Card"
+        ],
+
+        colour: [
+            "Full Colour",
+            "Black & White"
+        ],
+
+        finish: [
+            "Standard Gloss Finish",
+            "High Gloss Finish"
+        ],
+
+        quantity: [
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+        description: "Table tents are an effective and stylish way to capture attention in any setting, whether at a restaurant, event, or retail space. At The Sticker Printing, we specialize in high-quality custom table tent printing, offering vibrant designs that allow your message to shine, creating an impactful presence on any table."
     },
 
     //Speciality Finishes
@@ -398,7 +916,27 @@ const products = {
         name: "Foil Stamping",
         price: 50,
         image: "foilstamping.png",
-        description: ""
+        foilColour: [
+            "Gold",
+            "Silver",
+            "Rose Gold",
+            "Copper",
+            "Holographic",
+            "Black"
+        ],
+
+        application: [
+            "Logo",
+            "Text",
+            "Border"
+        ]
+
+        side: [
+            "Front Only",
+            "Front & Back"
+        ],
+        
+        description: "At The Sticker Printing, we specialize in high-quality foil stamping and gold foil printing, offering stunning, metallic finishes that make your designs pop. Whether you’re creating business cards, invitations, packaging, or marketing materials, foil stamping is the perfect way to elevate your brand’s visual appeal."
     }
 
 };
