@@ -6,25 +6,30 @@ const products = {
         image: "bookmarks.png",
 
         sizes: [
+            "Select",
             "50mm x 155mm",
             "50mm x 203mm"
         ],
         material: [
+            "Select",
             "350 GSM Card Stock",
             "400 GSM Card Stock"
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
         hole: [
+            "Select",
             "No Holes",
             "6.35mm Hole",
             "4.75mm Hole"
         ],
         tassel: [
+            "Select",
             "None",
             "Black Tassel",
             "Blue Tassel",
@@ -32,6 +37,7 @@ const products = {
             "Green Tassel"
         ],
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -69,10 +75,11 @@ const products = {
             "Select",
             "No Flap Envelope",
             "Top Flap",
-            "Left Flap",
+            "Left Flap"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -106,12 +113,14 @@ const products = {
         ],
 
         material: [
+            "Select",
             "350 GSM Card Stock",
             "400 GSM Card Stock"
         ],
 
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -147,21 +156,24 @@ const products = {
         material: [
             "Select",
             "280 GSM Cardstock",
-            "310 GSM Cardstock",
+            "310 GSM Cardstock"
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
         finish: [
-            "Standard Gloss Finish"
-            "Matt Finish"
+            "Select",
+            "Standard Gloss Finish",
+            "Matt Finish",
             "High Gloss Finish"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -188,6 +200,7 @@ const products = {
         image: "notepads.png",
         
         size: [
+            "Select",
             "108mm x 140mm",
             "89mm x 216mm",
             "140mm x 216mm",
@@ -196,22 +209,26 @@ const products = {
         ],
 
         material: [
+            "Select",
             "50 GSM Art Paper"
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
-        sheetsPerPad [
+        sheetsPerPad: [
+            "Select",
             "25",
             "50",
             "75",
             "100"
-        ]
+        ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -247,17 +264,20 @@ const products = {
         ],
 
         material: [
+            "Select",
             "300 GSM Card Stock",
             "400 GSM Card Stock"
         ],
 
         window: [
+            "Select",
             "Yes Window",
             "No Window"
-        ]
+        ],
 
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -322,7 +342,7 @@ const products = {
             "100mm x 70mm",
             "120mm x 60mm"
 
-        ]
+        ],
 
         finish: [
             "Select",
@@ -330,15 +350,16 @@ const products = {
             "Silver",
             "Rose Gold",
             "None"
-        ]
+        ],
 
         cornerStyle: [
             "Select",
-            "Sharp"
+            "Sharp",
             "Rounded"
-        ]
+        ],
 
        quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -367,6 +388,7 @@ const products = {
         image: "assetlabels.png",
 
         size: [
+            "Select",
             "20mm x 10mm",
             "40mm x 20mm",
             "50mm x 25mm",
@@ -376,21 +398,25 @@ const products = {
         ],
 
         material: [
+            "Select",
             "White Vinyl",
              "Clear Vinyl"
         ],
 
         finish: [
-        "Matte",
-        "Gloss",
+            "Select",
+            "Matte",
+            "Gloss"
         ],
 
         corners: [
-        "Rounded Corners",
-        "Square Corners"
+            "Select",
+            "Rounded Corners",
+            "Square Corners"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -418,28 +444,33 @@ const products = {
         image: "doorhangers.png",
 
         size: [
-            "88mm x 215mm"
-            "88mm x 280mm"
-            "105mm x 280mm"
+            "Select",
+            "88mm x 215mm",
+            "88mm x 280mm",
+            "105mm x 280mm",
             "105mm x 360mm"
         ],
 
         material: [
-            "310 GSM Art Card"
+            "Select",
+            "310 GSM Art Card",
             "350 GSM Art Card"
         ],
         colour: [
-            "Full Colour"
+            "Select",
+            "Full Colour",
             "Black & White"
         ],
 
         finish: [
+            "Select",
             "Standard Gloss Finish",
             "High Gloss Finish",
             "Matt Finish"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -466,6 +497,7 @@ const products = {
         price: 50,
         image: "standardcustomlabels.png",
         size: [
+            "Select",
             "50mm x 50mm",
             "75mm x 128mm",
             "75mm x 150mm",
@@ -478,21 +510,25 @@ const products = {
         ],
 
         material: [
+            "Select",
             "White Vinyl",
              "Clear Vinyl"
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
-        ]
+        ],
 
         finish: [
-        "Matte",
-        "Gloss",
+            "Select",
+            "Matte",
+            "Gloss"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -521,6 +557,7 @@ const products = {
         image: "posters.png",
 
         size: [
+            "Select",
             "28cm x 44cm",
             "30.5cm x 46cm",
             "46cm x 60cm",
@@ -530,24 +567,28 @@ const products = {
         ],
         
         material: [
-            "150 GSM Poster Paper"
-            "310 GSM Poster Card"
+            "Select",
+            "150 GSM Poster Paper",
+            "310 GSM Poster Card",
             "350 GSM Poster Card"
 
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
-        finsh: [
-            "Standard Gloss Finish"
+        finish: [
+            "Select",
+            "Standard Gloss Finish",
             "High Gloss Finish"
 
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -575,6 +616,7 @@ const products = {
         price: 50,
         image: "vinylbanner.png",
         size : [
+            "Select",
             "0.3m x 0.3m",
             "0.5m x 0.5m",
             "0.5m x 1m",
@@ -596,23 +638,27 @@ const products = {
         ],
 
         material: [
+            "Select",
             "9 Oz Matt Vinyl",
             "13 Oz Matt Vinyl"
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
         finish: [
+            "Select",
             "Raw Edges (No Grommets & Hem)",
             "Grommets & Hem",
             "75mm Pole Pocket (Left & Right)",
             "75mm Pole Pocket (Top & Bottom)"
-        ]
+        ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -642,6 +688,7 @@ const products = {
         image: "businesscards.png",
 
         size: [
+            "Select",
             "90mm x 50mm (Standard)",
             "50mm x 50mm (Mini Square)",
             "90mm x 90mm (Jumbo Square)",
@@ -649,6 +696,7 @@ const products = {
         ],
 
         material: [
+            "Select",
             "310 GSM Card Stock",
             "350 GSM Card Stock",
             "400 GSM Card Stock",
@@ -656,21 +704,25 @@ const products = {
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
         finish: [
+            "Select",
             "Standard Gloss Finish",
             "Matt Finish"
         ],
         specialEffects: [
+            "Select",
             "Emboss or Deboss ( Single Side)",
             "Foil Stamping ( Single Sided)",
             "Spot UV (Single Sided)"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -698,6 +750,7 @@ const products = {
         image: "brochures.png",
 
         size: [
+            "Select",
             "DL",
             "A6",
             "A5",
@@ -706,11 +759,13 @@ const products = {
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
         foldType: [
+            "Select",
             "Bi-Fold",
             "Tri-Fold",
             "Z-Fold",
@@ -719,6 +774,7 @@ const products = {
         ],
 
         material: [
+            "Select",
             "150 GSM Gloss",
             "170 GSM Gloss",
             "250 GSM Gloss",
@@ -726,17 +782,20 @@ const products = {
         ],
 
         printing: [
+            "Select",
             "Single Sided",
             "Double Sided"
         ],
 
         finish: [
+            "Select",
             "Matte",
             "Gloss",
             "Soft Touch"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -764,14 +823,15 @@ const products = {
         image: "eventtickets.png",
 
         size: [
+            "Select",
             "50mm x 140mm",
             "55mm x 150mm",
             "70mm x 150mm",
             "80mm x 200mm",
-            "Custom Size"
         ],
 
         material: [
+            "Select",
             "250 GSM Gloss",
             "300 GSM Matte",
             "350 GSM Card Stock",
@@ -779,16 +839,19 @@ const products = {
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
         finish: [
+            "Select",
             "Matte",
-            "Gloss",
+            "Gloss"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -816,6 +879,7 @@ const products = {
         image: "menus.png",
 
         size: [
+            "Select",
             "108mm x 280mm",
             "140mm x 216mm",
             "216mm x 280mm",
@@ -825,23 +889,27 @@ const products = {
         ],
 
         material: [
-            "150 GSM Art Paper".
+            "Select",
+            "150 GSM Art Paper",
             "350 GSM Art Card",
             "310 GSM Art Card",
             "150 GSM Art Paper"
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
         finish: [
+            "Select",
             "Standard Gloss Finish",
             "High Gloss Finish"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -869,11 +937,13 @@ const products = {
         image: "tabletents.png",
 
         size: [
+            "Select",
             "72mm x 280mm (Flat Size: 72mm X 666mm)",
             "101mm x 155mm (Flat Size: 101mm X 415mm)"
         ],
 
         material: [
+            "Select",
             "260 GSM Art Card",
             "280 GSM Matt Card",
             "310 GSM Art Card",
@@ -881,16 +951,19 @@ const products = {
         ],
 
         colour: [
+            "Select",
             "Full Colour",
             "Black & White"
         ],
 
         finish: [
+            "Select",
             "Standard Gloss Finish",
             "High Gloss Finish"
         ],
 
         quantity: [
+            "Select",
             "50",
             "100",
             "250",
@@ -917,6 +990,7 @@ const products = {
         price: 50,
         image: "foilstamping.png",
         foilColour: [
+            "Select",
             "Gold",
             "Silver",
             "Rose Gold",
@@ -926,16 +1000,18 @@ const products = {
         ],
 
         application: [
+            "Select",
             "Logo",
             "Text",
             "Border"
-        ]
+        ],
 
         side: [
+            "Select",
             "Front Only",
             "Front & Back"
         ],
-        
+
         description: "At The Sticker Printing, we specialize in high-quality foil stamping and gold foil printing, offering stunning, metallic finishes that make your designs pop. Whether you’re creating business cards, invitations, packaging, or marketing materials, foil stamping is the perfect way to elevate your brand’s visual appeal."
     }
 
@@ -949,6 +1025,9 @@ const productID = params.get("id");
 
 //find the product that matches id
 const product = products[productID];
+
+//create selections for products
+const selections = document.querySelector(".selections");
 
 // if the product exists update content
 if (product) {
@@ -966,7 +1045,82 @@ if (product) {
     document.getElementById("productDescription").textContent = product.description;
 
     
+    // group of selections
+        const sections = []
+
+    for (let key in product) {
+
+        //skip product info only need selections options
+        if ( key=== "name" || key === "price" || key === "image" || key ==="description" ) {
+            continue;
+        }
+
+        //create section for each selection
+        const section = document.createElement("section");
+        section.classList.add("d-none"); // hide all at first
+
+        //create label
+        const title = document.createElement("h3");
+        title.textContent = key;
+
+
+        //create selections element
+        const select = document.createElement("select");
+
+        // add select options
+        for (let i = 0; i < product[key].length; i++) {
+            let option = product[key][i];
+
+            select.add(new Option(option));
+
+
+        }
+
+        //add the title and each selection to a section
+        section.appendChild(title);
+        section.appendChild(select);
+
+        // add the section to the page
+        selections.appendChild(section);
+
+        // record position of section
+        const index = sections.length;
+        // add the section to group of sections
+        sections.push(section);
+
+         // reveal next selection after previous one is made
+        select.addEventListener("change", selectionChanged);
+
+        // detects selection change
+        function selectionChanged(){
+        if (select.value === "Select") { // this is placeholder so doesn't count as a change
+                return;
+            }
+
+            const currentIndex = sections.indexOf(section); // track current selection avail.
+            const nextSection = sections[currentIndex + 1]; // find next avail selection
+
+            // enable upload design button after completing last selection
+            if (currentIndex === sections.length - 1) {
+                document.getElementById("uploadDesign").disabled = false;
+            }
+            else {
+                nextSection.classList.remove("d-none"); // remove visibility marker
+            }
+        }
+
+        
+    }
+
+    // always show first selection 
+    if (sections.length > 0) {
+        sections[0].classList.remove("d-none");
+    }
+
+
 }
+
+
 //if shape is selected show appropriate sizing selections
 function openSize(shape){
 
@@ -990,4 +1144,6 @@ function showNext(next){
 
 
 }
+
+
 
