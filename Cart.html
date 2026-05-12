@@ -10,8 +10,10 @@
 <body>
 
     <!-- Cart heading-->
-    <header>
-        <button id="backbutton">←</button>
+    <header class="cartHeader">
+        <section class="goBack">
+            <button id="backbutton">←</button>
+        </section>
         <h1>Cart</h1>
 
     </header>
@@ -23,36 +25,46 @@
 
     <!--Has items in cart-->
     <div class="notemptycart">
-        <div class="items">
-
-            <!--Item-->
-            <article class="item">
-                <img src="productimg.png" alt="Product image" class="cartimage">
-
-                <section class="itemdetails">
-                    <h3 class="itemname">Product Name</h3>
-                    <details class="itemselections">
-                        <summary>Selections</summary>
-
-                        <section class="selectioncontents">
-                            <p><span class="sub-titles">Shape: </span>Circle</p>
-                            <p><span class="sub-titles">Sticker Size: </span>n mm</p>
-                            <p><span class="sub-titles">Sticker Material: </span>Gloss Sticker Paper</p>
-                            <p><span class="sub-titles">Sticker Colour: </span>Full Colour</p>
-                            <p><span class="sub-titles">Sticker Finish: </span>Standard</p>
-                            <p><span class="sub-titles">Sticker Special Effects: </span>None</p>
-                            <p><span class="sub-titles">Quantity: </span>0</p>
-
-                        </section>
-                    </details>
-
-                    <div class="price">$0</div>
-                </section>
+        <section class="cartContent">
+            <section class="item">
+                <img src="product1.png" class="itemImage">
+                <section class="productDetails">
+                    <h2 class="itemName">Item Name</h2>
                     
-            </article>
+                    <div class="itemQuantity">
+                        <button id="decreasebtn">-</button>
+                        <span class="number">1</span>
+                        <button id="increasebtn">+</button>
+                        <img src="deleteBin.png" class="deleteBin">
+                    </div>
 
-        </div>
 
+                </section>
+
+                <span class="itemPrice">$</span>
+                
+            </section>
+                
+        </section>
+        <section class="notes">
+            <h3>Notes</h3>
+            <textarea></textarea>
+        </section>
+        <section class="orderSummary">
+            <h3>Order Summary</h3>
+            <section class="addUpCosts">
+                <h4>Subtotal</h4>
+                <span class="cost" id="subtotalCost">$</span>
+                <h4>Delivery</h4>
+                <span class="cost" id="deliveryCost">$</span>
+            </section>
+            <section class="total">
+                <h3 class="totalTitle">Total</h3>
+                <span class="cost" id="totalPrice">$</span>
+        </section>
+
+        </section>
+        
 
     </div>
 

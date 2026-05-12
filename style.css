@@ -5,6 +5,7 @@
 
 
 /* GENERAL visual design */
+
 body{
     background-color: #EAE8E5;
     margin: 0;
@@ -326,6 +327,181 @@ p{
 }
 
 
+/* CART PAGE */
+
+.cartHeader {
+    background-color: #EAE8E5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.goBack button{
+    padding-left: 20px;
+    border: none;
+    background: #EAE8E5;
+    font-family: "Montserrat", serif;
+    font-size: clamp(20px, 5vw, 35px);
+
+    cursor: pointer;
+}
+.notemptycart {
+    padding: 30px;
+}
+
+.cartContent {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.itemImage{
+    width: 100px;
+    height: 100px;
+    border: 0.2px solid rgba(39, 36, 1, 0.3);
+    object-fit: cover;
+}
+
+.productDetails {
+    flex: 1;
+}
+
+.itemName{
+    font-family: "Montserrat", serif;
+    font-size: clamp(13px, 3vw, 16px);
+    font-weight: 350;
+    margin: 0 0 15px 0;
+}
+
+.itemPrice { 
+    display: block;
+    font-family: "Montserrat", serif;
+    font-size: clamp(15px, 3vw, 18px);
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+
+.itemQuantity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.itemQuantity button {
+    border: none;
+    background: #EAE8E5;
+    
+    cursor: pointer;
+    font-size: clamp(13px, 3vw, 16px);
+}
+
+.number {
+    font-family: "Montserrat", serif;
+    font-size: clamp(11px, 2vw, 14px);
+    border: 0.5px solid rgba(39, 36, 1, 0.5);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.deleteBin {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.notes{
+    margin-top: 50px;
+}
+
+.notes h3 {
+    font-family: "Montserrat", serif;
+    font-size: clamp(13px, 3vw, 16px);
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.notes textarea {
+    width: 100%;
+    height: 120px;
+
+    background: rgba(85, 115, 115, 0.4);
+
+
+    border: 0.5px solid rgb(39,36,1, 0.5);
+    padding: 10px;
+    font-size: clamp(10px, 1vw, 12px);
+    box-sizing: border-box;
+
+    
+}
+
+.orderSummary {
+    width: 100%;
+    border: 0.5px solid rgb(39,36,1, 0.5);
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.orderSummary h3 {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: clamp(13px, 2vw, 16px);
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+.addUpCosts {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.addUpCosts h4{
+    font-family: "Montserrat", serif;
+    font-size: clamp(11px, 1vw, 14px);
+    font-weight: 370;
+    padding-left: 40px;
+}
+
+.cost {
+    padding-right: 20px;
+    font-family: "Montserrat", serif;
+    font-size: clamp(11px, 1vw, 14px);
+    font-weight: 370;
+}
+
+#totalPrice {
+    padding-right: 20px;
+    font-family: "Montserrat", serif;
+    font-size: clamp(13px, 2vw, 16px);
+    font-weight: 370;
+}
+
+.totalTitle {
+    font-family: "Montserrat", serif;
+    font-size: clamp(13px, 2vw, 16px);
+    font-weight: 500;
+}
+
+.total {
+    border-top: 0.5px solid rgba(0, 0, 0, 1.0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
 
 
 

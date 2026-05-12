@@ -1077,7 +1077,7 @@ if (product) {
         }
 
         //add the title and each selection to a section
-        section.appendChild(title);
+        section.appendChild(title); // put the element inside element
         section.appendChild(select);
 
         // add the section to the page
@@ -1085,7 +1085,7 @@ if (product) {
 
         // record position of section
         const index = sections.length;
-        // add the section to group of sections
+        // add the section to array of sections
         sections.push(section);
 
          // reveal next selection after previous one is made
