@@ -12,19 +12,14 @@
     <!-- Cart heading-->
     <header class="cartHeader">
         <section class="goBack">
-            <button id="backbutton">←</button>
+            <button class="backbutton" onclick="history.back()">←</button>
         </section>
         <h1>Cart</h1>
 
     </header>
 
-    <!--Empty State-->
-    <div class="emptycart">
-        <a href="Categories.html" class="continueshopping">Continue Shopping</a>
-    </div>
-
     <!--Has items in cart-->
-    <div class="notemptycart">
+    <section class="cartContent">
         <section class="cartContent">
             <section class="item">
                 <img src="product1.png" class="itemImage">
@@ -66,9 +61,13 @@
         </section>
         
 
+    </section>
+    <div class="checkout">
+        <a href="Checkout.html">
+            <button>CHECKOUT</button>
+        </a>
     </div>
-
-    <button>CHECKOUT</button>
+    
     
     
 </body>

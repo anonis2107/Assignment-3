@@ -503,6 +503,20 @@ p{
     padding-bottom: 10px;
 }
 
+.checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkout button {
+    font-family: "Montserrat", serif;
+    font-size: clamp(13px, 2vw, 16px);
+    background-color: #272401;
+    color: white;
+    cursor: pointer;
+    padding: 8px 15px 8px 15px;
+
+}
 
 
 /* FOOTER */

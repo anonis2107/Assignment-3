@@ -48,10 +48,20 @@
             <!-- SELECTIONS NEED TO MAKE INTO A BUTTON & PROGRESSIVE SELECTION-->
 
             <section class="selections"></section>
+                    
+
+            
+
+
+
 
             <!--UNAVAIL UNTIL ALL SELECTIONS HAVE BEEN SELECTED-->
             <section class="productButtons">
-                <button id="uploadDesign" disabled>Upload Design</button>
+                <section class="uploadDesignButton">
+                    <input type="file" id="fileInput" hidden>
+                    <button id="uploadDesign" disabled>Upload Design</button>
+                    <p id="fileName"></p>
+                </section>
                 <button id="addToCart" disabled>Add to Cart</button>
 
             </section>

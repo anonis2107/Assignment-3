@@ -1117,7 +1117,6 @@ if (product) {
         sections[0].classList.remove("d-none");
     }
 
-
 }
 
 
@@ -1145,5 +1144,35 @@ function showNext(next){
 
 }
 
+//UPLOAD DESIGN BUTTON
+const input = document.getElementById("fileInput");
+const uploadBtn = document.getElementById("uploadDesign");
+const fileName = document.getElementById("fileName");
 
+uploadBtn.addEventListener("click", function() {
+    input.click();
 
+});
+
+input.addEventListener("change", function(){
+    if (input.value) {
+        fileName.innerHTML = input.value;
+    }else {
+        fileName.innerHTML = "";
+    }
+
+    if (fileName.innerHTML !== "") {
+    document.getElementById("addToCart").disabled = false; /*if design is uploaded add to cart is now avail */
+    }
+});
+
+//CART FUNCTIONS
+const addCartButton = document.querySelectorAll("#addToCart");
+addToCart.forEach(button => {
+    button.addEventListener("click", event => {
+        const productInfo = event.target.closest(".productInfo");
+        addToCart(productInfo);
+
+    });
+    
+});
