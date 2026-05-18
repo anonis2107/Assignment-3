@@ -1174,7 +1174,7 @@ const addToCartBtn = document.getElementById("addToCart");
 
 if (addToCartBtn){
     addToCartBtn.addEventListener("click", function () {
-        //get existing cart
+        //get existing / create new if none already cart
         let cart = JSON.parse(sessionStorage.getItem("cart")) || []; //restarts when tab reopened only
 
         //create product object for cart
@@ -1208,7 +1208,7 @@ if (addToCartBtn){
 //load items into cart
 const cartList = document.querySelector(".items");
 if (cartList){
-    //get saved cart
+    //get saved/ if empty a new cart
     let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
 
     if (cart.length === 0){
@@ -1256,11 +1256,11 @@ if (cartList){
         //increase quantity
         document.querySelectorAll(".increasebtn").forEach((button, index) => {
             button.addEventListener("click", function() {
-                let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+                let cart = JSON.parse(sessionStorage.getItem("cart")) || []; //get cart
 
                 cart[index].quantity += 1;
 
-                sessionStorage.setItem("cart", JSON.stringify(cart));
+                sessionStorage.setItem("cart", JSON.stringify(cart)); //save cart
 
                 document.querySelectorAll(".number")[index].textContent = cart[index].quantity;
                 document.querySelectorAll(".itemPrice")[index].textContent = '$' + cart[index].price * cart[index].quantity; //update price
@@ -1271,15 +1271,29 @@ if (cartList){
         //decrease quantity
         document.querySelectorAll(".decreasebtn").forEach((button, index) => {
             button.addEventListener("click", function() {
-                let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+                let cart = JSON.parse(sessionStorage.getItem("cart")) || []; //get cart or if cart doesnt exist yet a new cart created
 
                 cart[index].quantity -= 1;
 
-                sessionStorage.setItem("cart", JSON.stringify(cart)); //save
+                sessionStorage.setItem("cart", JSON.stringify(cart)); //save item
 
                 document.querySelectorAll(".number")[index].textContent = cart[index].quantity;
                 document.querySelectorAll(".itemPrice")[index].textContent = '$' + cart[index].price * cart[index].quantity; //update price
                 
+            });
+        });
+
+
+        //Delete item from cart
+        document.querySelectorAll(".deleteBin").forEach((button, index) => {
+            button.addEventListener("click", function() {
+                let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+                cart.splice(index, 1); // remove specified item from array cart
+
+                sessionStorage.setItem("cart", JSON.stringify(cart)); // save updated cart in storage
+
+                document.querySelectorAll(".buyItem")[index].remove(); //update page
             });
         });
 
