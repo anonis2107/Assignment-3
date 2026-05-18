@@ -167,6 +167,13 @@ p{
     height: 50px;
     justify-content: center;
 }
+/* CONTACT PAGE */
+
+#ausMap {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
 
 /* CATEGORIES PAGE */
 .categoryCards {
