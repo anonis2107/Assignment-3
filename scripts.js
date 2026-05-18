@@ -747,7 +747,7 @@ const products = {
     brochures: {
         name: "Brochures",
         price: 50,
-        image: "brochures.png",
+        image: "brochure.png",
 
         size: [
             "Select",
@@ -1149,30 +1149,140 @@ const input = document.getElementById("fileInput");
 const uploadBtn = document.getElementById("uploadDesign");
 const fileName = document.getElementById("fileName");
 
-uploadBtn.addEventListener("click", function() {
-    input.click();
-
-});
-
-input.addEventListener("change", function(){
-    if (input.value) {
-        fileName.innerHTML = input.value;
-    }else {
-        fileName.innerHTML = "";
-    }
-
-    if (fileName.innerHTML !== "") {
-    document.getElementById("addToCart").disabled = false; /*if design is uploaded add to cart is now avail */
-    }
-});
-
-//CART FUNCTIONS
-const addCartButton = document.querySelectorAll("#addToCart");
-addToCart.forEach(button => {
-    button.addEventListener("click", event => {
-        const productInfo = event.target.closest(".productInfo");
-        addToCart(productInfo);
+if (uploadBtn && input && fileName){
+    uploadBtn.addEventListener("click", function() {
+        input.click();
 
     });
-    
-});
+
+
+    input.addEventListener("change", function(){
+        if (input.value) {
+            fileName.innerHTML = input.value;
+        }else {
+            fileName.innerHTML = "";
+        }
+
+        if (fileName.innerHTML !== "") {
+            document.getElementById("addToCart").disabled = false; /*if design is uploaded add to cart is now avail */
+        }
+    });
+}
+
+//CART FUNCTIONS
+const addToCartBtn = document.getElementById("addToCart");
+
+if (addToCartBtn){
+    addToCartBtn.addEventListener("click", function () {
+        //get existing cart
+        let cart = JSON.parse(sessionStorage.getItem("cart")) || []; //restarts when tab reopened only
+
+        //create product object for cart
+        const cartItem = {
+            id: productID,
+            name: product.name,
+            image: product.image,
+            price: product.price,
+            quantity: 1
+        };
+
+        //check if item is already in cart 
+        const alreadyAdded = cart.find(item => item.id === productID);
+
+        if (alreadyAdded) {
+            alreadyAdded.quantity += 1;
+        }else {
+            //add the item to cart
+            cart.push(cartItem);
+        }
+        
+
+        //save updated cart so it doesn't restart on refresh
+        sessionStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Added to Cart");
+    });
+}
+
+
+//load items into cart
+const cartList = document.querySelector(".items");
+if (cartList){
+    //get saved cart
+    let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+    if (cart.length === 0){
+        cartList.innerHTML = `
+        <section class= "empty">
+            <a href="Categories.html">Continue Shopping</a>
+            </section>
+            `;
+    }else { 
+        //item and index to keep track of item actions (quantity changes etc)
+        cart.forEach((item, index) => {
+            const itemSection = document.createElement("section");
+            itemSection.classList.add("buyItem");
+            
+            itemSection.innerHTML = `
+            <img src="${item.image}" class="itemImage">
+
+            <section class="productDetails">
+
+                <h2 class="itemName">${item.name}</h2>
+
+                <div class="itemQuantity">
+
+                    <button class="decreasebtn">-</button>
+
+                    <span class="number">${item.quantity}</span>
+
+                    <button class="increasebtn">+</button>
+
+                    <img src="deleteBin.png"
+                         class="deleteBin"
+                         data-index="${index}">
+
+                </div>
+
+            </section>
+
+            <span class="itemPrice">
+                $${item.price}
+            </span>
+            `;
+            cartList.appendChild(itemSection);
+        });
+
+        //increase quantity
+        document.querySelectorAll(".increasebtn").forEach((button, index) => {
+            button.addEventListener("click", function() {
+                let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+                cart[index].quantity += 1;
+
+                sessionStorage.setItem("cart", JSON.stringify(cart));
+
+                document.querySelectorAll(".number")[index].textContent = cart[index].quantity;
+                document.querySelectorAll(".itemPrice")[index].textContent = '$' + cart[index].price * cart[index].quantity; //update price
+
+            });
+        });
+
+        //decrease quantity
+        document.querySelectorAll(".decreasebtn").forEach((button, index) => {
+            button.addEventListener("click", function() {
+                let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+                cart[index].quantity -= 1;
+
+                sessionStorage.setItem("cart", JSON.stringify(cart)); //save
+
+                document.querySelectorAll(".number")[index].textContent = cart[index].quantity;
+                document.querySelectorAll(".itemPrice")[index].textContent = '$' + cart[index].price * cart[index].quantity; //update price
+                
+            });
+        });
+
+
+    }
+}

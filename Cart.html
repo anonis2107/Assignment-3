@@ -5,42 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
 </head>
 <body>
 
+    
     <!-- Cart heading-->
     <header class="cartHeader">
         <section class="goBack">
             <button class="backbutton" onclick="history.back()">←</button>
         </section>
-        <h1>Cart</h1>
+        <h1 id="cartTitle">Cart</h1>
 
     </header>
 
+    <!--Has no items in cart-->
+    
+
     <!--Has items in cart-->
     <section class="cartContent">
-        <section class="cartContent">
-            <section class="item">
-                <img src="product1.png" class="itemImage">
-                <section class="productDetails">
-                    <h2 class="itemName">Item Name</h2>
+            <section class="items">
+                <!-- <section class="buyItem" >
+                    <img src="product1.png" class="itemImage">
+                    <section class="productDetails">
+                        <h2 class="itemName">Item Name</h2>
                     
-                    <div class="itemQuantity">
-                        <button id="decreasebtn">-</button>
-                        <span class="number">1</span>
-                        <button id="increasebtn">+</button>
-                        <img src="deleteBin.png" class="deleteBin">
-                    </div>
-
-
+                        <div class="itemQuantity">
+                            <button id="decreasebtn">-</button>
+                            <span class="number">1</span>
+                            <button id="increasebtn">+</button>
+                            <img src="deleteBin.png" class="deleteBin">
+                        </div>
+                    </section>
+                    <span class="itemPrice">$</span>
                 </section>
-
-                <span class="itemPrice">$</span>
                 
+            -->
             </section>
                 
-        </section>
         <section class="notes">
             <h3>Notes</h3>
             <textarea></textarea>
@@ -69,6 +70,6 @@
     </div>
     
     
-    
+    <script src="scripts.js"></script>
 </body>
 </html>
