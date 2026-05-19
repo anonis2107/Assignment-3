@@ -8,11 +8,14 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Check Out</h1>
+    <header class="checkoutHeader">
+        <a href="Cart.html" class="goBack">
+            <button class="backbutton">←</button>
+            <h2>Return to shopping cart</h2>
+        </a>
     </header>
 
-    <details class="orderSummary">
+    <details class="orderSummaryCheckOut">
         <summary>
             Order Summary (n items) - $0
         </summary>
@@ -34,35 +37,35 @@
         <form class="paymentForm">
 
             <!--Personal Info-->
-            <section class="detailSection">
+            <section class="personalInfo">
                 <h3>Personal Information</h3>
 
-                <input type="text" name="name" placeholder="Your Name" required>
+                <input class="checkoutInput" type="text" name="name" placeholder="Your Name" required>
 
                 <div class="detailRow">
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <input class="checkoutInput" type="email" name="email" placeholder="Email" required>
+                    <input class="checkoutInput" type="tel" name="phone" placeholder="Phone Number" required>
                 </div>
             </section>
 
             <!--Shipping Info-->
-            <section class="detailSection">
+            <section class="shippingInfo">
                 <h3>Shipping Information</h3>
 
                 <div class="detailRow">
-                    <input type="text" name="address" placeholder="Address" required>
-                    <input type="number" name="postcode" placeholder="Postcode" required>
+                    <input class="checkoutInput" type="text" name="address" placeholder="Address" required>
+                    <input class="checkoutInput" type="text" name="postcode" placeholder="Postcode" required>
                     
                 </div>
 
                 <div class="detailRow">
-                    <input type="text" name="city" placeholder="City" required>
-                    <input type="text" name="country" placeholder="Country" required>
+                    <input class="checkoutInput" type="text" name="city" placeholder="City" required>
+                    <input class="checkoutInput" type="text" name="country" placeholder="Country" required>
                 </div>
             </section>
 
             <!--Shipping Method -->
-            <section class="detailSection">
+            <section class="shippingMethod">
                 <h3>Shipping Method</h3>
                 <label class="shippingOption">
                     <input id="standardShipping"
@@ -85,7 +88,7 @@
             </section>
 
             <!-- Payment Methods-->
-            <section class="detailSection">
+            <section class="paymentMethod">
                 <h3>Payment Methods</h3>
 
                 <div class="payments">
@@ -97,11 +100,11 @@
 
                 <!-- Card Fields-->
                  <article class="cardDetails" id="card">
-                    <input type="text" placeholder="Cardholder Name">
+                    <input class="checkoutInput" type="text" placeholder="Cardholder Name">
                     <div class="detailRow">
-                        <input type="number" placeholder="Card Number">
-                        <input type="date" placeholder="Expiry Date">
-                        <input type="text" placeholder="CVC">
+                        <input class="checkoutInput" type="text" placeholder="Card Number">
+                        <input class="checkoutInput" type="date" placeholder="Expiry Date">
+                        <input class="checkoutInput" type="text" placeholder="CVC">
                     </div>
                  </article>
                  

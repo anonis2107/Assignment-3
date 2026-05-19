@@ -558,7 +558,108 @@ p{
 
 }
 
+/* CHECKOUT */
 
+.checkoutHeader {
+    background-color: #EAE8E5;
+}
+
+.goBack a{
+    font-family: "Montserrat", serif;
+    color: black;
+    text-decoration: none;
+}
+
+.orderSummaryCheckOut {
+    width: auto;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid;
+
+}
+
+
+.orderSummaryCheckOut summary {
+    font-family: "Playfair", serif;
+    font-size: 20px;
+}
+
+.orderSummaryCheckOut p {
+    font-family: "Montserrat", serif;
+}
+
+.personalInfo {
+    width: auto;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.personalInfo h3 {
+    font-family: "Playfair", serif;
+    font-size: 19px;
+    padding-left: 5px;
+    border-bottom: 1px solid;
+
+}
+
+.shippingInfo {
+    width: auto;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.shippingInfo h3 {
+    font-family: "Playfair", serif;
+    font-size: 19px;
+    padding-left: 5px;
+    border-bottom: 1px solid;
+
+}
+
+.shippingMethod {
+    width: auto;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.shippingMethod h3 {
+    font-family: "Playfair", serif;
+    font-size: 19px;
+    padding-left: 5px;
+    border-bottom: 1px solid;
+
+}
+
+.paymentMethod {
+    width: auto;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.paymentMethod h3 {
+    font-family: "Playfair", serif;
+    font-size: 19px;
+    padding-left: 5px;
+    border-bottom: 1px solid;
+
+}
+
+ .checkoutInput {
+    width: auto;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 18px;
+    padding: 5px 18px 10px;
+    margin: 5px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    transition: 0.2s ease;
+ }
 /* FOOTER */
 
 footer{
