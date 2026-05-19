@@ -299,11 +299,92 @@ const products = {
         description: "CD covers are more than just protective cases—they’re a powerful branding tool for musicians, businesses, and artists alike. At The Sticker Printing, we offer high-quality custom CD cover printing that combines vibrant design, lasting durability, and professional appeal to help your CDs make a lasting impression."
     },
 
-    //Custom Stickers (don't need selections as stickers have their own page with specific selections)
+    //Custom Stickers
     diecutstickers: {
         name: "Die Cut Stickers",
         price: 50,
         image: "diecut.png",
+        shape: [
+            "Select",
+            "Circle",
+            "Oval"
+        ],
+
+        circleSizes: [
+            "Select",
+            "13mm",
+            "19mm",
+            "25mm",
+            "32mm",
+            "38mm",
+            "50mm",
+            "64mm",
+            "70mm",
+            "76mm",
+            "101mm",
+            "115mm"
+        ],
+
+        ovalSizes: [
+            "Select",
+            "19mm x 38mm",
+            "32mm x 50mm",
+            "45mm x 64mm",
+            "50mm x 76mm",
+            "50mm x 83mm",
+            "76mm x 101mm",
+            "101mm x 152mm"
+        ],
+
+        material: [
+            "Select",
+            "Sticker Paper Gloss",
+            "Sticker Paper Matte",
+            "White Vinyl",
+            "Clear Vinyl"
+        ],
+
+        colour: [
+            "Select",
+            "Black & White",
+            "Full Colour"
+        ],
+
+        finish: [
+            "Select",
+            "Standard Finish",
+            "High UV Gloss Coating"
+        ],
+        effects:[
+            "Select",
+            "None",
+            "Emboss (single side)",
+            "Deboss (single side)",
+            "Foil Stamping",
+            "Spot UV"
+        ],
+
+        quantity: [
+            "Select",
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
+
         description: "High-quality custom round stickers designed for branding, packaging, promotions, or personal use. Made from premium vinyl, paper, or polyester, they’re available in matte, gloss, or transparent finishes and sizes from 25mm to 100mm (or custom).Printed in full colour with UV-resistant technology, these stickers offer sharp, vibrant results that won’t fade. They’re waterproof, weatherproof, and suitable for both indoor and outdoor use, with strong adhesive options (permanent or removable)."
     },
 
@@ -311,6 +392,81 @@ const products = {
         name: "Clear Stickers",
         price: 50,
         image: "clearsticker.png",
+
+        circleSizes: [
+            "Select",
+            "13mm",
+            "19mm",
+            "25mm",
+            "32mm",
+            "38mm",
+            "50mm",
+            "64mm",
+            "70mm",
+            "76mm",
+            "101mm",
+            "115mm"
+        ], 
+
+        ovalSizes: [
+            "Select",
+            "19mm x 38mm",
+            "32mm x 50mm",
+            "45mm x 64mm",
+            "50mm x 76mm",
+            "50mm x 83mm",
+            "76mm x 101mm",
+            "101mm x 152mm"
+        ],
+
+        material: [
+            "Select",
+            "Sticker Paper Gloss",
+            "Sticker Paper Matte",
+            "White Vinyl",
+            "Clear Vinyl"
+        ],
+
+        colour: [
+            "Select",
+            "Black & White",
+            "Full Colour"
+        ],
+
+        finish: [
+            "Select",
+            "Standard Finish",
+            "High UV Gloss Coating"
+        ],
+        effects:[
+            "Select",
+            "None",
+            "Emboss (single side)",
+            "Deboss (single side)",
+            "Foil Stamping",
+            "Spot UV"
+        ],
+
+        quantity: [
+            "Select",
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
         description: "Clear vinyl stickers offer a sleek, modern, and professional look, making them perfect for a variety of applications. Whether you’re using them for product labeling, window decals, or promotional giveaways, clear vinyl stickers provide a unique, transparent backdrop that enhances the design without overwhelming it. High-quality clear vinyl sticker printing, delivering durable, vibrant, and fully customizable stickers that reflect your brand in the best possible light."
     },
 
@@ -318,6 +474,81 @@ const products = {
         name: "Embossed Stickers",
         price: 50,
         image: "embossedstickers.webp",
+
+        circleSizes: [
+            "Select",
+            "13mm",
+            "19mm",
+            "25mm",
+            "32mm",
+            "38mm",
+            "50mm",
+            "64mm",
+            "70mm",
+            "76mm",
+            "101mm",
+            "115mm"
+        ], 
+
+        ovalSizes: [
+            "Select",
+            "19mm x 38mm",
+            "32mm x 50mm",
+            "45mm x 64mm",
+            "50mm x 76mm",
+            "50mm x 83mm",
+            "76mm x 101mm",
+            "101mm x 152mm"
+        ],
+
+        material: [
+            "Select",
+            "Sticker Paper Gloss",
+            "Sticker Paper Matte",
+            "White Vinyl",
+            "Clear Vinyl"
+        ],
+
+        colour: [
+            "Select",
+            "Black & White",
+            "Full Colour"
+        ],
+
+        finish: [
+            "Select",
+            "Standard Finish",
+            "High UV Gloss Coating"
+        ],
+        effects:[
+            "Select",
+            "None",
+            "Emboss (single side)",
+            "Deboss (single side)",
+            "Foil Stamping",
+            "Spot UV"
+        ],
+
+        quantity: [
+            "Select",
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
         description: "Embossed labels and stickers offer a unique, tactile experience that elevates your branding and product packaging. The raised design creates a sophisticated, high-end look, ensuring your brand stands out with style and elegance."
     },
 
@@ -325,6 +556,81 @@ const products = {
         name: "Heavy Duty Stickers",
         price: 50,
         image: "heavyduty.png",
+
+        circleSizes: [
+            "Select",
+            "13mm",
+            "19mm",
+            "25mm",
+            "32mm",
+            "38mm",
+            "50mm",
+            "64mm",
+            "70mm",
+            "76mm",
+            "101mm",
+            "115mm"
+        ],
+
+        ovalSizes: [
+            "Select",
+            "19mm x 38mm",
+            "32mm x 50mm",
+            "45mm x 64mm",
+            "50mm x 76mm",
+            "50mm x 83mm",
+            "76mm x 101mm",
+            "101mm x 152mm"
+        ],
+
+        material: [
+            "Select",
+            "Sticker Paper Gloss",
+            "Sticker Paper Matte",
+            "White Vinyl",
+            "Clear Vinyl"
+        ],
+
+        colour: [
+            "Select",
+            "Black & White",
+            "Full Colour"
+        ],
+
+        finish: [
+            "Select",
+            "Standard Finish",
+            "High UV Gloss Coating"
+        ],
+        effects:[
+            "Select",
+            "None",
+            "Emboss (single side)",
+            "Deboss (single side)",
+            "Foil Stamping",
+            "Spot UV"
+        ],
+
+        quantity: [
+            "Select",
+            "50",
+            "100",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
+            "6000",
+            "7000",
+            "8000",
+            "9000",
+            "10000"
+        ],
+
         description: "Heavy-duty stickers are built to handle tough conditions without losing quality. At The Sticker Printing, we offer strong, long-lasting heavy duty stickers perfect for vehicles, equipment, outdoor use, and industrial needs."
     },
 
@@ -1093,11 +1399,34 @@ if (product) {
 
         // detects selection change
         function selectionChanged(){
+
+        const currentIndex = sections.indexOf(section); // track current selection avail.
         if (select.value === "Select") { // this is placeholder so doesn't count as a change
                 return;
             }
+            
+            //specific process for sticker products
+            if (productID === "standardstickers" || productID === "heavydutystickers" || productID === "clearstickers" || productID === "embossedstickers" || productID === "diecutstickers") {
+                //if current selection is shape
+                if (key === "shape") {
+                    //if circle was selected only show sizes for circle
+                    if (select.value === "Circle") {
+                        sections[currentIndex + 1].classList.remove("d-none");
+                    //open oval sizes (next is material anyway so no need for seperate skip logic)   
+                    }else if (select.value === "Oval") {
+                        sections[currentIndex + 2].classList.remove("d-none");
 
-            const currentIndex = sections.indexOf(section); // track current selection avail.
+                    }
+                    return;
+                }
+                //if circle sizes then skip to material
+                if (key === "circleSizes") {
+                    sections[currentIndex + 2].classList.remove("d-none");
+                    return;
+                }
+            }
+
+            
             const nextSection = sections[currentIndex + 1]; // find next avail selection
 
             // enable upload design button after completing last selection
