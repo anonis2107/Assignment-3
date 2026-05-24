@@ -1533,7 +1533,6 @@ if (addToCartBtn){
     });
 }
 
-//empty cart page
 
 
 //load items into cart

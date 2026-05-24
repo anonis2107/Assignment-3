@@ -682,6 +682,73 @@ footer a{
 
 }
 
+.radio {
+    display: none;
+}
+
+.placeOrderBtn {
+    background-color: #272401;
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    color: white;
+    width: 250px;
+
+    display: flex;
+    
+}
+
+.radio {
+    display: none;
+    
+}
+
+.radio:checked + label {
+    background-color: rgba(85, 115, 115, 0.4);
+    color: black;
+    transition: 0.3s;
+}
+.payments {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.payments label {
+    flex: 1;
+    padding: 12px;
+    background-color: #EAE8E5;
+    text-align: center;
+    border: 1px solid;
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    font-size: 15px;
+    transition: 0.2s;
+
+}
+
+.paymentContent {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#card:checked ~ .cardContent {
+    display: block; /* show this content when selected */
+}
+
+#klarna:checked ~ .klarnaMethod {
+    display: block;
+}
+
+#paypal:checked ~ .paypalMethod {
+    display: block;
+}
+
+#applePay:checked ~ .appleMethod {
+    display: block;
+}
+
 
 /* MOBILE DESIGN */
 @media (max-width: 768px) {

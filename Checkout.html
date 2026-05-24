@@ -92,40 +92,52 @@
                 <h3>Payment Methods</h3>
 
                 <div class="payments">
-                    <button type="button" class="tab">Credit/Debit Card</button>
-                    <button type="button" class="tab">Klarna</button>
-                    <button type="button" class="tab">Paypal</button>
-                    <button type="button" class="tab"> Apple Pay</button>
-                </div>
 
-                <!-- Card Fields-->
-                 <article class="cardDetails" id="card">
-                    <input class="checkoutInput" type="text" placeholder="Cardholder Name">
-                    <div class="detailRow">
-                        <input class="checkoutInput" type="text" placeholder="Card Number">
-                        <input class="checkoutInput" type="date" placeholder="Expiry Date">
-                        <input class="checkoutInput" type="text" placeholder="CVC">
-                    </div>
-                 </article>
+                    <input type="radio" name="pay" class="radio" id="card" checked>
+                    <label for="card"><span>Credit Card</span></label>
+
+                    <input type="radio" name="pay" class="radio" id="klarna">
+                    <label for="klarna"><span>Klarna</span></label>
+
+
+                    <input type="radio" name="pay" class="radio" id="paypal">
+                    <label for="paypal"><span>Paypal</span></label>
+
+                    <input type="radio" name="pay" class="radio" id="applePay">
+                    <label for="applePay"><span> Apple Pay</span></label>
+
+
+                    <!-- Card Fields-->
+                    <article class="paymentContent cardContent">
+                        <input class="checkoutInput" type="text" placeholder="Cardholder Name" required>
+
+                        <div class="detailRow">
+
+                            <input class="checkoutInput" type="text" placeholder="Card Number" required>
+                            <input class="checkoutInput" type="date" placeholder="Expiry Date" required>
+                            <input class="checkoutInput" type="text" placeholder="CVC" required>
+                        </div>
+                    </article>
                  
-                 <!--Klarna-->
-                 <article class="klarnaMethod" id="klarna">
-                    <p>Continue with Klarna at next step</p>
-                 </article>
+                    <!--Klarna-->
+                    <article class="paymentContent klarnaMethod">
+                        <p>Continue with Klarna</p>
+                    </article>
 
-                 <!--Paypal-->
-                 <article class="paypalMethod" id="paypal">
-                    <p>Pay with Paypal</p>
-                 </article>
+                    <!--Paypal-->
+                    <article class="paymentContent paypalMethod">
+                        <p>Pay with Paypal</p>
+                    </article>
 
-                 <!-- Apply Pay-->
-                  <article class="appleMethod" id="applePay">
-                    <p>Pay using Apply Pay</p>
-                  </article>
+                    <!-- Apply Pay-->
+                    <article class="paymentContent appleMethod">
+                        <p>Pay using Apply Pay</p>
+                    </article>
+                </div>
             </section>
 
             <!--Place Order Final Step-->
-            <button type="submit" class="placeOrderbtn">
+            <button type="submit" class="placeOrderBtn">
                 PLACE ORDER
             </button>
 
