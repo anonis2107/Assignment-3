@@ -704,6 +704,7 @@ footer a{
 
 .radio:checked + label {
     background-color: rgba(85, 115, 115, 0.4);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2); /* inner shadow*/
     color: black;
     transition: 0.3s;
 }
@@ -749,7 +750,33 @@ footer a{
     display: block;
 }
 
+.shippingOption {
+    display: none;
+    
+}
 
+.shippingMethod {
+    display: flex;
+    flex-direction: column;
+}
+
+.shippingType {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid;
+    padding: 12px;
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    transition: 0.5s;
+}
+
+.shippingOption:checked + label{
+    background-color: rgba(85, 115, 115, 0.4);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2); /* inner shadow*/
+    transition: 0.3s;
+
+}
 /* MOBILE DESIGN */
 @media (max-width: 768px) {
     .categories{

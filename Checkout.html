@@ -67,23 +67,19 @@
             <!--Shipping Method -->
             <section class="shippingMethod">
                 <h3>Shipping Method</h3>
-                <label class="shippingOption">
-                    <input id="standardShipping"
-                        name="shippingMethod" type="radio"
-                        checked required>
-                    <span for="standardShipping">Standard Shipping</span>
-                    <span class="standardPrice">$10</span>
 
+                <input type="radio" name="shipping" class="shippingOption" id="standard" checked>
+                <label for="standard" class="shippingType">
+                    <span>Standard Shipping (3-5 days)</span>
+                    <span>$10</span>
                 </label>
 
-                <label class="shippingOption">
-                    <input id="expressShipping"
-                        name="shippingMethod" type="radio"
-                        checked required>
-                    <span for="expressShipping">Express Shipping</span>
-                    <span class="expressPrice">$15</span>
-
+                <input type="radio" name="shipping" class="shippingOption" id="express">
+                <label for="express" class="shippingType">
+                    <span>Express Shipping (1-2 days)</span>
+                    <span>$15</span>
                 </label>
+
 
             </section>
 
