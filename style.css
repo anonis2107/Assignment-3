@@ -564,10 +564,11 @@ p{
     background-color: #EAE8E5;
 }
 
-.goBack a{
+.goBack {
     font-family: "Montserrat", serif;
     color: black;
     text-decoration: none;
+
 }
 
 .orderSummaryCheckOut {
@@ -676,6 +677,60 @@ p{
  .detailRow .checkoutInput {
     width: 50%;
  }
+
+ .cardContent .detailRow .checkoutInput {
+    flex: 1;
+    min-width: 0;
+ }
+
+ .cardContent #cardName {
+    width: 100%;
+ }
+
+.shippingInfo .shippingInput {
+    padding: 5px 18px 10px;
+    border: 1px solid;
+    border-radius: 40px;
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    margin: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.shippingInfo .detailRow {
+    display: flex;
+
+}
+
+/* takes the items in first part (address and postcode) and makes them 3:1 ratio so address is bigger in width */
+.shippingInfo .detailRow:first-of-type .shippingInput:first-child { /* takes the first 'item' in section */
+    flex: 3; /* makes it worth 3 parts */
+}
+.shippingInfo .detailRow:first-of-type .shippingInput:last-child { /* takes the last 'item' in section */
+    flex: 1; /* makes it worth 1 part */
+}
+
+/* makes the items in here (second part which is city and country) equal */
+.shippingInfo .detailRow:last-of-type .shippingInput {
+    flex: 1;
+}
+
+.cardContent .detailRow {
+    display: flex;
+}
+
+.cardContent .detailRow .checkoutInput:nth-child(1) {
+    flex: 3;
+}
+
+.cardContent .detailRow .checkoutInput:nth-child(2) {
+    flex: 1.5;
+}
+
+.cardContent .detailRow .checkoutInput:nth-child(3) {
+    flex: 1;
+}
 
 
 /* FOOTER */
