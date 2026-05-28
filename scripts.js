@@ -1537,9 +1537,30 @@ if (addToCartBtn){
 
 //load items into cart
 const cartList = document.querySelector(".items");
+function calculateSubtotal(cart) {
+    return cart.reduce((sum, item) => {
+        return sum + (item.price * item.quantity);
+    }, 0);
+}
 if (cartList){
     //get saved/ if empty a new cart
     let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+    function updateSummary() {
+        let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+        let subtotal = calculateSubtotal(cart);
+        let delivery = 10;
+        let total = subtotal > 0 ? (subtotal + delivery) : 0;
+
+        document.getElementById("subtotalCost").textContent = "$" + subtotal;
+        document.getElementById("deliveryCost").textContent = "From $" + delivery;
+        document.getElementById("totalPrice").textContent = "$" + total;
+
+        sessionStorage.setItem("subtotal", subtotal);
+        sessionStorage.setItem("delivery", delivery);
+        sessionStorage.setItem("total", total);
+    }
 
     if (cart.length === 0){
         cartList.innerHTML = `
@@ -1565,7 +1586,7 @@ if (cartList){
 
                     <button class="decreasebtn">-</button>
 
-                    <span class="number">${item.quantity}</span>
+                    <span class="number">${item.quantity * item.quantity}</span>
 
                     <button class="increasebtn">+</button>
 
@@ -1595,6 +1616,7 @@ if (cartList){
 
                 document.querySelectorAll(".number")[index].textContent = cart[index].quantity;
                 document.querySelectorAll(".itemPrice")[index].textContent = '$' + cart[index].price * cart[index].quantity; //update price
+                updateSummary();
 
             });
         });
@@ -1604,12 +1626,34 @@ if (cartList){
             button.addEventListener("click", function() {
                 let cart = JSON.parse(sessionStorage.getItem("cart")) || []; //get cart or if cart doesnt exist yet a new cart created
 
-                cart[index].quantity -= 1;
+                if (cart[index].quantity > 1){
+                    cart[index].quantity -= 1;
 
                 sessionStorage.setItem("cart", JSON.stringify(cart)); //save item
-
                 document.querySelectorAll(".number")[index].textContent = cart[index].quantity;
                 document.querySelectorAll(".itemPrice")[index].textContent = '$' + cart[index].price * cart[index].quantity; //update price
+                }
+                else {
+                    cart.splice(index, 1); // remove specified item from array cart
+
+                    sessionStorage.setItem("cart", JSON.stringify(cart)); // save updated cart in storage
+
+                    document.querySelectorAll(".buyItem")[index].remove(); //update page
+                    updateSummary();
+                
+                    //update immediately on deletion
+                    if (cart.length === 0){
+                        cartList.innerHTML = `
+                        <section class= "empty">
+                            <a href="Categories.html">Continue Shopping</a>
+                        </section>
+                        `;
+                        document.getElementById("checkoutBtn").disabled = true;
+                    }
+
+                }
+                
+                updateSummary();
                 
             });
         });
@@ -1625,6 +1669,7 @@ if (cartList){
                 sessionStorage.setItem("cart", JSON.stringify(cart)); // save updated cart in storage
 
                 document.querySelectorAll(".buyItem")[index].remove(); //update page
+                updateSummary();
                 
                 //update immediately on deletion
                 if (cart.length === 0){
@@ -1646,4 +1691,43 @@ if (cartList){
     if (cart.length > 0) {
         document.getElementById("checkoutBtn").disabled = false;
     }
+    updateSummary();
+}
+
+//CHECKOUT
+if (document.getElementById("itemSummaries")) {
+    const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+    const itemSummaries = document.getElementById("itemSummaries");
+    const subtotalPrice = document.getElementById("subtotalPrice");
+    const orderSummaryTitle = document.getElementById("orderSummary");
+
+    function calculateSubtotal(cart) {
+        return cart.reduce((sum, item) => {
+            return sum+ (item.price * item.quantity);
+        }, 0);
+    }
+    function createCheckSummary() {
+        itemSummaries.innerHTML = "";
+        cart.forEach(item => {
+            const row = document.createElement("div");
+            row.classList.add("summaryItem");
+
+            row.innerHTML = `
+            <p>${item.name}</p>
+            <p>Qty: ${item.quantity}</p>
+            <p>$${item.price * item.quantity}</p>
+            `;
+            itemSummaries.appendChild(row);
+        });
+    }
+
+    function updateSummaryTotals() {
+        const subtotal = calculateSubtotal(cart);
+        subtotalPrice.textContent = "$" + subtotal;
+        orderSummaryTitle.textContent = `Order Summary (${cart.length} items) - $${subtotal}`;
+    }
+
+    createCheckSummary();
+    updateSummaryTotals();
 }

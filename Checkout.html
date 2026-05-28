@@ -16,21 +16,13 @@
     </header>
 
     <details class="orderSummaryCheckOut">
-        <summary>
-            Order Summary (n items) - $0
-        </summary>
+        <summary id="orderSummary"></summary>
 
-        <section class="itemSummaries">
-            <div class="checkoutItem">
-                <p>itemName</p>
-                <p>$0</p>
-            </div>
-
-            <div class="subtotal">
-                <p>Subtotal</p>
-                <p>$0</p>
-            </div>
-        </section>
+        <section id="itemSummaries"></section>
+        <div class="subtotalRow">
+            <p>Subtotal</p>
+            <p id="subtotalPrice">$0</p>
+        </div>
     </details>
 
     <section class="paymentDetails">
@@ -40,7 +32,7 @@
             <section class="personalInfo">
                 <h3>Personal Information</h3>
 
-                <input class="checkoutInput" type="text" name="name" placeholder="Your Name" required>
+                <input class="checkoutInput" type="text" name="name" id="userName" placeholder="Your Name" required>
 
                 <div class="detailRow">
                     <input class="checkoutInput" type="email" name="email" placeholder="Email" required>

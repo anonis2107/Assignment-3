@@ -589,6 +589,15 @@ p{
     font-family: "Montserrat", serif;
 }
 
+.personalInfo h3,
+.shippingInfo h3,
+.shippingMethod h3,
+.paymentMethod h3 {
+    margin: 0;
+    padding: 15px 5px;
+
+}
+
 .personalInfo {
     width: auto;
     margin: 20px;
@@ -596,11 +605,18 @@ p{
     border: 1px solid;
 }
 
+.personalInfo #userName {
+    width: calc(100% - 48px);
+    margin-top: 15px;
+
+ }
+
 .personalInfo h3 {
     font-family: "Playfair", serif;
     font-size: 19px;
     padding-left: 5px;
     border-bottom: 1px solid;
+    
 
 }
 
@@ -617,6 +633,7 @@ p{
     padding-left: 5px;
     border-bottom: 1px solid;
 
+
 }
 
 .shippingMethod {
@@ -630,7 +647,6 @@ p{
     font-family: "Playfair", serif;
     font-size: 19px;
     padding-left: 5px;
-    border-bottom: 1px solid;
 
 }
 
@@ -645,7 +661,6 @@ p{
     font-family: "Playfair", serif;
     font-size: 19px;
     padding-left: 5px;
-    border-bottom: 1px solid;
 
 }
 
@@ -655,7 +670,9 @@ p{
     border: 1px solid;
     border-radius: 18px;
     padding: 5px 18px 10px;
-    margin: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
     font-size: 16px;
     color: black;
     outline: none;
@@ -681,10 +698,12 @@ p{
  .cardContent .detailRow .checkoutInput {
     flex: 1;
     min-width: 0;
+    margin-bottom: 0;
  }
 
  .cardContent #cardName {
-    width: 100%;
+    width: calc(100% - 48px);
+
  }
 
 .shippingInfo .shippingInput {
@@ -706,14 +725,17 @@ p{
 /* takes the items in first part (address and postcode) and makes them 3:1 ratio so address is bigger in width */
 .shippingInfo .detailRow:first-of-type .shippingInput:first-child { /* takes the first 'item' in section */
     flex: 3; /* makes it worth 3 parts */
+    margin-top: 15px;
 }
 .shippingInfo .detailRow:first-of-type .shippingInput:last-child { /* takes the last 'item' in section */
     flex: 1; /* makes it worth 1 part */
+    margin-top: 15px;
 }
 
 /* makes the items in here (second part which is city and country) equal */
 .shippingInfo .detailRow:last-of-type .shippingInput {
     flex: 1;
+    margin-bottom: 10px;
 }
 
 .cardContent .detailRow {
@@ -807,9 +829,10 @@ footer a{
 .paymentContent {
     display: none;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
 }
+
 
 #card:checked ~ .cardContent {
     display: block; /* show this content when selected */
@@ -906,8 +929,11 @@ footer a{
     border-radius: 50px;
     font-size: clamp(18px, 2vw, 24px);
     cursor: pointer;
-    box-shadow: 0 4px 11px rgba(0,0,0,0.15);
     transition: 0.2s ease;
+}
+
+.statusBtn:hover {
+    box-shadow: 0 4px 11px rgba(0,0,0,0.15);
 }
 .homeBtn {
     font-family: "Montserrat", serif;
@@ -915,10 +941,12 @@ footer a{
     border: 1px solid;
     border-radius: 40px;
     padding: 8px 15px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     font-size: 16px;
     cursor: pointer;
     transition: 0.2s ease;
+}
+.homeBtn:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 /* MOBILE DESIGN */
 @media (max-width: 768px) {
