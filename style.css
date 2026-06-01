@@ -319,11 +319,14 @@ p{
     flex: 1;
 }
 
-.productimage {
+#productimage {
     width: 100%;
     max-width: 500px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .productpage img {
@@ -331,6 +334,7 @@ p{
     height: 100%;
     display: block;
     object-fit: cover;
+    object-position: cover;
 }
 
 .d-none {
@@ -752,6 +756,44 @@ p{
 
 .cardContent .detailRow .checkoutInput:nth-child(3) {
     flex: 1;
+}
+
+.summaryItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.summaryImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.nameQuant {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.summaryPrice {
+    margin-left: auto;
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.subtotalRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 

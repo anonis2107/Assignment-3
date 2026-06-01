@@ -1586,7 +1586,7 @@ if (cartList){
 
                     <button class="decreasebtn">-</button>
 
-                    <span class="number">${item.quantity * item.quantity}</span>
+                    <span class="number">${item.quantity}</span>
 
                     <button class="increasebtn">+</button>
 
@@ -1707,27 +1707,36 @@ if (document.getElementById("itemSummaries")) {
             return sum+ (item.price * item.quantity);
         }, 0);
     }
+    //create order summary section
     function createCheckSummary() {
+        //create summary header
+        orderSummaryTitle.textContent = `Order Summary (${cart.length} items)`;
+        
+        //add each item to summary
         itemSummaries.innerHTML = "";
         cart.forEach(item => {
             const row = document.createElement("div");
             row.classList.add("summaryItem");
 
             row.innerHTML = `
-            <p>${item.name}</p>
-            <p>Qty: ${item.quantity}</p>
-            <p>$${item.price * item.quantity}</p>
+            <img src="${item.image}" class="summaryImage">
+            <div class="nameQuant">
+                <span>${item.name}</span>
+                <span>Qty: ${item.quantity}</span>
+            </div>
+            
+            <span class="summaryPrice">$${item.price * item.quantity}</span>
             `;
             itemSummaries.appendChild(row);
         });
-    }
 
-    function updateSummaryTotals() {
+        //summary subtotal display
         const subtotal = calculateSubtotal(cart);
         subtotalPrice.textContent = "$" + subtotal;
-        orderSummaryTitle.textContent = `Order Summary (${cart.length} items) - $${subtotal}`;
+        
     }
 
-    createCheckSummary();
-    updateSummaryTotals();
+    //run order summary creation
+    createCheckSummary(); //inner content
+    
 }
