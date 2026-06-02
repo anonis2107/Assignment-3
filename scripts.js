@@ -6,54 +6,54 @@ const products = {
         image: "bookmarks.png",
 
         sizes: [
-            "Select",
-            "50mm x 155mm",
-            "50mm x 203mm"
+            { name: "Select", price: 0 },
+            { name: "50mm x 155mm (+ $0.00)", price: 0 },
+            { name: "50mm x 203mm (+ $2.00)", price: 2 }
         ],
         material: [
-            "Select",
-            "350 GSM Card Stock",
-            "400 GSM Card Stock"
+            { name: "Select", price: 0 },
+            { name: "350 GSM Card Stock (+ $10.00)", price: 10 },
+            { name: "400 GSM Card Stock (+ $12.00)", price: 12 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         hole: [
-            "Select",
-            "No Holes",
-            "6.35mm Hole",
-            "4.75mm Hole"
+            { name: "Select", price: 0 },
+            { name: "No Holes (+ $0.00)", price: 0 },
+            { name: "6.35mm Hole (+ $2.00)", price: 2 },
+            { name: "4.75mm Hole (+ $2.00)", price: 2 }
         ],
         tassel: [
-            "Select",
-            "None",
-            "Black Tassel",
-            "Blue Tassel",
-            "Red Tassel",
-            "Green Tassel"
+            { name: "Select", price: 0 },
+            { name: "None (+ $0.00)", price: 0 },
+            { name: "Black Tassel (+ $10.00)", price: 10 },
+            { name: "Blue Tassel (+ $10.00)", price: 10 },
+            { name: "Red Tassel (+ $10.00)", price: 10 },
+            { name: "Green Tassel (+ $10.00)", price: 10 }
         ],
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Bookmarks are more than just a way to mark your page; they are a creative tool to promote your brand, share a message, or add a personal touch to your reading experience. At The Sticker Printing, we specialize in high-quality custom bookmark printing that is affordable, vibrant, and tailored to your exact needs."
@@ -64,38 +64,38 @@ const products = {
     image: "envelopes.png",
 
     size: [
-            "Select",
-            "A7",
-            "A6",
-            "100mm x 240mm",
-            "228mm x 325mm"
+            { name: "Select", price: 0 },
+            { name: "A7 (+ $0.00)", price: 0 },
+            { name: "A6 (+ $2.00)", price: 2 },
+            { name: "100mm x 240mm (+ $4.00)", price: 4 },
+            { name: "228mm x 325mm (+ $6.00)", price: 6 }
         ],
 
         flapStyle: [
-            "Select",
-            "No Flap Envelope",
-            "Top Flap",
-            "Left Flap"
+            { name: "Select", price: 0 },
+            { name: "No Flap Envelope (+ $0.00)", price: 0 },
+            { name: "Top Flap (+ $5.00)", price: 5 },
+            { name: "Left Flap (+ $5.00)", price: 5 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
     description: "" 
@@ -105,38 +105,38 @@ const products = {
         price: 50,
         image: "invitations.png",
         size: [
-            "Select",
-            "A7",
-            "A6",
-            "100mm x 240mm",
-            "228mm x 325mm"
+            { name: "Select", price: 0 },
+            { name: "A7 (+ $0.00)", price: 0 },
+            { name: "A6 (+ $2.00)", price: 2 },
+            { name: "100mm x 240mm (+ $4.00)", price: 4 },
+            { name: "228mm x 325mm (+ $6.00)", price: 6 }
         ],
 
         material: [
-            "Select",
-            "350 GSM Card Stock",
-            "400 GSM Card Stock"
+            { name: "Select", price: 0 },
+            { name: "350 GSM Card Stock (+ $10.00)", price: 10 },
+            { name: "400 GSM Card Stock", price: 12 }
         ],
 
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
         description: ""
 
@@ -146,50 +146,50 @@ const products = {
         price: 50,
         image: "postcards.png",
         size: [
-            "Select",
-            "101mm x 155mm",
-            "127mm x 152mm",
-            "127mm x 178mm",
-            "155mm x 228mm"
+            { name: "Select", price: 0 },
+            { name: "101mm x 155mm (+ $0.00)", price: 0 },
+            { name: "127mm x 152mm (+ $2.00)", price: 2 },
+            { name: "127mm x 178mm (+ $3.50)", price: 3.50 },
+            { name: "155mm x 228mm (+ $4.00)", price: 4 }
         ],
 
         material: [
-            "Select",
-            "280 GSM Cardstock",
-            "310 GSM Cardstock"
+            { name: "Select", price: 0 },
+            { name: "280 GSM Cardstock (+ $7.00)", price: 7 },
+            { name: "310 GSM Cardstock (+ $11.00)", price: 11 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Gloss Finish",
-            "Matt Finish",
-            "High Gloss Finish"
+            { name: "Select", price: 0 },
+            { name: "Standard Gloss Finish (+ $0.00)", price: 0 },
+            { name: "Matte Finish (+ $5.00)", price: 5 },
+            { name: "High Gloss Finish (+ $5.00)", price: 5 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "At The Sticker Printing, we offer high-quality custom postcard printing designed to help you grab attention and make a lasting impression. With vibrant colors, premium materials, and full customization options, our postcards are perfect for direct mail campaigns, event promotions, thank-you notes, and more."
@@ -200,51 +200,51 @@ const products = {
         image: "notepads.png",
         
         size: [
-            "Select",
-            "108mm x 140mm",
-            "89mm x 216mm",
-            "140mm x 216mm",
-            "216mm x 280mm"
+            { name: "Select", price: 0 },
+            { name: "108mm x 140mm (+ $0.00)", price: 0 },
+            { name: "89mm x 216mm (+ $2.00)", price: 2 },
+            { name: "140mm x 216mm (+ $4.00)", price: 4 },
+            { name: "216mm x 280mm (+ $6.00)", price: 6 }
 
         ],
 
         material: [
-            "Select",
-            "50 GSM Art Paper"
+            { name: "Select", price: 0 },
+            { name: "50 GSM Art Paper (+ $0.00)", price: 0 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         sheetsPerPad: [
-            "Select",
-            "25",
-            "50",
-            "75",
-            "100"
+            { name: "Select", price: 0 },
+            { name: "25 (+ $0.00)", price: 0 },
+            { name: "50 (+ $5.00)", price: 5 },
+            { name: "75 (+ $7.50)", price: 7.5 },
+            { name: "100 (+ $10.00)", price: 10 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
         description: "Notepads are a versatile tool for businesses, events, and personal use. At The Sticker Printing, we specialize in high-quality notepad printing, offering a wide range of customization options to help you create notepads that are as practical as they are stylish."
     },
@@ -256,44 +256,44 @@ const products = {
         image: "cdcovers.png",
 
         size: [
-            "Select",
-            "A7",
-            "A6",
-            "100mm x 240mm",
-            "228mm x 325mm"
+            { name: "Select", price: 0 },
+            { name: "A7 (+ $0.00)", price: 0 },
+            { name: "A6 (+ $2.00)", price: 2 },
+            { name: "100mm x 240mm (+ $4.00)", price: 4 },
+            { name: "228mm x 325mm (+ $6.00)", price: 6 }
         ],
 
         material: [
-            "Select",
-            "300 GSM Card Stock",
-            "400 GSM Card Stock"
+            { name: "Select", price: 0 },
+            { name: "300 GSM Card Stock (+ $0.00)", price: 0 },
+            { name: "400 GSM Card Stock", price: 12 }
         ],
 
         window: [
-            "Select",
-            "Yes Window",
-            "No Window"
+            { name: "Select", price: 0 },
+            { name: "No Window (+ $0.00)", price: 0 },
+            { name: "Yes Window (+ $1.00)", price: 1 }
         ],
 
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "CD covers are more than just protective cases—they’re a powerful branding tool for musicians, businesses, and artists alike. At The Sticker Printing, we offer high-quality custom CD cover printing that combines vibrant design, lasting durability, and professional appeal to help your CDs make a lasting impression."
@@ -305,83 +305,84 @@ const products = {
         price: 50,
         image: "diecut.png",
         shape: [
-            "Select",
-            "Circle",
-            "Oval"
+            { name: "Select", price: 0 },
+            { name: "Circle (+ $0.00)", price: 0 },
+            { name: "Oval (+ $0.00)", price: 0 }
         ],
 
         circleSizes: [
-            "Select",
-            "13mm",
-            "19mm",
-            "25mm",
-            "32mm",
-            "38mm",
-            "50mm",
-            "64mm",
-            "70mm",
-            "76mm",
-            "101mm",
-            "115mm"
+            { name: "Select", price: 0 },
+            { name: "13mm (+ $0.00)", price: 0 },
+            { name: "19mm (+ $0.50)", price: 0.5 },
+            { name: "25mm (+ $1.00)", price: 1 },
+            { name: "32mm (+ $1.50)", price: 1.5 },
+            { name: "38mm (+ $2.00)", price: 2 },
+            { name: "50mm (+ $2.50)", price: 2.50 },
+            { name: "64mm (+ $3.00)", price: 3 },
+            { name: "70mm (+ $3.50)", price: 3.50 },
+            { name: "76mm (+ $4.00)", price: 4 },
+            { name: "101mm (+ $4.50)", price: 4.50 },
+            { name: "115mm (+ $5.00)", price: 5 }
         ],
 
         ovalSizes: [
-            "Select",
-            "19mm x 38mm",
-            "32mm x 50mm",
-            "45mm x 64mm",
-            "50mm x 76mm",
-            "50mm x 83mm",
-            "76mm x 101mm",
-            "101mm x 152mm"
+            { name: "Select", price: 0 },
+            { name: "19mm x 38mm (+ $0.50)", price: 0.50 },
+            { name: "32mm x 50mm (+ $1.00)", price: 1 },
+            { name: "45mm x 64mm (+ $1.50)", price: 1.50 },
+            { name: "50mm x 76mm (+ $2.00)", price: 2 },
+            { name: "50mm x 83mm (+ $2.50)", price: 2.50 },
+            { name: "76mm x 101mm (+ $3.00)", price: 3 },
+            { name: "101mm x 152mm (+ $3.50)", price: 3.50 }
         ],
 
         material: [
-            "Select",
-            "Sticker Paper Gloss",
-            "Sticker Paper Matte",
-            "White Vinyl",
-            "Clear Vinyl"
+            { name: "Select", price: 0 },
+            { name: "Sticker Paper Gloss (+ $0.00)", price: 0 },
+            { name: "Sticker Paper Matte (+ $0.00)", price: 0 },
+            { name: "White Vinyl (+ $5.00)", price: 5 },
+            { name: "Clear Vinyl (+ $5.00)", price: 5 }
         ],
 
         colour: [
-            "Select",
-            "Black & White",
-            "Full Colour"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Finish",
-            "High UV Gloss Coating"
+            { name: "Select", price: 0 },
+            { name: "Standard Finish (+ $0.00)", price: 0 },
+            { name: "High UV Gloss Coating (+ $5.00)", price: 5 }
         ],
         effects:[
-            "Select",
-            "None",
-            "Emboss (single side)",
-            "Deboss (single side)",
-            "Foil Stamping",
-            "Spot UV"
+            { name: "Select", price: 0 },
+            { name: "None (+ $0.00)", price: 0 },
+            { name: "Emboss (single side) (+ $5.00)", price: 5 },
+            { name: "Deboss (single side) (+ $5.00)", price: 5 },
+            { name: "Foil Stamping (+ $15.00)", price: 15 },
+            
+            { name: "Spot UV (+ $15.00)", price: 15 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
 
@@ -394,77 +395,77 @@ const products = {
         image: "clearsticker.png",
 
         circleSizes: [
-            "Select",
-            "13mm",
-            "19mm",
-            "25mm",
-            "32mm",
-            "38mm",
-            "50mm",
-            "64mm",
-            "70mm",
-            "76mm",
-            "101mm",
-            "115mm"
+            { name: "Select", price: 0 },
+            { name: "13mm (+ $0.00)", price: 0 },
+            { name: "19mm (+ $0.50)", price: 0.5 },
+            { name: "25mm (+ $1.00)", price: 1 },
+            { name: "32mm (+ $1.50)", price: 1.5 },
+            { name: "38mm (+ $2.00)", price: 2 },
+            { name: "50mm (+ $2.50)", price: 2.50 },
+            { name: "64mm (+ $3.00)", price: 3 },
+            { name: "70mm (+ $3.50)", price: 3.50 },
+            { name: "76mm (+ $4.00)", price: 4 },
+            { name: "101mm (+ $4.50)", price: 4.50 },
+            { name: "115mm (+ $5.00)", price: 5 }
         ], 
 
         ovalSizes: [
-            "Select",
-            "19mm x 38mm",
-            "32mm x 50mm",
-            "45mm x 64mm",
-            "50mm x 76mm",
-            "50mm x 83mm",
-            "76mm x 101mm",
-            "101mm x 152mm"
+            { name: "Select", price: 0 },
+            { name: "19mm x 38mm (+ $0.50)", price: 0.50 },
+            { name: "32mm x 50mm (+ $1.00)", price: 1 },
+            { name: "45mm x 64mm (+ $1.50)", price: 1.50 },
+            { name: "50mm x 76mm (+ $2.00)", price: 2 },
+            { name: "50mm x 83mm (+ $2.50)", price: 2.50 },
+            { name: "76mm x 101mm (+ $3.00)", price: 3 },
+            { name: "101mm x 152mm (+ $3.50)", price: 3.50 }
         ],
 
         material: [
-            "Select",
-            "Sticker Paper Gloss",
-            "Sticker Paper Matte",
-            "White Vinyl",
-            "Clear Vinyl"
+            { name: "Select", price: 0 },
+            { name: "Sticker Paper Gloss (+ $0.00)", price: 0 },
+            { name: "Sticker Paper Matte (+ $0.00)", price: 0 },
+            { name: "White Vinyl (+ $5.00)", price: 5 },
+            { name: "Clear Vinyl (+ $5.00)", price: 5 }
         ],
 
         colour: [
-            "Select",
-            "Black & White",
-            "Full Colour"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Finish",
-            "High UV Gloss Coating"
+            { name: "Select", price: 0 },
+            { name: "Standard Finish (+ $0.00)", price: 0 },
+            { name: "High UV Gloss Coating (+ $5.00)", price: 5 }
         ],
         effects:[
-            "Select",
-            "None",
-            "Emboss (single side)",
-            "Deboss (single side)",
-            "Foil Stamping",
-            "Spot UV"
+            { name: "Select", price: 0 },
+            { name: "None (+ $0.00)", price: 0 },
+            { name: "Emboss (single side) (+ $5.00)", price: 5 },
+            { name: "Deboss (single side) (+ $5.00)", price: 5 },
+            { name: "Foil Stamping (+ $15.00)", price: 15 },
+            { name: "Spot UV (+ $15.00)", price: 15 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Clear vinyl stickers offer a sleek, modern, and professional look, making them perfect for a variety of applications. Whether you’re using them for product labeling, window decals, or promotional giveaways, clear vinyl stickers provide a unique, transparent backdrop that enhances the design without overwhelming it. High-quality clear vinyl sticker printing, delivering durable, vibrant, and fully customizable stickers that reflect your brand in the best possible light."
@@ -476,77 +477,77 @@ const products = {
         image: "embossedstickers.webp",
 
         circleSizes: [
-            "Select",
-            "13mm",
-            "19mm",
-            "25mm",
-            "32mm",
-            "38mm",
-            "50mm",
-            "64mm",
-            "70mm",
-            "76mm",
-            "101mm",
-            "115mm"
+            { name: "Select", price: 0 },
+            { name: "13mm (+ $0.00)", price: 0 },
+            { name: "19mm (+ $0.50)", price: 0.5 },
+            { name: "25mm (+ $1.00)", price: 1 },
+            { name: "32mm (+ $1.50)", price: 1.5 },
+            { name: "38mm (+ $2.00)", price: 2 },
+            { name: "50mm (+ $2.50)", price: 2.50 },
+            { name: "64mm (+ $3.00)", price: 3 },
+            { name: "70mm (+ $3.50)", price: 3.50 },
+            { name: "76mm (+ $4.00)", price: 4 },
+            { name: "101mm (+ $4.50)", price: 4.50 },
+            { name: "115mm (+ $5.00)", price: 5 }
         ], 
 
         ovalSizes: [
-            "Select",
-            "19mm x 38mm",
-            "32mm x 50mm",
-            "45mm x 64mm",
-            "50mm x 76mm",
-            "50mm x 83mm",
-            "76mm x 101mm",
-            "101mm x 152mm"
+            { name: "Select", price: 0 },
+            { name: "19mm x 38mm (+ $0.50)", price: 0.50 },
+            { name: "32mm x 50mm (+ $1.00)", price: 1 },
+            { name: "45mm x 64mm (+ $1.50)", price: 1.50 },
+            { name: "50mm x 76mm (+ $2.00)", price: 2 },
+            { name: "50mm x 83mm (+ $2.50)", price: 2.50 },
+            { name: "76mm x 101mm (+ $3.00)", price: 3 },
+            { name: "101mm x 152mm (+ $3.50)", price: 3.50 }
         ],
 
         material: [
-            "Select",
-            "Sticker Paper Gloss",
-            "Sticker Paper Matte",
-            "White Vinyl",
-            "Clear Vinyl"
+            { name: "Select", price: 0 },
+            { name: "Sticker Paper Gloss (+ $0.00)", price: 0 },
+            { name: "Sticker Paper Matte (+ $0.00)", price: 0 },
+            { name: "White Vinyl (+ $5.00)", price: 5 },
+            { name: "Clear Vinyl (+ $5.00)", price: 5 }
         ],
 
         colour: [
-            "Select",
-            "Black & White",
-            "Full Colour"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Finish",
-            "High UV Gloss Coating"
+            { name: "Select", price: 0 },
+            { name: "Standard Finish (+ $0.00)", price: 0 },
+            { name: "High UV Gloss Coating (+ $5.00)", price: 5 }
         ],
         effects:[
-            "Select",
-            "None",
-            "Emboss (single side)",
-            "Deboss (single side)",
-            "Foil Stamping",
-            "Spot UV"
+            { name: "Select", price: 0 },
+            { name: "None (+ $0.00)", price: 0 },
+            { name: "Emboss (single side) (+ $5.00)", price: 5 },
+            { name: "Deboss (single side) (+ $5.00)", price: 5 },
+            { name: "Foil Stamping (+ $15.00)", price: 15 },
+            { name: "Spot UV (+ $15.00)", price: 15 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Embossed labels and stickers offer a unique, tactile experience that elevates your branding and product packaging. The raised design creates a sophisticated, high-end look, ensuring your brand stands out with style and elegance."
@@ -558,77 +559,77 @@ const products = {
         image: "heavyduty.png",
 
         circleSizes: [
-            "Select",
-            "13mm",
-            "19mm",
-            "25mm",
-            "32mm",
-            "38mm",
-            "50mm",
-            "64mm",
-            "70mm",
-            "76mm",
-            "101mm",
-            "115mm"
+            { name: "Select", price: 0 },
+            { name: "13mm (+ $0.00)", price: 0 },
+            { name: "19mm (+ $0.50)", price: 0.5 },
+            { name: "25mm (+ $1.00)", price: 1 },
+            { name: "32mm (+ $1.50)", price: 1.5 },
+            { name: "38mm (+ $2.00)", price: 2 },
+            { name: "50mm (+ $2.50)", price: 2.50 },
+            { name: "64mm (+ $3.00)", price: 3 },
+            { name: "70mm (+ $3.50)", price: 3.50 },
+            { name: "76mm (+ $4.00)", price: 4 },
+            { name: "101mm (+ $4.50)", price: 4.50 },
+            { name: "115mm (+ $5.00)", price: 5 }
         ],
 
         ovalSizes: [
-            "Select",
-            "19mm x 38mm",
-            "32mm x 50mm",
-            "45mm x 64mm",
-            "50mm x 76mm",
-            "50mm x 83mm",
-            "76mm x 101mm",
-            "101mm x 152mm"
+            { name: "Select", price: 0 },
+            { name: "19mm x 38mm (+ $0.50)", price: 0.50 },
+            { name: "32mm x 50mm (+ $1.00)", price: 1 },
+            { name: "45mm x 64mm (+ $1.50)", price: 1.50 },
+            { name: "50mm x 76mm (+ $2.00)", price: 2 },
+            { name: "50mm x 83mm (+ $2.50)", price: 2.50 },
+            { name: "76mm x 101mm (+ $3.00)", price: 3 },
+            { name: "101mm x 152mm (+ $3.50)", price: 3.50 }
         ],
 
         material: [
-            "Select",
-            "Sticker Paper Gloss",
-            "Sticker Paper Matte",
-            "White Vinyl",
-            "Clear Vinyl"
+            { name: "Select", price: 0 },
+            { name: "Sticker Paper Gloss (+ $0.00)", price: 0 },
+            { name: "Sticker Paper Matte (+ $0.00)", price: 0 },
+            { name: "White Vinyl (+ $5.00)", price: 5 },
+            { name: "Clear Vinyl (+ $5.00)", price: 5 }
         ],
 
         colour: [
-            "Select",
-            "Black & White",
-            "Full Colour"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Finish",
-            "High UV Gloss Coating"
+            { name: "Select", price: 0 },
+            { name: "Standard Finish (+ $0.00)", price: 0 },
+            { name: "High UV Gloss Coating (+ $5.00)", price: 5 }
         ],
         effects:[
-            "Select",
-            "None",
-            "Emboss (single side)",
-            "Deboss (single side)",
-            "Foil Stamping",
-            "Spot UV"
+            { name: "Select", price: 0 },
+            { name: "None (+ $0.00)", price: 0 },
+            { name: "Emboss (single side) (+ $5.00)", price: 5 },
+            { name: "Deboss (single side) (+ $5.00)", price: 5 },
+            { name: "Foil Stamping (+ $15.00)", price: 15 },
+            { name: "Spot UV (+ $15.00)", price: 15 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Heavy-duty stickers are built to handle tough conditions without losing quality. At The Sticker Printing, we offer strong, long-lasting heavy duty stickers perfect for vehicles, equipment, outdoor use, and industrial needs."
@@ -642,46 +643,46 @@ const products = {
         image: "giftcards.png",
 
         size: [
-            "Select",
-            "85mm x 55mm (Standard)",
-            "90mm x 50mm",
-            "100mm x 70mm",
-            "120mm x 60mm"
+            { name: "Select", price: 0 },
+            { name: "85mm x 55mm (Standard) (+ $0.00)", price: 0 },
+            { name: "90mm x 50mm (+ $0.50)", price: 0.50 },
+            { name: "100mm x 70mm (+ $1.00)", price: 1 },
+            { name: "120mm x 60mm (+ $1.50)", price: 1.50 }
 
         ],
 
         finish: [
-            "Select",
-            "Gold",
-            "Silver",
-            "Rose Gold",
-            "None"
+            { name: "Select", price: 0 },
+            { name: "None (+ $0.00)", price: 0 },
+            { name: "Gold (+ $1.50)", price: 1.50 },
+            { name: "Silver (+ $1.50)", price: 1.50 },
+            { name: "Rose Gold (+ $1.50)", price: 1.50 }
         ],
 
         cornerStyle: [
-            "Select",
-            "Sharp",
-            "Rounded"
+            { name: "Select", price: 0 },
+            { name: "Sharp (+ $0.00)", price: 0 },
+            { name: "Rounded (+ $0.00)", price: 0 }
         ],
 
        quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
         description: "Gift cards are more than just a present—they’re a thoughtful experience. At The Sticker Printing, we offer high-quality custom gift card printing that’s perfect for businesses and personal gifting. Whether you need branded gift cards for your store or a custom card for someone special, we’ve got you covered."
     },
@@ -694,51 +695,51 @@ const products = {
         image: "assetlabels.png",
 
         size: [
-            "Select",
-            "20mm x 10mm",
-            "40mm x 20mm",
-            "50mm x 25mm",
-            "60mm x 30mm",
-            "80mm x 40mm",
-            "100mm x 50mm",
+            { name: "Select", price: 0 },
+            { name: "20mm x 10mm (+ $0.00)", price: 0 },
+            { name: "40mm x 20mm (+ $0.50)", price: 0.50 },
+            { name: "50mm x 25mm (+ $1.00)", price: 1 },
+            { name: "60mm x 30mm (+ $1.50)", price: 1.50 },
+            { name: "80mm x 40mm (+ $2.00)", price: 2 },
+            { name: "100mm x 50mm (+ $2.50)", price: 2.50 },
         ],
 
         material: [
-            "Select",
-            "White Vinyl",
-             "Clear Vinyl"
+            { name: "Select", price: 0 },
+            { name: "White Vinyl (+ $5.00)", price: 5 },
+             { name: "Clear Vinyl (+ $5.00)", price: 5 }
         ],
 
         finish: [
-            "Select",
-            "Matte",
-            "Gloss"
+            { name: "Select", price: 0 },
+            { name: "Matte (+ $0.00)", price: 0 },
+            { name: "Gloss (+ $2.00)", price: 0 }
         ],
 
-        corners: [
-            "Select",
-            "Rounded Corners",
-            "Square Corners"
+        cornerStyle: [
+            { name: "Select", price: 0 },
+            { name: "Sharp (+ $0.00)", price: 0 },
+            { name: "Rounded (+ $0.00)", price: 0 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Protect your valuable assets with custom asset labels, tags, and stickers designed for long-lasting durability and security. At The Sticker Printing, we specialize in high-quality asset labeling solutions that help businesses efficiently track, manage, and safeguard their equipment, tools, and inventory. Our labels are built to withstand harsh environments, ensuring clear readability and strong adhesion on a variety of surfaces."
@@ -750,49 +751,49 @@ const products = {
         image: "doorhangers.png",
 
         size: [
-            "Select",
-            "88mm x 215mm",
-            "88mm x 280mm",
-            "105mm x 280mm",
-            "105mm x 360mm"
+            { name: "Select", price: 0 },
+            { name: "88mm x 215mm (+ $0.00)", price: 0 },
+            { name: "88mm x 280mm (+ $0.50)", price: 0.50 },
+            { name: "105mm x 280mm (+ $1.00)", price: 1 },
+            { name: "105mm x 360mm (+ $1.50)", price: 1.50 }
         ],
 
         material: [
-            "Select",
-            "310 GSM Art Card",
-            "350 GSM Art Card"
+            { name: "Select", price: 0 },
+            { name: "310 GSM Art Card (+ $11.00)", price: 11 },
+            { name: "350 GSM Art Card (+ $12.00)", price: 12 }
         ],
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Gloss Finish",
-            "High Gloss Finish",
-            "Matt Finish"
+            { name: "Select", price: 0 },
+            { name: "Standard Gloss Finish (+ $0.00)", price: 0 },
+            { name: "High Gloss Finish (+ $5.00)", price: 5 },
+            { name: "Matte Finish (+ $5.00)", price: 5 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Door Hangers are a fantastic way to grab attention and deliver important messages directly to your audience. Whether for business promotions, event invitations, or personal use, The Sticker Printing offers high-quality custom door hanger printing that ensures your message stands out."
@@ -803,54 +804,54 @@ const products = {
         price: 50,
         image: "standardcustomlabels.png",
         size: [
-            "Select",
-            "50mm x 50mm",
-            "75mm x 128mm",
-            "75mm x 150mm",
-            "101mm x 101mm",
-            "101mm x 155mm",
-            "127mm x 127mm",
-            "127mm x 178mm",
-            "228mm x 75mm",
-            "255mm x 75mm"
+            { name: "Select", price: 0 },
+            { name: "50mm x 50mm (+ $0.00)", price: 0 },
+            { name: "75mm x 128mm (+ $0.50)", price: 0.50 },
+            { name: "75mm x 150mm (+ $1.00)", price: 1 },
+            { name: "101mm x 101mm (+ $1.50)", price: 1.50 },
+            { name: "101mm x 155mm (+ $2.00)", price: 2 },
+            { name: "127mm x 127mm (+ $2.50)", price: 2.50 },
+            { name: "127mm x 178mm (+ $3.00)", price: 3 },
+            { name: "228mm x 75mm (+ $3.50)", price: 3.50 },
+            { name: "255mm x 75mm (+ $4.00)", price: 4 }
         ],
 
         material: [
-            "Select",
-            "White Vinyl",
-             "Clear Vinyl"
+            { name: "Select", price: 0 },
+            { name: "White Vinyl (+ $5.00)", price: 5 },
+             { name: "Clear Vinyl (+ $5.00)", price: 5 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Matte",
-            "Gloss"
+            { name: "Select", price: 0 },
+            { name: "Matte (+ $0.00)", price: 0 },
+            { name: "Gloss (+ $2.00)", price: 0 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
         description: "Labels do more than share info—they showcase your brand. At The Sticker Printing, we create high-quality custom labels that make your products stand out. Perfect for bottles, jars, packaging, or promos, our labels are designed to boost your brand and leave a lasting impression."
     },
@@ -859,58 +860,59 @@ const products = {
 
     posters: {
         name: "Posters",
-        price: 50,
+        price: 150,
         image: "posters.png",
 
         size: [
-            "Select",
-            "28cm x 44cm",
-            "30.5cm x 46cm",
-            "46cm x 60cm",
-            "56cm x 72cm",
-            "60cm x 90cm"
+            { name: "Select", price: 0 },
+            { name: "28cm x 44cm (+ $0.00)", price: 0 },
+            { name: "30.5cm x 46cm (+ $0.50)", price: 0.50 },
+            { name: "46cm x 60cm (+ $1.00)", price: 1 },
+            { name: "56cm x 72cm (+ $1.50)", price: 1.50 },
+            { name: "60cm x 90cm (+ $2.00)", price: 2 }
 
         ],
         
         material: [
-            "Select",
-            "150 GSM Poster Paper",
-            "310 GSM Poster Card",
-            "350 GSM Poster Card"
+            { name: "Select", price: 0 },
+            { name: "150 GSM Poster Paper (+ $0.00)", price: 0 },
+            { name: "310 GSM Poster Card (+ $11.00)", price: 11 },
+            { name: "350 GSM Poster Card (+ $13.00)", price: 13 }
 
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Gloss Finish",
-            "High Gloss Finish"
+            { name: "Select", price: 0 },
+            { name: "Standard Gloss Finish (+ $0.00)", price: 0 },
+            { name: "Standard Matte Finish (+ $3.00)", price: 3 },
+            { name: "High Gloss Finish (+ $5.00)", price: 5 }
 
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
 
@@ -919,68 +921,68 @@ const products = {
 
     vinybanner: {
         name: "Vinyl Banner",
-        price: 50,
+        price: 250,
         image: "vinylbanner.png",
         size : [
-            "Select",
-            "0.3m x 0.3m",
-            "0.5m x 0.5m",
-            "0.5m x 1m",
-            "0.5m x 1.5m",
-            "0.5m x 2m",
-            "0.5m x 3m",
-            "1m x 1.5m",
-            "1m x 2m",
-            "1m x 2.5m",
-            "1m x 3m",
-            "1.5m x 1.5m",
-            "1.5m x 2m",
-            "1.5m x 3m",
-            "2m x 3m",
-            "2m x 4m",
-            "2m x 5m",
-            "3m x 3m",
-            "3m x 3.5m"
+            { name: "Select", price: 0 },
+            { name: "0.3m x 0.3m (+ $0.00)", price: 0 },
+            { name: "0.5m x 0.5m (+ $5.00)", price: 5 },
+            { name: "0.5m x 1m (+ $5.00)", price: 5 },
+            { name: "0.5m x 1.5m (+ $5.00)", price: 5 },
+            { name: "0.5m x 2m (+ $5.00)", price: 5 },
+            { name: "0.5m x 3m (+ $5.00)", price: 5 },
+            { name: "1m x 1.5m (+ $10.00)", price: 10 },
+            { name: "1m x 2m (+ $10.00)", price: 10 },
+            { name: "1m x 2.5m (+ $10.00)", price: 10 },
+            { name: "1m x 3m (+ $10.00)", price: 10 },
+            { name: "1.5m x 1.5m (+ $15.00)", price: 15 },
+            { name: "1.5m x 2m (+ $15.00)", price: 15 },
+            { name: "1.5m x 3m (+ $15.00)", price: 15 },
+            { name: "2m x 3m (+ $20.00)", price: 20 },
+            { name: "2m x 4m (+ $20.00)", price: 20 },
+            { name: "2m x 5m (+ $20.00)", price: 20 },
+            { name: "3m x 3m (+ $25.00)", price: 25 },
+            { name: "3m x 3.5m (+ $25.00)", price: 25 }
         ],
 
         material: [
-            "Select",
-            "9 Oz Matt Vinyl",
-            "13 Oz Matt Vinyl"
+            { name: "Select", price: 0 },
+            { name: "9 Oz Matt Vinyl (+ $5.00)", price: 5 },
+            { name: "13 Oz Matt Vinyl (+ $7.00)", price: 7 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Raw Edges (No Grommets & Hem)",
-            "Grommets & Hem",
-            "75mm Pole Pocket (Left & Right)",
-            "75mm Pole Pocket (Top & Bottom)"
+            { name: "Select", price: 0 },
+            { name: "Raw Edges (No Grommets & Hem) (+ $0.00)", price: 0 },
+            { name: "Grommets & Hem (+ $5.00)", price: 5 },
+            { name: "75mm Pole Pocket (Left & Right) (+ $5.00)", price: 5 },
+            { name: "75mm Pole Pocket (Top & Bottom) (+ $5.00)", price: 5 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Vinyl banners are an exceptional way to make a bold statement at events, in-store promotions, or outdoor advertising campaigns. At The Sticker Printing, we specialize in custom vinyl banner printing, providing high-quality, weather-resistant banners that ensure your message stands out and lasts."
@@ -994,57 +996,59 @@ const products = {
         image: "businesscards.png",
 
         size: [
-            "Select",
-            "90mm x 50mm (Standard)",
-            "50mm x 50mm (Mini Square)",
-            "90mm x 90mm (Jumbo Square)",
-            "90mm x 25mm (Slim)"
+            { name: "Select", price: 0 },
+            { name: "90mm x 50mm (Standard) (+ $0.00)", price: 0 },
+            { name: "50mm x 50mm (Mini Square) (+ $1.00)", price: 1 },
+            { name: "90mm x 90mm (Jumbo Square) (+ $2.00)", price: 2 },
+            { name: "90mm x 25mm (Slim) (+ $3.00)", price: 3 }
         ],
 
         material: [
-            "Select",
-            "310 GSM Card Stock",
-            "350 GSM Card Stock",
-            "400 GSM Card Stock",
-            "600 GSM Card Stock"
+            { name: "Select", price: 0 },
+            { name: "310 GSM Card Stock (+ $8.00)", price: 8 },
+            { name: "350 GSM Card Stock (+ $10.00)", price: 10 },
+            { name: "400 GSM Card Stock", price: 12 },
+            { name: "600 GSM Card Stock (+ $15.00)", price: 15 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Gloss Finish",
-            "Matt Finish"
+            { name: "Select", price: 0 },
+            { name: "Standard Gloss Finish (+ $0.00)", price: 0 },
+            { name: "Standard Matte Finish (+ $3.00)", price: 3 },
+            { name: "Matte Finish (+ $5.00)", price: 5 }
         ],
         specialEffects: [
-            "Select",
-            "Emboss or Deboss ( Single Side)",
-            "Foil Stamping ( Single Sided)",
-            "Spot UV (Single Sided)"
+            { name: "Select", price: 0 },
+            { name: "Emboss ( Single Side) (+ $5.00)", price: 5 },
+            { name: "Deboss ( Single Side) (+ $5.00)", price: 5 },
+            { name: "Foil Stamping ( Single Sided) (+ $5.00)", price: 5 },
+            { name: "Spot UV ( Single Sided) (+ $5.00)", price: 5 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
         
         description: "Business cards are more than just contact details; they are a powerful tool to represent your business. At The Sticker Printing, we ensure that your custom business card printing experience is not only informative but also memorable, leaving a lasting impression on clients."
@@ -1056,68 +1060,68 @@ const products = {
         image: "brochure.png",
 
         size: [
-            "Select",
-            "DL",
-            "A6",
-            "A5",
-            "A4",
-            "Square 210mm x 210mm"
+            { name: "Select", price: 0 },
+            { name: "DL (+ $1.00)", price: 1 },
+            { name: "A6 (+ $2.00)", price: 2 },
+            { name: "A5 (+ $3.00)", price: 3 },
+            { name: "A4 (+ $4.00)", price: 4 },
+            { name: "Square 210mm x 210mm (+ $5.00)", price: 5 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         foldType: [
-            "Select",
-            "Bi-Fold",
-            "Tri-Fold",
-            "Z-Fold",
-            "Gate Fold",
-            "Half Fold"
+            { name: "Select", price: 0 },
+            { name: "Bi-Fold (+ $0.00)", price: 0 },
+            { name: "Tri-Fold (+ $0.00)", price: 0 },
+            { name: "Z-Fold (+ $0.00)", price: 0 },
+            { name: "Gate Fold (+ $0.00)", price: 0 },
+            { name: "Half Fold (+ $0.00)", price: 0 }
         ],
 
         material: [
-            "Select",
-            "150 GSM Gloss",
-            "170 GSM Gloss",
-            "250 GSM Gloss",
-            "300 GSM Matte"
+            { name: "Select", price: 0 },
+            { name: "150 GSM Gloss (+ $0.00)", price: 0 },
+            { name: "170 GSM Gloss (+ $2.00)", price: 2 },
+            { name: "250 GSM Gloss (+ $4.00)", price: 4 },
+            { name: "300 GSM Gloss (+ $6.00)", price: 6 }
         ],
 
         printing: [
-            "Select",
-            "Single Sided",
-            "Double Sided"
+            { name: "Select", price: 0 },
+            { name: "Single Sided (+ $0.00)", price: 0 },
+            { name: "Double Sided (+ $5.00)", price: 5 }
         ],
 
         finish: [
-            "Select",
-            "Matte",
-            "Gloss",
-            "Soft Touch"
+            { name: "Select", price: 0 },
+            { name: "Matte (+ $0.00)", price: 0 },
+            { name: "Gloss (+ $2.00)", price: 0 },
+            { name: "Soft Touch (+ $5.00)", price: 5 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
     
         description: "Brochures are one of the most effective marketing tools, allowing you to showcase your brand, products, and services in a professional and engaging way. At The Sticker Printing, we specialize in high-quality custom brochure printing that is not only affordable but designed to capture audience’s attention."
@@ -1129,51 +1133,51 @@ const products = {
         image: "eventtickets.png",
 
         size: [
-            "Select",
-            "50mm x 140mm",
-            "55mm x 150mm",
-            "70mm x 150mm",
-            "80mm x 200mm",
+            { name: "Select", price: 0 },
+            { name: "50mm x 140mm (+ $0.00)", price: 0 },
+            { name: "55mm x 150mm (+ $1.00)", price: 1 },
+            { name: "70mm x 150mm (+ $2.00)", price: 3 },
+            { name: "80mm x 200mm (+ $3.00)", price: 4 }
         ],
 
         material: [
-            "Select",
-            "250 GSM Gloss",
-            "300 GSM Matte",
-            "350 GSM Card Stock",
-            "Synthetic Waterproof Stock"
+            { name: "Select", price: 0 },
+            { name: "250 GSM Gloss (+ $4.00)", price: 4 },
+            { name: "300 GSM Gloss (+ $6.00)", price: 6 },
+            { name: "350 GSM Card Stock (+ $10.00)", price: 10 },
+            { name: "Synthetic Waterproof Stock (+ $12.00)", price: 12 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Matte",
-            "Gloss"
+            { name: "Select", price: 0 },
+            { name: "Matte (+ $0.00)", price: 0 },
+            { name: "Gloss (+ $2.00)", price: 0 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Event tickets are more than just entry passes—they help set the tone for your event. At The Sticker Printing, we offer high-quality custom event ticket printing that leaves a lasting impression. Whether it’s a concert, festival, conference, or any special event, our custom tickets are made to look great and stand out."
@@ -1185,53 +1189,53 @@ const products = {
         image: "menus.png",
 
         size: [
-            "Select",
-            "108mm x 280mm",
-            "140mm x 216mm",
-            "216mm x 280mm",
-            "216mm x 356mm",
-            "229mm x 309mm",
-            "280mm x 432mm"
+            { name: "Select", price: 0 },
+            { name: "108mm x 280mm (+ $2.00)", price: 2 },
+            { name: "140mm x 216mm (+ $4.00)", price: 4 },
+            { name: "216mm x 280mm (+ $6.00)", price: 6 },
+            { name: "216mm x 356mm (+ $8.00)", price: 8 },
+            { name: "280mm x 432mm (+ $10.00)", price: 10 },
+            { name: "280mm x 432mm (+ $12.00)", price: 12 }
         ],
 
         material: [
-            "Select",
-            "150 GSM Art Paper",
-            "350 GSM Art Card",
-            "310 GSM Art Card",
-            "150 GSM Art Paper"
+            { name: "Select", price: 0 },
+            { name: "150 GSM Art Paper (+ $10.00)", price: 10 },
+            { name: "310 GSM Art Card (+ $11.00)", price: 11 },
+            { name: "350 GSM Art Card (+ $12.00)", price: 12 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Gloss Finish",
-            "High Gloss Finish"
+            { name: "Select", price: 0 },
+            { name: "Standard Gloss Finish (+ $0.00)", price: 0 },
+            { name: "Standard Matte Finish (+ $3.00)", price: 3 },
+            { name: "High Gloss Finish (+ $5.00)", price: 5 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
 
         description: "Menus do more than list food—they showcase your brand and set the tone for your dining experience. At The Sticker Printing, we create high-quality custom menus that highlight your dishes and make a lasting impression."
@@ -1243,79 +1247,81 @@ const products = {
         image: "tabletents.png",
 
         size: [
-            "Select",
-            "72mm x 280mm (Flat Size: 72mm X 666mm)",
-            "101mm x 155mm (Flat Size: 101mm X 415mm)"
+            { name: "Select", price: 0 },
+            { name: "72mm x 280mm (Flat Size: 72mm X 666mm (+ $0.00)", price: 0 },
+            { name: "101mm x 155mm (Flat Size: 101mm X 415mm) (+ $5.00)", price: 5 }
         ],
 
         material: [
-            "Select",
-            "260 GSM Art Card",
-            "280 GSM Matt Card",
-            "310 GSM Art Card",
-            "350 GSM Art Card"
+            { name: "Select", price: 0 },
+            { name: "260 GSM Art Card (+ $9.00)", price: 9 },
+            { name: "280 GSM Art Card (+ $10.00)", price: 10 },
+            { name: "310 GSM Art Card (+ $11.00)", price: 11 },
+            { name: "350 GSM Art Card (+ $12.00)", price: 12 }
         ],
 
         colour: [
-            "Select",
-            "Full Colour",
-            "Black & White"
+            { name: "Select", price: 0 },
+            { name: "Black & White (+ $0.00)", price: 0 },
+            { name: "Full Colour (+ $20.00)", price: 20 }
         ],
 
         finish: [
-            "Select",
-            "Standard Gloss Finish",
-            "High Gloss Finish"
+            { name: "Select", price: 0 },
+            { name: "Standard Gloss Finish (+ $0.00)", price: 0 },
+            { name: "Standard Matte Finish (+ $3.00)", price: 3 },
+            { name: "High Gloss Finish (+ $5.00)", price: 5 }
         ],
 
         quantity: [
-            "Select",
-            "50",
-            "100",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2000",
-            "3000",
-            "4000",
-            "5000",
-            "6000",
-            "7000",
-            "8000",
-            "9000",
-            "10000"
+            { name: "Select", price: 0 },
+            { name: "50 (+ $0.00)", price: 0 },
+            { name: "100 (+ $10.00)", price: 10 },
+            { name: "250 (+ $20.00)", price: 20 },
+            { name: "500 (+ $40.00)", price: 40 },
+            { name: "750 (+ $50.00)", price: 50 },
+            { name: "1000 (+ $75.00)", price: 75 },
+            { name: "1500 (+ $110.00)", price: 110 },
+            { name: "2000 (+ $150.00)", price: 150 },
+            { name: "3000 (+ $225.00)", price: 225 },
+            { name: "4000 (+ $300.00)", price: 300 },
+            { name: "5000 (+ $375.00)", price: 375 },
+            { name: "6000 (+ $450.00)", price: 450 },
+            { name: "7000 (+ $725.00)", price: 725 },
+            { name: "8000 (+ $800.00)", price: 800 },
+            { name: "9000 (+ $875.00)", price: 875 },
+            { name: "10000 (+ $950.00)", price: 950 }
         ],
         description: "Table tents are an effective and stylish way to capture attention in any setting, whether at a restaurant, event, or retail space. At The Sticker Printing, we specialize in high-quality custom table tent printing, offering vibrant designs that allow your message to shine, creating an impactful presence on any table."
     },
 
     //Speciality Finishes
     foilstamping: {
-        name: "Foil Stamping",
-        price: 50,
+        name: { name: "Foil Stamping (+ $15.00)", price: 15 },
+        
+        price: 20,
         image: "foilstamping.png",
         foilColour: [
-            "Select",
-            "Gold",
-            "Silver",
-            "Rose Gold",
-            "Copper",
-            "Holographic",
-            "Black"
+            { name: "Select", price: 0 },
+            { name: "Gold (+ $1.50)", price: 1.50 },
+            { name: "Silver (+ $1.50)", price: 1.50 },
+            { name: "Rose Gold (+ $1.50)", price: 1.50 },
+            { name: "Copper (+ $1.50)", price: 1.50 },
+            { name: "Holographic (+ $1.50)", price: 1.50 },
+            { name: "Black (+ $1.50)", price: 1.50 }
         ],
 
         application: [
-            "Select",
-            "Logo",
-            "Text",
-            "Border"
+            { name: "Select", price: 0 },
+            { name: "Logo (+ $0.00)", price: 0 },
+            { name: "Text (+ $0.00)", price: 0 },
+            { name: "Border (+ $0.00)", price: 0 }
         ],
 
         side: [
-            "Select",
-            "Front Only",
-            "Front & Back"
+            { name: "Select", price: 0 },
+            { name: "Front Only (+ $0.00)", price: 0 },
+            { name: "Front & Back (+ $10.00)", price: 10 }
         ],
 
         description: "At The Sticker Printing, we specialize in high-quality foil stamping and gold foil printing, offering stunning, metallic finishes that make your designs pop. Whether you’re creating business cards, invitations, packaging, or marketing materials, foil stamping is the perfect way to elevate your brand’s visual appeal."
@@ -1335,8 +1341,13 @@ const product = products[productID];
 //create selections for products
 const selections = document.querySelector(".selections");
 
+//for tracking price of each product
+let currentTotalPrice = 0;
+let currentSelections = {}; //store selections for cart
+
 // if the product exists update content
 if (product) {
+    currentTotalPrice = product.price;
 
     //image
     document.getElementById("productImage").src = product.image;
@@ -1350,6 +1361,19 @@ if (product) {
     //product description
     document.getElementById("productDescription").textContent = product.description;
 
+    function updateProductPrice() {
+        let total = product.price;
+
+        document.querySelectorAll(".selections select").forEach(select => {
+            const selected = select.options[select.selectedIndex];
+
+            total += Number(selected.dataset.price || 0);
+        });
+
+        currentTotalPrice = total; 
+        document.getElementById("startingStatement").textContent = "$" + total.toFixed(2) + " AUD";
+    
+    }
     
     // group of selections
         const sections = []
@@ -1367,20 +1391,25 @@ if (product) {
 
         //create label
         const title = document.createElement("h3");
-        title.textContent = key;
+        const formattedTitle = key
+            .replace(/[A-Z]/g, ' $&')
+            .replace(/^./, str => str.toUpperCase());
+        title.textContent = formattedTitle + " *";
 
 
         //create selections element
-        const select = document.createElement("select");
+        const select = document.createElement("Select");
 
         // add select options
-        for (let i = 0; i < product[key].length; i++) {
-            let option = product[key][i];
+        product[key].forEach(item => {
+            const option = document.createElement("option");
 
-            select.add(new Option(option));
+            option.textContent = item.name;
+            option.value = item.name;
+            option.dataset.price = item.price;
 
-
-        }
+            select.appendChild(option);
+        });
 
         //add the title and each selection to a section
         section.appendChild(title); // put the element inside element
@@ -1395,25 +1424,31 @@ if (product) {
         sections.push(section);
 
          // reveal next selection after previous one is made
-        select.addEventListener("change", selectionChanged);
+        select.addEventListener("change", () => {
+            selectionChanged();
+            updateProductPrice();
+        });
 
         // detects selection change
         function selectionChanged(){
-
-        const currentIndex = sections.indexOf(section); // track current selection avail.
-        if (select.value === "Select") { // this is placeholder so doesn't count as a change
+            const currentIndex = sections.indexOf(section); // track current selection avail.
+            
+            if (select.value === "Select") { // this is placeholder so doesn't count as a change
                 return;
             }
+
+            //track the selections made
+            currentSelections[key] = select.value;
             
             //specific process for sticker products
             if (productID === "standardstickers" || productID === "heavydutystickers" || productID === "clearstickers" || productID === "embossedstickers" || productID === "diecutstickers") {
                 //if current selection is shape
                 if (key === "shape") {
                     //if circle was selected only show sizes for circle
-                    if (select.value === "Circle") {
+                    if (select.value === "Circle (+ $0.00)") {
                         sections[currentIndex + 1].classList.remove("d-none");
                     //open oval sizes (next is material anyway so no need for seperate skip logic)   
-                    }else if (select.value === "Oval") {
+                    }else if (select.value === "Oval (+ $0.00)") {
                         sections[currentIndex + 2].classList.remove("d-none");
 
                     }
@@ -1498,6 +1533,7 @@ if (uploadBtn && input && fileName){
     });
 }
 
+
 //CART FUNCTIONS
 const addToCartBtn = document.getElementById("addToCart");
 
@@ -1506,13 +1542,32 @@ if (addToCartBtn){
         //get existing / create new if none already cart
         let cart = JSON.parse(sessionStorage.getItem("cart")) || []; //restarts when tab reopened only
 
+        let selectionsArray = [];
+        document.querySelectorAll(".selections select").forEach(select => {
+            const key = select.previousElementSibling.textContent.replace(' *', ''); //make as key and also remove astricks
+            const value = select.value;
+
+            //only include if not 'Select'
+            if (value !== "Select") {
+                //check if key already exists in the array
+                const existingIndex = selectionsArray.findIndex(s => s.key === key);
+                if (existingIndex >= 0) {
+                    selectionsArray[existingIndex].value = value; //update if selection was changed
+                }
+                else {
+                    selectionsArray.push({key, value}); //add the newly made one
+                }
+            }
+        });
+
         //create product object for cart
         const cartItem = {
             id: productID,
             name: product.name,
             image: product.image,
-            price: product.price,
-            quantity: 1
+            price: currentTotalPrice,
+            quantity: 1,
+            selections: selectionsArray
         };
 
         //check if item is already in cart 
@@ -1520,6 +1575,7 @@ if (addToCartBtn){
 
         if (alreadyAdded) {
             alreadyAdded.quantity += 1;
+            alreadyAdded.selections = selectionsArray; // update selections if re-added
         }else {
             //add the item to cart
             cart.push(cartItem);
@@ -1574,6 +1630,13 @@ if (cartList){
         cart.forEach((item, index) => {
             const itemSection = document.createElement("section");
             itemSection.classList.add("buyItem");
+
+            let selectionsHTML = "";
+            if (item.selections && item.selections.length > 0) {
+                item.selections.forEach(sel => {
+                    selectionsHTML += `<p>${sel.key}: ${sel.value}</p>`;
+                });
+            }
             
             itemSection.innerHTML = `
             <img src="${item.image}" class="itemImage">
@@ -1581,6 +1644,11 @@ if (cartList){
             <section class="productDetails">
 
                 <h2 class="itemName">${item.name}</h2>
+
+                <details class="selectionSummary">
+                    <summary>Selections</summary>
+                    ${selectionsHTML}
+                </details>
 
                 <div class="itemQuantity">
 
