@@ -538,6 +538,11 @@ p{
 
 }
 
+.summaryPrice {
+    font-family: "Montserrat", serif;
+    font-size: 13px;
+}
+
 .addUpCosts {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -591,6 +596,14 @@ p{
     cursor: pointer;
     padding: 8px 15px 8px 15px;
     margin-top: 20px;
+
+}
+
+.checkout button:disabled {
+    background-color: #B5B5B5;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.7;
 
 }
 
@@ -722,8 +735,9 @@ p{
  .detailRow {
     display: flex;
     gap: 20px;
-    width: 100%;
+    margin: 10px 5px;
  }
+
  .personalInfo .checkoutInput {
     width: 100%;
  }
@@ -755,9 +769,16 @@ p{
 
 .shippingInfo .detailRow {
     display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 
 }
 
+/* set default */
+.shippingInput {
+    flex: 1;
+    min-width: 0;
+}
 /* takes the items in first part (address and postcode) and makes them 3:1 ratio so address is bigger in width */
 .shippingInfo .detailRow:first-of-type .shippingInput:first-child { /* takes the first 'item' in section */
     flex: 3; /* makes it worth 3 parts */
@@ -790,66 +811,6 @@ p{
     flex: 1;
 }
 
-.summaryItem {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px 20px;
-}
-
-.summaryImage {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-
-.nameQuant {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.summaryPrice {
-    margin-left: auto;
-    font-family: "Montserrat", serif;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.subtotalRow{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    margin: 15px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    font-family: "Montserrat", serif;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-
-/* FOOTER */
-
-footer{
-    text-align: center;
-    padding: 20px;
-    border-top: 0.5px solid;
-    background: #FFFF;
-
-}
-
-.footerNav{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px;
-}
-
-footer a{
-    font-family: "Montserrat", serif;
-    font-size: 12px;
-
-}
 
 .radio {
     display: none;
@@ -867,7 +828,15 @@ footer a{
     justify-content: center;
     margin: 20px auto;
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
     
+}
+
+.placeOrderBtn:disabled {
+    background-color: #B5B5B5;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.7;
 }
 
 .radio {
@@ -890,12 +859,13 @@ footer a{
 .payments label {
     flex: 1;
     padding: 12px;
+    min-width: 50px;
     background-color: #EAE8E5;
     text-align: center;
     border: 1px solid;
     cursor: pointer;
     font-family: "Montserrat", serif;
-    font-size: 15px;
+    font-size: clamp(12px, 2vw, 15px);
     transition: 0.2s;
 
 }
@@ -942,6 +912,7 @@ footer a{
     padding: 12px;
     cursor: pointer;
     font-family: "Montserrat", serif;
+    font-size: clamp(13px, 2vw, 16px);
     transition: 0.5s;
 }
 
@@ -951,6 +922,63 @@ footer a{
     transition: 0.3s;
 
 }
+
+.checkoutTotal {
+    font-size: clamp(15px, 2vw, 18px);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid;
+}
+
+.totalLabel {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 600;
+}
+
+.summaryItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.summaryImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.nameQuant {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Montserrat", serif;
+    font-size: 13px;
+}
+
+.summaryPrice {
+    margin-left: auto;
+    font-family: "Montserrat", serif;
+    font-size: 13px;
+    font-weight: 450;
+}
+
+.subtotalRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 /* ORDER CONFIRMATION PAGE */
 #orderConfirmedImg {
@@ -1022,6 +1050,30 @@ footer a{
 .homeBtn:hover {
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 0.5px solid;
+    background: #FFFF;
+
+}
+
+.footerNav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+footer a{
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+
+}
+
 /* MOBILE DESIGN */
 @media (max-width: 768px) {
     .categories{
@@ -1045,6 +1097,8 @@ footer a{
     .productpage {
         flex-direction: column;
     }
+
+
 }
 
 

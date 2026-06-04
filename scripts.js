@@ -1770,11 +1770,15 @@ if (document.getElementById("itemSummaries")) {
     const subtotalPrice = document.getElementById("subtotalPrice");
     const orderSummaryTitle = document.getElementById("orderSummary");
 
+    //calculate total of cart items only (no shipping etc)
     function calculateSubtotal(cart) {
-        return cart.reduce((sum, item) => {
-            return sum+ (item.price * item.quantity);
-        }, 0);
+        let subtotal = 0;
+        for (let item of cart) {
+            subtotal += item.price * item.quantity;
+        }
+        return subtotal;
     }
+
     //create order summary section
     function createCheckSummary() {
         //create summary header
@@ -1798,13 +1802,54 @@ if (document.getElementById("itemSummaries")) {
             itemSummaries.appendChild(row);
         });
 
+
         //summary subtotal display
         const subtotal = calculateSubtotal(cart);
         subtotalPrice.textContent = "$" + subtotal;
+
         
     }
 
+    function getDeliveryCost() {
+        const selectedShipping = document.querySelector('input[name="shipping"]:checked'); //find the shipping option that's been selected
+
+        if (selectedShipping) { //if selection was actioned
+            return Number(selectedShipping.value); //return the value of the shipping method
+        }
+        return 0;
+    }
+
+    function updateFinalTotal(){
+        const subtotal = calculateSubtotal(cart);
+        const delivery = getDeliveryCost();
+        const total = subtotal + delivery;
+
+        document.getElementById("finalAmount").textContent = "$" + total;
+    }
+
+
+    //live update of final shipping cost
+    document.querySelectorAll('input[name="shipping"]').forEach(option => {
+        option.addEventListener("change", updateFinalTotal);
+    });
+
+
+    const form = document.querySelector(".paymentForm");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); //stop reloading page
+
+        if (!form.checkValidity()){
+            form.reportValidity();
+            return;
+        }
+
+        window.location.href = "OrderConfirmation.html"; // if required inputs are filled then change page
+    });
+
     //run order summary creation
     createCheckSummary(); //inner content
+
+    updateFinalTotal(); //final final order total with delivery
     
 }
