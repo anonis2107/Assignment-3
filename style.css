@@ -373,6 +373,51 @@ p{
     text-decoration: underline;
 }
 
+#uploadDesign {
+    background-color: #272401 ;
+    align-self: center;
+    margin-left: 25px;
+    padding: 4px 10px 4px 10px;
+    max-width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.4);
+
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    color: white;
+}
+
+#uploadDesign:disabled {
+    background-color: #B5B5B5;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.7;
+}
+
+#addToCart {
+    background-color: rgb(39, 36, 1, 0.47);
+    align-self: center;
+    margin-left: 25px;
+    padding: 4px 10px 4px 10px;
+    max-width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    color: black;
+
+}
+
+#addToCart:disabled {
+    background-color: #B5B5B5;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.5;
+}
+
+
+
 /* CART PAGE */
 
 .cartHeader {
@@ -538,6 +583,7 @@ p{
 
 }
 
+
 .summaryPrice {
     font-family: "Montserrat", serif;
     font-size: 13px;
@@ -545,7 +591,8 @@ p{
 
 .addUpCosts {
     display: grid;
-    grid-template-columns: 1fr auto;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .addUpCosts h4{
@@ -569,10 +616,18 @@ p{
     font-weight: 370;
 }
 
+.cartSub, .cartDel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .totalTitle {
     font-family: "Montserrat", serif;
     font-size: clamp(13px, 2vw, 16px);
     font-weight: 500;
+
 }
 
 .total {
@@ -580,7 +635,9 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 0px;
+
 }
 
 .checkout {
