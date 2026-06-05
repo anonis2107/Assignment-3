@@ -1512,6 +1512,7 @@ function showNext(next){
 const input = document.getElementById("fileInput");
 const uploadBtn = document.getElementById("uploadDesign");
 const fileName = document.getElementById("fileName");
+const replaceBtn = document.getElementById("replaceFile");
 
 if (uploadBtn && input && fileName){
     uploadBtn.addEventListener("click", function() {
@@ -1522,14 +1523,16 @@ if (uploadBtn && input && fileName){
 
     input.addEventListener("change", function(){
         if (input.value) {
-            fileName.innerHTML = input.value;
+            fileName.innerHTML = "✅ " + input.files[0].name + " [uploaded]";
         }else {
             fileName.innerHTML = "";
         }
 
         if (fileName.innerHTML !== "") {
+            replaceBtn.classList.remove("d-none");
             document.getElementById("addToCart").disabled = false; /*if design is uploaded add to cart is now avail */
         }
+
     });
 }
 

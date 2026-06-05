@@ -25,6 +25,21 @@
     <!-- NAVIGATION-->
     <nav class="headerNav">
         <a href="Home.html">Home</a>
+        <div class="categoriesDropdown">
+            <a href="Categories.html">Products</a>
+
+            <div class="dropContent">
+                <a href="Cards&Stationary.html">Cards & Stationary</a>
+                <a href="CustomStickers.html">Custom Stickers</a>
+                <a href="Labels&Tags.html">Labels & Tags</a>
+                <a href="MarketingMaterials.html">Marking Materials</a>
+                <a href="GiftCards.html">Giftcards</a>
+                <a href="CDPackaging.html">CD Packaging</a>
+                <a href="SpecialityFinishes.html">Speciality Finishes</a>
+                <a href="LargeSinage.html">Large Sinage</a>
+            </div>
+
+        </div>
         <a href="AboutUs.html">About Us</a>
         <a href="ContactUs.html">Contact</a>
         <a href="FAQ.html">FAQ</a>
@@ -44,75 +59,69 @@
             <p id="startingStatement">Starting from <span id="startingPrice">$50</span></p>
             <p id="prompt">Start Selection:</p>
 
-            <p id="preface">*Please note <span>all</span> selections must be made before "Add to Cart" is available- Check 'How to Order' below for more details</p>
+            <p id="preface">*Please note <span class="emphasiseText">all</span> selections must be made before "Add to Cart" is available- Check 'How to Order' below for more details</p>
             
             <!-- SELECTIONS NEED TO MAKE INTO A BUTTON & PROGRESSIVE SELECTION-->
 
-            <section class="selections"></section>
+            <section class="customiseAdd">
+                <section class="selections"></section>
+
+                <!--UNAVAIL UNTIL ALL SELECTIONS HAVE BEEN SELECTED-->
+                <section class="productButtons">
+                    <section class="uploadDesignButton">
+                        <input type="file" id="fileInput" hidden>
+                        <button class="buttonDisabled" id="uploadDesign" disabled>Upload Design ⬆️</button>
+                        <p id="fileName"></p>
+                        <button id="replaceFile" class=" replaceBtn d-none">[Replace File]</button>
+                        <button class="buttonDisabled" id="addToCart" disabled>Add to Cart </button>
+                    </section>
                     
 
-            
-
-
-
-
-            <!--UNAVAIL UNTIL ALL SELECTIONS HAVE BEEN SELECTED-->
-            <section class="productButtons">
-                <section class="uploadDesignButton">
-                    <input type="file" id="fileInput" hidden>
-                    <button class="buttonDisabled" id="uploadDesign" disabled>Upload Design ⬆️</button>
-                    <p id="fileName"></p>
                 </section>
-                <button class="buttonDisabled" id="addToCart" disabled>Add to Cart</button>
 
             </section>
 
 
             <!--Product text sections-->
 
-            <section>
+            
+        </section>
+        <section class="productDropdowns">
 
                 <details>
                     <summary>How to Order</summary>
-                    <ol>
-                        <li>Select Sticker: 
-                            <ol>
-                                <li>Shape</li>
-                                <li>Size</li>
-                                <li>Material</li>
-                                <li>Colour</li>
-                                <li>Finish</li>
-                                <li>Special Effects</li>
-                                <li>Quantity</li>
-                            </ol>
-                        </li>
-                        <li>Upload your design</li>
-                        <li>Add to Cart</li>
+                    <ol class="infoText">
+                        <li>Select all your product specifications and quantity from the available options</li>
+                        <li>Upload your design file <span class="emphasiseText">after all selections have been made</span></li>
+                        <li>Review all your selections</li>
+                        <li>Add product to Cart</li>
+                        <li>Proceed to checkout to complete your order, please add any notes in the note section in cart</li>
 
                     </ol>
+
+                    <p class="infoText">If you have anymore enquiries please check the FAQ page or contact us, find our details on the Contact Us page!</p>
                 </details>
 
                 <!-- Description-->
                 <details>
                     <summary>Description</summary>
-                    <p id="productDescription" class="productDescription">Product description</p>
+                    <p id="productDescription" class="productDescription infoText">Product description</p>
                 </details>
 
                 <!--Reviews-->
                 <details>
                     <summary>Reviews</summary>
                     <p class="reviewrating">★★★★★</p>
-                    <h4 class="reviewtitle">Review Title</h4>
-                    <p class="reviewbody">Review body</p>
+                    <h4 class="reviewtitle">Amazing Products!</h4>
+                    <p class="reviewDate">12/12/2025</p>
+                    <p class="reviewbody infoText">High quality and just as I expected!</p>
                     <div>
                         <img src="reviewerprofile.png">
-                        <p class="reviewername">Name</p>
-                        <p class="publishdate">12/12/2025</p>
+                        <p class="reviewername">Sarah Sunday</p>
                     </div>
                     
                 </details>
             </section>
-        </section>
          
 
     </main>

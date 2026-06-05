@@ -54,6 +54,46 @@ nav a:hover{
     text-decoration: underline;
 }
 
+.categoriesDropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1000; /*makes content be on top layer of everything */
+}
+
+.dropContent {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 0.1px solid;
+    border-bottom: none;
+    min-width: 180px;
+}
+
+.dropContent a {
+    display: block;
+    width: 100%;
+    padding: 7px 15px;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+
+    font-family: "Montserrat", serif;
+    font-size: 13px;
+    font-weight: 350;
+}
+
+.dropContent a:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoriesDropdown:hover .dropContent {
+    display: block;
+    
+}
+
 header input{
     padding: 10px 20px;
     border-radius: 20px;
@@ -80,9 +120,17 @@ font-size: clamp(35px, 5vw, 50px);
 }
 
 /*body text */
-p{
+p {
     font-family: "Montserrat", serif;
     font-size: clamp(12px, 2vw, 16px);
+    margin: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.infoText {
+    font-family: "Montserrat", serif;
+    font-size: clamp(12px, 2vw, 14px);
     margin: 20px;
     line-height: 1.5;
     letter-spacing: 0.5px;
@@ -313,6 +361,27 @@ p{
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.productinfo {
+    flex: 1;
+    width: 100%;
+}
+
+.productDropdowns {
+    width: 100%;
+    flex-basis: 100%;
+    margin-top: 20px;
+    
+}
+
+.productDropdowns details {
+    border-top: 0.5px solid;
+    padding: 10px;
 }
 
 .productimage, .productinfo {
@@ -356,6 +425,11 @@ p{
     margin: 20px;
 }
 
+.selections h3 {
+    font-family: "Montserrat", serif;
+    font-weight: 350;
+}
+
 #startingStatement {
     font-family: "Montserrat", serif;
     font-weight: 350;
@@ -369,21 +443,46 @@ p{
     font-size: 13px;
 }
 
-#preface span {
+.emphasiseText {
     text-decoration: underline;
+}
+
+select {
+    width: 220px;
+    padding: 3px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+}
+
+.productButtons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-left: 0;
 }
 
 #uploadDesign {
     background-color: #272401 ;
     align-self: center;
-    margin-left: 25px;
+    justify-content: center;
     padding: 4px 10px 4px 10px;
-    max-width: 250px;
-    box-shadow: rgba(0, 0, 0, 0.4);
+    width: 140px;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin-bottom: 5px;
 
     font-family: "Montserrat", serif;
-    font-size: 12px;
+    font-size: 13px;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #uploadDesign:disabled {
@@ -393,18 +492,45 @@ p{
     opacity: 0.7;
 }
 
+
+#replaceFile {
+    font-family: "Montserrat", serif;
+    width: 140px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin: 0;
+
+}
+
+#fileName {
+    text-align: center;
+    width: 140px;
+    margin: 3px 0;
+    font-size: 12px;
+
+}
+
+
+
 #addToCart {
     background-color: rgb(39, 36, 1, 0.47);
-    align-self: center;
-    margin-left: 25px;
+    align-items: center;
+    justify-content: center;
     padding: 4px 10px 4px 10px;
-    max-width: 250px;
-    box-shadow: rgba(0, 0, 0, 0.4);
+    width: 140px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
+    border: 0.1px solid;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 10px;
 
     font-family: "Montserrat", serif;
-    font-size: 12px;
+    font-size: 13px;
     color: black;
 
 }
@@ -414,6 +540,13 @@ p{
     cursor: not-allowed;
     box-shadow: none;
     opacity: 0.5;
+}
+
+.customiseAdd {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content
 }
 
 
@@ -1153,6 +1286,16 @@ footer a{
 
     .productpage {
         flex-direction: column;
+    }
+
+
+    .productDropdowns {
+        width: 100%;
+    }
+
+    .productDropdowns details {
+        width: 100%;
+        margin: 0;
     }
 
 
