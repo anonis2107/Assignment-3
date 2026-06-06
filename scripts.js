@@ -1329,6 +1329,23 @@ const products = {
 
 };
 
+
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("headNav");
+
+//expand menu on mobile
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+//show search dropdown
+const searchBtn = document.querySelector(".searchBtn");
+const searchDropdown = document.querySelector(".searchDropdown");
+
+searchBtn.addEventListener("click", () => {
+    searchDropdown.style.display = searchDropdown.style.display === "block" ? "none" : "block";
+});
+
 //get product id from URL
 
 const params = new URLSearchParams(window.location.search);

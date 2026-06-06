@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <input type="text" placeholder="Search">
-        <img src="thestickerprinting.png" alt="Website Logo" class="logo">
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+       <button class="searchBtn">
+            <img src="search.png" class="searchIcon">
+        </button>
+        
+        <div class="searchDropdown">
+            <input type="text" placeholder="Search">
+        </div>
+        
+        <a href="Home.html">
+            <img src="thestickerprinting.png" alt="Website Logo" class="logo">
+        </a>
 
         <div>
             <a href="Cart.html">
@@ -22,7 +34,7 @@
 
     </header>
     <!-- NAVIGATION-->
-    <nav class="headerNav">
+    <nav class="headerNav" id="headNav">
         <a href="Home.html">Home</a>
         <div class="categoriesDropdown">
             <a href="Categories.html">Products</a>
@@ -135,6 +147,7 @@
             <a href="FAQ.html">FAQ</a>
         </nav>
       </footer>
+      <script src="scripts.js"></script>
     
 </body>
 </html>

@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CD Packaging</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <input type="text" placeholder="Search">
-        <img src="thestickerprinting.png" alt="Website Logo" class="logo">
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+        <button class="searchBtn">
+            <img src="search.png" class="searchIcon">
+        </button>
+        
+        <div class="searchDropdown">
+            <input type="text" placeholder="Search">
+        </div>
+        
+        <a href="Home.html">
+            <img src="thestickerprinting.png" alt="Website Logo" class="logo">
+        </a>
 
         <div>
             <a href="Cart.html">
@@ -22,7 +34,7 @@
 
     </header>
     <!-- NAVIGATION-->
-    <nav class="headerNav">
+    <nav class="headerNav" id="headNav">
         <a href="Home.html">Home</a>
         <div class="categoriesDropdown">
             <a href="Categories.html">Products</a>
@@ -48,7 +60,7 @@
         <h1>CD Packaging</h1>
         <section id="productLists">
             <!-- CD Covers -->
-            <a href="ProductPage.html?id=cdcovers" class="productCardLink">
+            <a href="ProductPage.html?id=cdcover" class="productCardLink">
                 <article>
                     <img src="cdcovers.png" alt="CD Covers">
                     <div class="info">
@@ -74,6 +86,7 @@
             <a href="FAQ.html">FAQs</a>
         </nav>
       </footer>
+      <script src="scripts.js"></script>
     
 </body>
 </html>

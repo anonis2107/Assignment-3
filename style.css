@@ -31,6 +31,17 @@ header{
     background: #FFFF;
 }
 
+/*hide on desktop, only for mobile */
+.hamburger {
+    visibility: hidden;
+    opacity: 0;;
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
 .headerNav {
     display: flex;
     justify-content: space-evenly;
@@ -54,6 +65,37 @@ nav a:hover{
     text-decoration: underline;
 }
 
+.searchBtn {
+    background: none;
+    border: none;
+    font-size: clamp(15px,2vw,20px);
+    cursor: pointer;
+}
+
+.searchDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 60px;
+    background: white;
+    padding: 10px;
+    border: 1px solid;
+    z-index: 1000;
+
+}
+
+.searchIcon {
+    height: 25px;
+    margin: 0;
+}
+
+.searchDropdown input {
+    width: 200px;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
 .categoriesDropdown {
     position: relative;
     display: inline-block;
@@ -70,6 +112,7 @@ nav a:hover{
     border: 0.1px solid;
     border-bottom: none;
     min-width: 180px;
+    
 }
 
 .dropContent a {
@@ -103,8 +146,8 @@ header input{
 }
 
 .logo{
-    height: 80px;
-    justify-content: center;
+    position: static;
+    transform: none;
 }
 
 .cart-icon{
@@ -1266,6 +1309,69 @@ footer a{
 
 /* MOBILE DESIGN */
 @media (max-width: 768px) {
+
+    .logo {
+        height: 50px;
+    }
+
+
+    .hamburger {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .dropContent {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 110px;
+    background: white;
+    border: 0.1px solid;
+    border-bottom: none;
+    min-width: 180px;
+    
+}
+
+    .headerNav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        flex-direction: column;
+        width: 130px;
+        background: white;
+        border: 1px solid;
+        z-index: 999;
+        align-items: stretch;
+
+        gap: 0;
+        padding: 0;
+    }
+
+    .headerNav.active {
+        display: flex;
+    }
+
+    .headerNav a {
+        display: block;
+        padding: 14px 16px;
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid;
+        box-sizing: border-box;
+        line-height: 1.2;
+        text-decoration: none;
+    }
+
+    .keyValues{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin:30px 30px 60px 30px;
+        gap: 0;
+
+    }
     .categories{
         grid-template-columns: repeat(2, 1fr);
     }

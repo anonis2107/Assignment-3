@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    
 </head>
 <body>
     <!-- HEADER -->
     <header>
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+
+        <button class="searchBtn">
+            <img src="search.png" class="searchIcon">
+        </button>
         
-        <input type="text" placeholder="Search">
+        <div class="searchDropdown">
+            <input type="text" placeholder="Search">
+        </div>
         
-        <img src="thestickerprinting.png" alt="Website Logo" class="logo">
+        
+        <a href="Home.html">
+            <img src="thestickerprinting.png" alt="Website Logo" class="logo">
+        </a>
 
         <div>
             <a href="Cart.html">
                 <img src="cart.png" alt="Cart Link" class="cart-icon">
             </a>
         </div>
-
         
     </header>
     
     <!-- NAVIGATION-->
-    <nav class="headerNav">
+    <nav class="headerNav" id="headNav">
         <a href="Home.html">Home</a>
         <div class="categoriesDropdown">
             <a href="Categories.html">Products</a>
@@ -91,6 +102,8 @@
             <a href="FAQ.html">FAQs</a>
         </nav>
       </footer>
+
+      <script src="scripts.js"></script>
 
     
 </body>
