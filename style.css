@@ -696,6 +696,11 @@ select {
     width: fit-content
 }
 
+.reviewername {
+    font-style: italic;
+    font-size: 12px;
+}
+
 
 
 /* CART PAGE */
