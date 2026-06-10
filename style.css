@@ -1494,6 +1494,13 @@ footer a{
     
 }
 
+/* ORDER CONFIRMED */
+.statusBtn,
+.homeBtn,
+.goBack {
+    text-decoration: none;
+    color: black;
+}
 
 
 /* MOBILE DESIGN */
