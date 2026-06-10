@@ -275,7 +275,9 @@ p {
 
 }
 
-
+.notAdded {
+    display: none
+}
 
 .shopnowbtn{
     display: inline-block;
@@ -1474,7 +1476,6 @@ footer a{
     background: white;
 }
 
-#left
 #orderhistory th {
     padding: 12px;
     border: 0.5px solid;

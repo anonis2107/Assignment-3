@@ -1955,6 +1955,7 @@ if (document.getElementById("itemSummaries")) {
         }
 
         //place order
+        document.querySelector(".notAdded").classList.remove(".notAdded");
         sessionStorage.removeItem("cart"); //empty cart data
         updateCartIcon();
         window.location.href = "OrderConfirmation.html"; // if required inputs are filled then change page
@@ -1971,6 +1972,20 @@ const cardNumber = document.getElementById("cardNumber");
 const cvc = document.getElementById("cvc");
 const expiryDate = document.getElementById("expiryDate");
 const cardName = document.getElementById("cardName");
+const postcode = document.getElementById("postcode");
+
+if (postcode) {
+    postcode.addEventListener("input", function () {
+        //if not a digit then alert user can't do that
+        if (/\D/.test(this.value)) {
+            alert("Postcode cannot contain non-numerical values");
+            this.value = this.value.replace(/\D/g, "");
+
+        }
+        
+
+    });
+}
 
 if (cardNumber) {
     cardNumber.addEventListener("input", function () {
