@@ -1496,9 +1496,12 @@ footer a{
 
 /* ORDER CONFIRMED */
 .statusBtn,
-.homeBtn,
-.goBack {
+.homeBtn {
     text-decoration: none;
+    color: black;
+}
+
+.backButton {
     color: black;
 }
 
