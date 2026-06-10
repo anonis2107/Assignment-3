@@ -1956,6 +1956,7 @@ if (document.getElementById("itemSummaries")) {
 
         //place order
         sessionStorage.setItem("orderPlaced", "true"); // for marking order
+        sessionStorage.removeItem("cart");
         updateCartIcon();
         window.location.href = "OrderConfirmation.html"; // if required inputs are filled then change page
     });
