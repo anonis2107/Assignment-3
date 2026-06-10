@@ -1509,7 +1509,7 @@ footer a{
 /* MOBILE DESIGN */
 
 /*768 for easy testing purposes */
-@media (max-width: 400px) { 
+@media (max-width: 500px) { 
 
     header {
         display: grid;
