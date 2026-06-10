@@ -1955,8 +1955,7 @@ if (document.getElementById("itemSummaries")) {
         }
 
         //place order
-        document.querySelector(".notAdded").classList.remove(".notAdded");
-        sessionStorage.removeItem("cart"); //empty cart data
+        sessionStorage.setItem("orderPlaced", "true"); // for marking order
         updateCartIcon();
         window.location.href = "OrderConfirmation.html"; // if required inputs are filled then change page
     });
@@ -1966,6 +1965,11 @@ if (document.getElementById("itemSummaries")) {
 
     updateFinalTotal(); //final final order total with delivery
     
+}
+
+const hiddenOrder = document.querySelector(".notAdded");
+if (hiddenOrder && sessionStorage.getItem("orderPlaced") === "true") {
+    hiddenOrder.classList.remove("notAdded");
 }
 
 const cardNumber = document.getElementById("cardNumber");
