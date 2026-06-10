@@ -8,11 +8,15 @@
 </head>
 <body>
     <header class="checkoutHeader">
-        <a href="Cart.html" class="goBack">
-            <button class="backbutton">←</button>
-            <h2>Return to shopping cart</h2>
-        </a>
+        <section class="goBack">
+            <button class="backbutton" id="checkoutBack" onclick="history.back()">← <span class="gobackLabel">Go Back</span></button>
+        </section>
+
+        
+        
     </header>
+    <h1>Check Out</h1>
+    
 
     <details class="orderSummaryCheckOut">
         <summary id="orderSummary"></summary>

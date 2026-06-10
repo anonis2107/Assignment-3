@@ -802,7 +802,7 @@ const products = {
     standardcustomlabels: {
         name: "Standard Custom Labels",
         price: 50,
-        image: "standardcustomlabels.png",
+        image: "standardcustomlabel.png",
         size: [
             { name: "Select", price: 0 },
             { name: "50mm x 50mm (+ $0.00)", price: 0 },
@@ -856,7 +856,7 @@ const products = {
         description: "Labels do more than share info—they showcase your brand. At The Sticker Printing, we create high-quality custom labels that make your products stand out. Perfect for bottles, jars, packaging, or promos, our labels are designed to boost your brand and leave a lasting impression."
     },
 
-    //Large Sinage
+    //Large Signage
 
     posters: {
         name: "Posters",
@@ -919,7 +919,7 @@ const products = {
         description: "Posters are a powerful marketing tool, perfect for grabbing attention and spreading your message. Whether you’re promoting an event, showcasing your brand, or creating eye-catching artwork."
     },
 
-    vinybanner: {
+    vinylbanner: {
         name: "Vinyl Banner",
         price: 250,
         image: "vinylbanner.png",
@@ -1297,8 +1297,7 @@ const products = {
 
     //Speciality Finishes
     foilstamping: {
-        name: { name: "Foil Stamping (+ $15.00)", price: 15 },
-        
+        name: "Foil Stamping",
         price: 20,
         image: "foilstamping.png",
         foilColour: [
@@ -1333,18 +1332,51 @@ const products = {
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("headNav");
 
-//expand menu on mobile
-hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active");
+if (hamburger && nav) {
+    //expand menu on mobile
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+}
+
+//close navigation when touching outside
+document.addEventListener("click", (touch) => {
+    if (!nav.contains(touch.target) && !hamburger.contains(touch.target)){
+        nav.classList.remove("active");
+    }
 });
+
+
+
+
 
 //show search dropdown
 const searchBtn = document.querySelector(".searchBtn");
-const searchDropdown = document.querySelector(".searchDropdown");
+const search = document.querySelector(".search");
 
-searchBtn.addEventListener("click", () => {
-    searchDropdown.style.display = searchDropdown.style.display === "block" ? "none" : "block";
+//if the page has the search and it is clicked open the input bar
+if (searchBtn && search){
+    searchBtn.addEventListener("click", () => {
+        //mobile only
+        if (window.innerWidth <= 768) { 
+            search.classList.toggle("active");
+        }
+        
+    });
+
+}
+
+document.addEventListener("click", (touch) => {
+    const input = document.querySelector(".search input");
+
+    //touching outside the search bar closes it
+    if (!search.contains(touch.target)) {
+        input.getBoundingClientRect(); //closes focus and dropdown
+        search.classList.remove("active");
+    }
+
 });
+
 
 //get product id from URL
 
@@ -1666,7 +1698,7 @@ if (cartList){
                 <h2 class="itemName">${item.name}</h2>
 
                 <details class="selectionSummary">
-                    <summary>Selections</summary>
+                    <summary id="reviewSelections">Selections</summary>
                     ${selectionsHTML}
                 </details>
 
@@ -1854,16 +1886,41 @@ if (document.getElementById("itemSummaries")) {
     });
 
 
+
+    const cardSelected = document.getElementById("card");
+    const cardFields = document.querySelectorAll(".cardContent input");
+    const placeOrderBtn = document.querySelector(".placeOrderBtn");
+
+    function updatePaymentReqs() {
+        cardFields.forEach(field => {
+            //if the selected payment method is card ONLY
+            field.required = cardSelected.checked;
+        });
+
+        //if all inputs not filled then do not allow place order to be available
+        placeOrderBtn.disabled = !form.checkValidity();
+    }
+
     const form = document.querySelector(".paymentForm");
+
+    form.addEventListener("input", updatePaymentReqs);
+    form.addEventListener("change", updatePaymentReqs);
+
+    updatePaymentReqs();
+    
+
 
     form.addEventListener("submit", function (e) {
         e.preventDefault(); //stop reloading page
 
+
+        //if any inputs cause warning then do not leave/allow place order
         if (!form.checkValidity()){
             form.reportValidity();
             return;
         }
 
+        //place order
         window.location.href = "OrderConfirmation.html"; // if required inputs are filled then change page
     });
 

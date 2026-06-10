@@ -9,30 +9,42 @@
 <body>
     <!-- HEADER -->
     <header>
+        <div class="leftIcons">
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
 
-        <button class="hamburger" id="hamburger">
-            ☰
-        </button>
-
-        <button class="searchBtn">
-            <img src="search.png" class="searchIcon">
-        </button>
+            <div class="search">
+                <button class="searchBtn">
+                    <img src="search.png" class="searchIcon">
+                </button>
         
-        <div class="searchDropdown">
-            <input type="text" placeholder="Search">
+                <div class="searchDropdown">
+                    <input type="search" placeholder="Search">
+                </div>
+
+            </div>
+            
+
         </div>
         
 
+        
         <a href="Home.html">
             <img src="thestickerprinting.png" alt="Website Logo" class="logo">
         </a>
 
-        <div class="cartIcon">
-            <a href="Cart.html">
-                <img src="cart.png" alt="Cart Link" class="cart-icon">
+        <div class="rightIcons">
+            <a href="Profile.html">
+                <img src="account.png" id="profileIcon">
             </a>
-        </div>
 
+            <div>
+                <a href="Cart.html">
+                    <img src="cart.png" alt="Cart Link" class="cart-icon">
+                </a>
+            </div>
+        </div>
     </header>
 
 
@@ -51,7 +63,7 @@
                 <a href="GiftCards.html">Giftcards</a>
                 <a href="CDPackaging.html">CD Packaging</a>
                 <a href="SpecialityFinishes.html">Speciality Finishes</a>
-                <a href="LargeSinage.html">Large Sinage</a>
+                <a href="LargeSignage.html">Large Sinage</a>
             </div>
 
         </div>
@@ -61,7 +73,10 @@
     </nav>
 
     <main>
-        <button class="backbutton" onclick="history.back()">←</button>
+        <section class="goBack">
+            <button class="backbutton" onclick="history.back()">← <span class="gobackLabel">Go Back</span></button>
+        </section>
+
         <h1>About Us</h1>
         <section>
             <p>At The Sticker Printing, we pride ourselves on delivering top-quality round stickers in Australia with precision printing, fast turnaround, and free shipping nationwide.</p>

@@ -18,7 +18,7 @@ body{
 
 details {
     font-family: "Montserrat", serif;
-    padding: 20px;
+    padding: 5px 10px;
 }
 
 
@@ -26,9 +26,49 @@ header{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background: #FFFF;
+    justify-content: center;
+    padding: 10px 30px;
+    background: white;
+}
+
+.leftIcons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchDropdown {
+    display: block;
+
+}
+
+.search input {
+    display: block;
+    opacity: 1;
+    width: 320px;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    
+}
+
+.rightIcons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+#profileIcon {
+    height: clamp(32px, 5vw, 42px);
 }
 
 /*hide on desktop, only for mobile */
@@ -66,34 +106,17 @@ nav a:hover{
 }
 
 .searchBtn {
+    display: flex;
     background: none;
     border: none;
+    align-items: center;
     font-size: clamp(15px,2vw,20px);
     cursor: pointer;
 }
 
-.searchDropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 60px;
-    background: white;
-    padding: 10px;
-    border: 1px solid;
-    z-index: 1000;
-
-}
-
 .searchIcon {
-    height: 25px;
+    height: clamp(25px, 5vw, 35px);
     margin: 0;
-}
-
-.searchDropdown input {
-    width: 200px;
-    padding: 8px 10px;
-    border: 1px solid;
-    border-radius: 20px;
 }
 
 .categoriesDropdown {
@@ -148,10 +171,16 @@ header input{
 .logo{
     position: static;
     transform: none;
+    height: clamp(60px, 8vw, 85px);
+    width: auto;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .cart-icon{
-    height: 50px;
+    height: clamp(50px, 4vw, 60px);
+    margin-right: 10px;
 }
 
 /* set header font */
@@ -179,6 +208,30 @@ p {
     letter-spacing: 0.5px;
 }
 
+.goBack {
+    padding-left: 20px;
+    padding-top: 20px;
+    border: none;
+    background: #EAE8E5;
+    
+}
+
+.gobackLabel {
+    font-family: "Montserrat", serif;
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+.goBack button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+#productpgBack {
+    padding-top: 20px;
+}
 
 /*HOMEPAGE */
 
@@ -399,6 +452,14 @@ p {
 
 }
 
+/* POLICIES */
+#policies h2{
+    font-family: "Montserrat", serif;
+    font-size: clamp(15px, 2vw, 18px);
+    font-weight: 600;
+    margin-left: 20px;
+}
+
 /*PRODUCT PAGE */
 .productpage {
     display: flex;
@@ -431,6 +492,11 @@ p {
     flex: 1;
 }
 
+.productimage {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
 #productimage {
     width: 100%;
     max-width: 500px;
@@ -439,6 +505,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .productpage img {
@@ -610,15 +677,17 @@ select {
     font-size: clamp(45px, 5vw, 60px);
 
 }
-.goBack button{
-    padding-left: 20px;
-    border: none;
-    background: #EAE8E5;
-    font-family: "Montserrat", serif;
-    font-size: clamp(20px, 5vw, 35px);
 
-    cursor: pointer;
+#reviewSelections {
+    font-family: "Montserrat", serif;
+    font-size: clamp(9px,2vw,13px);
+    font-style: italic;
+    font-weight: 275;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: 5px;
 }
+
 
 .empty {
     display: flex;
@@ -669,7 +738,8 @@ select {
     font-family: "Montserrat", serif;
     font-size: clamp(13px, 3vw, 16px);
     font-weight: 350;
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0;
+    
 }
 
 .itemPrice { 
@@ -844,13 +914,9 @@ select {
 
 .checkoutHeader {
     background-color: #EAE8E5;
-}
-
-.goBack {
-    font-family: "Montserrat", serif;
-    color: black;
-    text-decoration: none;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .orderSummaryCheckOut {
@@ -1310,8 +1376,68 @@ footer a{
 /* MOBILE DESIGN */
 @media (max-width: 768px) {
 
-    .logo {
-        height: 50px;
+    .rightIcons {
+        gap: 20px;
+    }
+
+    .search {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    /*expandable search */
+    .search input {
+        width: 0;
+        opacity: 0;
+        padding: 0;
+        border: 0;
+    
+    }
+
+    .search.active input {
+        width: 80vw;
+        max-width: 250px;
+        opacity: 1;
+        padding: 8px 10px;
+        border: 1px solid;
+        border-radius: 20px;
+
+    }
+
+
+
+    .search.active .searchDropdown {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        z-index: 1000;
+    }
+
+    .searchDropdown {
+    position: fixed;
+    top: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    max-width: 250px;
+    }
+
+    .searchDropdown input {
+        display: block;
+        width: 100%;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(12px);
+        outline: none;
+
     }
 
 
@@ -1393,6 +1519,14 @@ footer a{
     .productpage {
         flex-direction: column;
     }
+
+    .productimage {
+        margin: 0;
+    }
+
+    #productpgBack {
+    padding-top: 0px;
+}
 
 
     .productDropdowns {

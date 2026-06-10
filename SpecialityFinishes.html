@@ -11,27 +11,42 @@
     <!-- HEADER -->
     <header>
 
-        <button class="hamburger" id="hamburger">
-            ☰
-        </button>
+        <div class="leftIcons">
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
 
-        <button class="searchBtn">
-            <img src="search.png" class="searchIcon">
-        </button>
+            <div class="search">
+                <button class="searchBtn">
+                    <img src="search.png" class="searchIcon">
+                </button>
         
-        <div class="searchDropdown">
-            <input type="text" placeholder="Search">
+                <div class="searchDropdown">
+                    <input type="text" placeholder="Search">
+                </div>
+
+            </div>
+
         </div>
+        
+
         
         <a href="Home.html">
             <img src="thestickerprinting.png" alt="Website Logo" class="logo">
         </a>
 
-        <div>
-            <a href="Cart.html">
-                <img src="cart.png" alt="Cart Link" class="cart-icon">
+        <div class="rightIcons">
+            <a href="Profile.html">
+                <img src="account.png" id="profileIcon">
             </a>
+
+            <div>
+                <a href="Cart.html">
+                    <img src="cart.png" alt="Cart Link" class="cart-icon">
+                </a>
+            </div>
         </div>
+
     </header>
 
     <!-- NAVIGATION-->
@@ -48,7 +63,7 @@
                 <a href="GiftCards.html">Giftcards</a>
                 <a href="CDPackaging.html">CD Packaging</a>
                 <a href="SpecialityFinishes.html">Speciality Finishes</a>
-                <a href="LargeSinage.html">Large Sinage</a>
+                <a href="LargeSignage.html">Large Sinage</a>
             </div>
 
         </div>
@@ -58,10 +73,15 @@
     </nav>
 
     <main>
+
+        <section class="goBack">
+            <button class="backbutton" onclick="history.back()">← <span class="gobackLabel">Go Back</span></button>
+        </section>
+
         <section id="productLists">
 
             <!-- Foil Stamping -->
-            <a href="ProductPage.html?id=menus" class="productCardLink">
+            <a href="ProductPage.html?id=foilstamping" class="productCardLink">
                 <article>
                     <img src="foilstamping.png" alt="Foil Stamping">
                     <div class="info">

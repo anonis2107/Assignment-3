@@ -10,26 +10,42 @@
 <body>
     <!-- HEADER -->
     <header>
-        <button class="hamburger" id="hamburger">
-            ☰
-        </button>
-        <button class="searchBtn">
-            <img src="search.png" class="searchIcon">
-        </button>
+        <div class="leftIcons">
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
+
+            <div class="search">
+                <button class="searchBtn">
+                    <img src="search.png" class="searchIcon">
+                </button>
         
-        <div class="searchDropdown">
-            <input type="text" placeholder="Search">
+                <div class="searchDropdown">
+                    <input type="text" placeholder="Search">
+                </div>
+
+            </div>
+
         </div>
+        
+
         
         <a href="Home.html">
             <img src="thestickerprinting.png" alt="Website Logo" class="logo">
         </a>
 
-        <div>
-            <a href="Cart.html">
-                <img src="cart.png" alt="Cart Link" class="cart-icon">
+        <div class="rightIcons">
+            <a href="Profile.html">
+                <img src="account.png" id="profileIcon">
             </a>
+
+            <div>
+                <a href="Cart.html">
+                    <img src="cart.png" alt="Cart Link" class="cart-icon">
+                </a>
+            </div>
         </div>
+
 
     </header>
     
@@ -47,7 +63,7 @@
                 <a href="GiftCards.html">Giftcards</a>
                 <a href="CDPackaging.html">CD Packaging</a>
                 <a href="SpecialityFinishes.html">Speciality Finishes</a>
-                <a href="LargeSinage.html">Large Sinage</a>
+                <a href="LargeSignage.html">Large Sinage</a>
             </div>
 
         </div>
@@ -56,6 +72,11 @@
         <a href="FAQ.html">FAQ</a>
     </nav>
 
+    <main>
+
+        <section class="goBack">
+            <button class="backbutton" onclick="history.back()">← <span class="gobackLabel">Go Back</span></button>
+        </section>
         <!-- Category-->
          <h1>Marketing Materials</h1>
 
@@ -77,7 +98,7 @@
             <!-- Brochures -->
             <a href="ProductPage.html?id=brochures" class="productCardLink">
                 <article>
-                    <img src="brochures.png" alt="Brochures">
+                    <img src="brochure.png" alt="Brochures">
                     <div class="info">
                         <h3>Brochures</h3>
                         <p>★★★★★</p>
