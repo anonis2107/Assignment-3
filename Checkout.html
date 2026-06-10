@@ -55,7 +55,7 @@
 
                 <div class="detailRow">
                     <input class="shippingInput" type="text" name="city" placeholder="City" maxlength="35" required>
-                    <input class="shippingInput" type="text" name="country" placeholder="Country" maxlength="35" required>
+                    <input class="shippingInput " type="text" name="country" placeholder="Country" maxlength="35" required>
                 </div>
             </section>
 
@@ -85,7 +85,7 @@
                 <div class="payments">
 
                     <input type="radio" name="pay" class="radio" id="card" checked>
-                    <label for="card"><span>Credit Card</span></label>
+                    <label for="card"><span>Card</span></label>
 
                     <input type="radio" name="pay" class="radio" id="klarna">
                     <label for="klarna"><span>Klarna</span></label>
@@ -95,7 +95,7 @@
                     <label for="paypal"><span>Paypal</span></label>
 
                     <input type="radio" name="pay" class="radio" id="applePay">
-                    <label for="applePay"><span> Apple Pay</span></label>
+                    <label for="applePay"><span> Pay</span></label>
 
 
                     <!-- Card Fields-->
@@ -104,9 +104,9 @@
 
                         <div class="detailRow">
 
-                            <input class="checkoutInput" type="text" placeholder="Card Number" maxlength="16" required>
-                            <input class="checkoutInput" type="date" placeholder="Expiry Date" required>
-                            <input class="checkoutInput" type="text" placeholder="CVC" maxlength="3" required>
+                            <input class="checkoutInput" id="cardNumber" type="text" placeholder="Card Number" maxlength="16" required>
+                            <input class="checkoutInput" id="expiryDate" type="month" placeholder="Expiry Date" required>
+                            <input class="checkoutInput" id="cvc" type="text" placeholder="CVC" maxlength="3" required>
                         </div>
                     </article>
                  

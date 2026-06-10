@@ -1377,6 +1377,36 @@ document.addEventListener("click", (touch) => {
 
 });
 
+//MENU mobile
+//on mobile don't auto open categories page, open sub dropdown for categories
+const productsLinks = document.getElementById("productLinks");
+
+if (productsLinks) {
+    productsLinks.addEventListener("click", function(open) {
+        if (window.innerWidth <= 400) {
+            open.preventDefault();
+            this.parentElement.classList.toggle("open");
+        }
+    });
+}
+
+//cart icon update (empty/not empty)
+function updateCartIcon() {
+    const cartIcon = document.getElementById("cartIcon");
+
+    //if there is a cart on the page
+    if (cartIcon) {
+        const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+        if (cart.length > 0) {
+            cartIcon.src = "cartFilled.png";
+        }
+        else{
+            cartIcon.src = "cartEmpty.png";
+        }
+    }
+}
+
+updateCartIcon();
 
 //get product id from URL
 
@@ -1636,6 +1666,7 @@ if (addToCartBtn){
 
         //save updated cart so it doesn't restart on refresh
         sessionStorage.setItem("cart", JSON.stringify(cart));
+        updateCartIcon();
 
         alert("Added to Cart");
     });
@@ -1686,7 +1717,7 @@ if (cartList){
             let selectionsHTML = "";
             if (item.selections && item.selections.length > 0) {
                 item.selections.forEach(sel => {
-                    selectionsHTML += `<p>${sel.key}: ${sel.value}</p>`;
+                    selectionsHTML += `<p><span class="selKey">${sel.key}:</span> ${sel.value}</p>`;
                 });
             }
             
@@ -1737,6 +1768,7 @@ if (cartList){
                 document.querySelectorAll(".number")[index].textContent = cart[index].quantity;
                 document.querySelectorAll(".itemPrice")[index].textContent = '$' + cart[index].price * cart[index].quantity; //update price
                 updateSummary();
+                updateCartIcon();
 
             });
         });
@@ -1757,6 +1789,7 @@ if (cartList){
                     cart.splice(index, 1); // remove specified item from array cart
 
                     sessionStorage.setItem("cart", JSON.stringify(cart)); // save updated cart in storage
+                    updateCartIcon();
 
                     document.querySelectorAll(".buyItem")[index].remove(); //update page
                     updateSummary();
@@ -1790,6 +1823,7 @@ if (cartList){
 
                 document.querySelectorAll(".buyItem")[index].remove(); //update page
                 updateSummary();
+                updateCartIcon();
                 
                 //update immediately on deletion
                 if (cart.length === 0){
@@ -1910,8 +1944,8 @@ if (document.getElementById("itemSummaries")) {
     
 
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault(); //stop reloading page
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); //stop reloading page
 
 
         //if any inputs cause warning then do not leave/allow place order
@@ -1921,6 +1955,8 @@ if (document.getElementById("itemSummaries")) {
         }
 
         //place order
+        sessionStorage.removeItem("cart"); //empty cart data
+        updateCartIcon();
         window.location.href = "OrderConfirmation.html"; // if required inputs are filled then change page
     });
 
@@ -1930,3 +1966,63 @@ if (document.getElementById("itemSummaries")) {
     updateFinalTotal(); //final final order total with delivery
     
 }
+
+const cardNumber = document.getElementById("cardNumber");
+const cvc = document.getElementById("cvc");
+const expiryDate = document.getElementById("expiryDate");
+const cardName = document.getElementById("cardName");
+
+if (cardNumber) {
+    cardNumber.addEventListener("input", function () {
+        //if not a digit then alert user can't do that
+        if (/\D/.test(this.value)) {
+            alert("Card number cannot contain non-numerical values");
+            this.value = this.value.replace(/\D/g, "");
+
+        }
+        
+
+    });
+}
+
+if (cvc) {
+    cvc.addEventListener("input", function () {
+        
+        //if not a digit then alert user can't do that
+        if (/\D/.test(this.value)) {
+            alert("CVC cannot contain non-numerical values");
+            this.value = this.value.replace(/\D/g, "");
+
+        }
+    });
+    
+}
+
+if (expiryDate) {
+    expiryDate.addEventListener("change", function () {
+        const selectedDate = new Date(this.value);
+        const today = new Date(); //curent date
+
+        if (selectedDate < today) {
+            alert("Expiry date cannot be in the past.");
+            this.value="";
+        }
+    });
+}
+
+if (cardName) {
+    cardName.addEventListener("input", function () {
+        //if not a digit then alert user can't do that
+        if (/\d/.test(this.value)) {
+            alert("Please enter the cardholder's name");
+            this.value = this.value.replace(/\d/g, "");
+
+        }
+        
+
+    });
+}
+
+
+
+
