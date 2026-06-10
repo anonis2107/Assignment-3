@@ -1509,7 +1509,7 @@ footer a{
 /* MOBILE DESIGN */
 
 /*768 for easy testing purposes */
-@media (max-width: 768px) { 
+@media (max-width: 400px) { 
 
     header {
         display: grid;
@@ -1596,12 +1596,12 @@ footer a{
     }
 
     .searchDropdown {
-    position: fixed;
-    top: 84px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80vw;
-    max-width: 250px;
+        position: fixed;
+        top: 84px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80vw;
+        max-width: 250px;
     }
 
     .searchDropdown input {
@@ -1718,7 +1718,7 @@ footer a{
     }
 
     .productDropdowns details {
-        width: 100%;
+        width: auto;
         margin: 0;
     }
 

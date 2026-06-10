@@ -1358,7 +1358,7 @@ const search = document.querySelector(".search");
 if (searchBtn && search){
     searchBtn.addEventListener("click", () => {
         //mobile only
-        if (window.innerWidth <= 768) { 
+        if (window.innerWidth <= 400) { 
             search.classList.toggle("active");
         }
         
@@ -1383,7 +1383,7 @@ const productsLinks = document.getElementById("productLinks");
 
 if (productsLinks) {
     productsLinks.addEventListener("click", function(open) {
-        if (window.innerWidth <= 400) {
+        if (window.innerWidth <= 480) {
             open.preventDefault();
             this.parentElement.classList.toggle("open");
         }
